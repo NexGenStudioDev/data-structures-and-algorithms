@@ -1760,3 +1760,624 @@ Given a sorted array and a target element, determine whether the target exists u
 Found at Index 4
 ```
 
+# 🚀 DSA Preparation Series – Level 5: Strings (Questions 76–100)
+
+After mastering arrays, the next important topic is **Strings**.
+
+Strings are used everywhere in programming — usernames, passwords, text processing, search engines, and many real-world applications.
+
+In this level, you will learn:
+
+* Character handling
+* String traversal
+* String manipulation
+* Frequency counting
+* Palindrome checking
+* Basic string algorithms
+
+---
+
+# 📌 Question 76: Take a String as Input and Print It
+
+### Problem Statement
+
+Take a string as input and print the same string.
+
+### Example
+
+**Input**
+
+```text
+Hello
+```
+
+**Output**
+
+```text
+Hello
+```
+
+### Concepts Covered
+
+* String input
+* Output printing
+
+---
+
+# 📌 Question 77: Find the Length of a String
+
+### Problem Statement
+
+Take a string as input and find its length.
+
+### Example
+
+**Input**
+
+```text
+Programming
+```
+
+**Output**
+
+```text
+11
+```
+
+### Concepts Covered
+
+* String traversal
+* Counting characters
+
+---
+
+# 📌 Question 78: Print Each Character of a String
+
+### Problem Statement
+
+Take a string and print each character on a new line.
+
+### Example
+
+**Input**
+
+```text
+Hello
+```
+
+**Output**
+
+```text
+H
+e
+l
+l
+o
+```
+
+---
+
+# 📌 Question 79: Count Vowels in a String
+
+### Problem Statement
+
+Count the number of vowels present in a string.
+
+### Example
+
+**Input**
+
+```text
+education
+```
+
+**Output**
+
+```text
+5
+```
+
+---
+
+# 📌 Question 80: Count Consonants in a String
+
+### Problem Statement
+
+Count the number of consonants present in a string.
+
+### Example
+
+**Input**
+
+```text
+hello
+```
+
+**Output**
+
+```text
+3
+```
+
+---
+
+# 📌 Question 81: Convert String to Uppercase
+
+### Problem Statement
+
+Convert all characters of a string into uppercase.
+
+### Example
+
+**Input**
+
+```text
+hello
+```
+
+**Output**
+
+```text
+HELLO
+```
+
+---
+
+# 📌 Question 82: Convert String to Lowercase
+
+### Problem Statement
+
+Convert all characters of a string into lowercase.
+
+### Example
+
+**Input**
+
+```text
+WORLD
+```
+
+**Output**
+
+```text
+world
+```
+
+---
+
+# 📌 Question 83: Reverse a String
+
+### Problem Statement
+
+Reverse the given string.
+
+### Example
+
+**Input**
+
+```text
+coding
+```
+
+**Output**
+
+```text
+gnidoc
+```
+
+---
+
+# 📌 Question 84: Check Palindrome String
+
+### Problem Statement
+
+Check whether a string is a palindrome.
+
+A palindrome reads the same from both directions.
+
+### Example
+
+**Input**
+
+```text
+madam
+```
+
+**Output**
+
+```text
+Palindrome
+```
+
+---
+
+# 📌 Question 85: Compare Two Strings
+
+### Problem Statement
+
+Take two strings and check whether they are equal.
+
+### Example
+
+**Input**
+
+```text
+hello
+hello
+```
+
+**Output**
+
+```text
+Same
+```
+
+---
+
+# 📌 Question 86: Concatenate Two Strings
+
+### Problem Statement
+
+Join two strings together.
+
+### Example
+
+**Input**
+
+```text
+Hello
+World
+```
+
+**Output**
+
+```text
+HelloWorld
+```
+
+---
+
+# 📌 Question 87: Count Words in a Sentence
+
+### Problem Statement
+
+Count the number of words present in a sentence.
+
+### Example
+
+**Input**
+
+```text
+I love programming
+```
+
+**Output**
+
+```text
+3
+```
+
+---
+
+# 📌 Question 88: Count Frequency of a Character
+
+### Problem Statement
+
+Count how many times a given character appears in a string.
+
+### Example
+
+**Input**
+
+```text
+programming
+g
+```
+
+**Output**
+
+```text
+2
+```
+
+---
+
+# 📌 Question 89: Find First Non-Repeating Character
+
+### Problem Statement
+
+Find the first character that appears only once in a string.
+
+### Example
+
+**Input**
+
+```text
+aabbcde
+```
+
+**Output**
+
+```text
+c
+```
+
+---
+
+# 📌 Question 90: Remove Spaces from a String
+
+### Problem Statement
+
+Remove all spaces from the given string.
+
+### Example
+
+**Input**
+
+```text
+hello world
+```
+
+**Output**
+
+```text
+helloworld
+```
+
+---
+
+# 📌 Question 91: Replace a Character in a String
+
+### Problem Statement
+
+Replace all occurrences of one character with another character.
+
+### Example
+
+**Input**
+
+```text
+banana
+a -> o
+```
+
+**Output**
+
+```text
+bonono
+```
+
+---
+
+# 📌 Question 92: Check Anagram Strings
+
+### Problem Statement
+
+Check whether two strings contain the same characters with the same frequency.
+
+### Example
+
+**Input**
+
+```text
+listen
+silent
+```
+
+**Output**
+
+```text
+Anagram
+```
+
+---
+
+# 📌 Question 93: Find Duplicate Characters
+
+### Problem Statement
+
+Print all characters that appear more than once in a string.
+
+### Example
+
+**Input**
+
+```text
+programming
+```
+
+**Output**
+
+```text
+r g m
+```
+
+---
+
+# 📌 Question 94: Find Longest Word in a Sentence
+
+### Problem Statement
+
+Given a sentence, find the longest word.
+
+### Example
+
+**Input**
+
+```text
+I love competitive programming
+```
+
+**Output**
+
+```text
+competitive
+```
+
+---
+
+# 📌 Question 95: Reverse Words in a Sentence
+
+### Problem Statement
+
+Reverse the order of words in a sentence.
+
+### Example
+
+**Input**
+
+```text
+I love coding
+```
+
+**Output**
+
+```text
+coding love I
+```
+
+---
+
+# 📌 Question 96: Check String Rotation
+
+### Problem Statement
+
+Check whether one string is a rotation of another string.
+
+### Example
+
+**Input**
+
+```text
+ABCD
+CDAB
+```
+
+**Output**
+
+```text
+Yes
+```
+
+---
+
+# 📌 Question 97: Remove Duplicate Characters
+
+### Problem Statement
+
+Remove duplicate characters from a string.
+
+### Example
+
+**Input**
+
+```text
+programming
+```
+
+**Output**
+
+```text
+progamin
+```
+
+---
+
+# 📌 Question 98: Check Valid Parentheses
+
+### Problem Statement
+
+Given a string containing brackets, check whether brackets are balanced.
+
+### Example
+
+**Input**
+
+```text
+{[()]}
+```
+
+**Output**
+
+```text
+Valid
+```
+
+---
+
+# 📌 Question 99: Longest Common Prefix
+
+### Problem Statement
+
+Find the longest common prefix among given strings.
+
+### Example
+
+**Input**
+
+```text
+flower
+flow
+flight
+```
+
+**Output**
+
+```text
+fl
+```
+
+---
+
+# 📌 Question 100: String Compression
+
+### Problem Statement
+
+Compress a string by replacing consecutive repeating characters with character + count.
+
+### Example
+
+**Input**
+
+```text
+aaabbc
+```
+
+**Output**
+
+```text
+a3b2c1
+```
+
+---
+
+# 🎯 Concepts Covered in Questions 76–100
+
+After completing this level, you should understand:
+
+* ✅ String input/output
+* ✅ Character traversal
+* ✅ String manipulation
+* ✅ Palindrome checking
+* ✅ Anagram logic
+* ✅ Frequency counting
+* ✅ Two-pointer thinking
+* ✅ Basic string algorithms
+
+---
+
+# 🎉 Congratulations!
+
+After completing Questions **1–100**, you have built a strong programming foundation:
+
+✅ Variables
+✅ Operators
+✅ Conditions
+✅ Loops
+✅ Arrays
+✅ Strings
+
+Now you are ready to start the actual DSA journey:
+
+
+**Strong basics → Easier DSA learning 🚀**
