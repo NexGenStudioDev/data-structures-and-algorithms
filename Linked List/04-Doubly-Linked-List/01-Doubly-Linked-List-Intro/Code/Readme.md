@@ -12,7 +12,7 @@ read this doc
 
 
 
-##  Adding Event at DLL
+##  Adding node at DLL
 
 ### 1. Adding element at first
 

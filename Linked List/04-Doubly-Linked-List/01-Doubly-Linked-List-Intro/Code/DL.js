@@ -81,6 +81,80 @@ class DLL {
     this.len++;
   }
 
+  removeHead(){
+
+    let head = this.head
+    
+    this.head = head.next
+    head.prev = null
+    this.len--
+   
+    return this.head
+  }
+
+  removeTail(){
+   let Current = this.head
+
+ 
+
+   while(Current.next.next !== null){
+    Current = Current.next
+   }
+
+
+
+   Current.next.prev = null
+   Current.next = null
+
+   this.len--
+
+    return this.head
+
+
+
+   
+  //  Current.next = null
+
+    // this.len--
+
+
+
+
+  }
+
+removeAtIndex(index) {
+  if (index < 0 || index >= this.len) {
+    console.log("Invalid Index");
+    return;
+  }
+
+  // Remove first node
+  if (index === 0) {
+    this.removeHead();
+    return;
+  }
+
+  // Remove last node
+  if (index === this.len - 1) {
+    this.removeTail();
+    return;
+  }
+
+  let current = this.head;
+
+  for (let i = 0; i < index; i++) {
+    current = current.next;
+  }
+
+  current.prev.next = current.next;
+  current.next.prev = current.prev;
+
+  current.next = null;
+  current.prev = null;
+
+  this.len--;
+}
+
   // Print List
   print() {
     let current = this.head;
@@ -98,16 +172,23 @@ class DLL {
 
 const students = new DLL();
 
+
+
 students.addAtFirst("Rahul");
 students.addAtFirst("Priya");
 students.addAtFirst("Amit");
-
-students.addAtLast("Neha");
+// students.addAtLast("Neha");
 
 students.addAtIndex(0, "Abhishek");
-students.addAtIndex(5, "Rohit");
+
+
 students.addAtIndex(3, "Sneha");
+
+
+
+students.removeHead()
+students.removeTail()
+students.print();
 
 console.log("Length:", students.len);
 
-students.print();
