@@ -614,3 +614,384 @@ Peek()
 > **A Stack is a linear data structure that follows the LIFO (Last In, First Out) principle, where both insertion (Push) and deletion (Pop) are performed only at one end called the Top. The last element inserted into the stack is the first element removed. Stacks are widely used in function calls, browser history, undo/redo operations, expression evaluation, and backtracking algorithms.**
 
 ---
+
+
+
+# Stack in Code (JavaScript)
+
+When learning about **Stacks**, one common question is:
+
+> **"Does JavaScript have a Stack data structure?"**
+
+The answer is **No**.
+
+JavaScript **does not provide a built-in `Stack` class**. Instead, we **implement a Stack using an Array** because arrays already provide the operations needed to follow the **LIFO (Last In, First Out)** principle.
+
+---
+
+# Is Every Array a Stack?
+
+❌ **No.**
+
+This is one of the biggest misconceptions among beginners.
+
+An **Array** and a **Stack** are **not the same thing**.
+
+* **Array** → A general-purpose data structure.
+* **Stack** → A data structure that follows specific rules.
+
+An array can be used as:
+
+* Stack
+* Queue
+* List
+* Dynamic Array
+
+depending on **how you use it**.
+
+> **A Stack is not defined by what it stores; it is defined by how it is accessed.**
+
+---
+
+# Why Do We Use an Array?
+
+A Stack needs only a few basic operations:
+
+* Push (Insert)
+* Pop (Remove)
+* Peek (View Top)
+* isEmpty
+* Size
+
+JavaScript arrays already provide these operations.
+
+| Stack Operation | JavaScript Array Method   |
+| --------------- | ------------------------- |
+| Push            | `push()`                  |
+| Pop             | `pop()`                   |
+| Peek            | `array[array.length - 1]` |
+| isEmpty         | `array.length === 0`      |
+| Size            | `array.length`            |
+
+Because of these methods, an array can easily behave like a Stack.
+
+---
+
+# What Makes an Array Behave Like a Stack?
+
+An array behaves like a Stack **only when we follow the Stack rules**.
+
+The rules are:
+
+* ✅ Insert elements only at the **Top**.
+* ✅ Remove elements only from the **Top**.
+* ❌ Do not remove elements from the middle.
+* ❌ Do not insert elements at the beginning.
+* ❌ Do not access elements randomly for modification.
+
+If we follow these rules, the array behaves exactly like a Stack.
+
+---
+
+# Example: Using an Array as a Stack
+
+```javascript
+const stack = [];
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log(stack);
+
+// Output:
+// [10, 20, 30]
+
+stack.pop();
+
+console.log(stack);
+
+// Output:
+// [10, 20]
+```
+
+Here,
+
+* `push()` adds an element to the **Top**.
+* `pop()` removes the element from the **Top**.
+
+Since all operations happen from the same end, the array behaves like a Stack.
+
+---
+
+# Stack Visualization
+
+```text
+Push(10)
+
+Top
+ ↓
+
++----+
+| 10 |
++----+
+```
+
+```text
+Push(20)
+
+Top
+ ↓
+
++----+
+| 20 |
++----+
+| 10 |
++----+
+```
+
+```text
+Push(30)
+
+Top
+ ↓
+
++----+
+| 30 |
++----+
+| 20 |
++----+
+| 10 |
++----+
+```
+
+```text
+Pop()
+
+Top
+ ↓
+
++----+
+| 20 |
++----+
+| 10 |
++----+
+```
+
+Notice that **30**, which was inserted last, is removed first.
+
+---
+
+# Suppose You Have a Real Stack of Books
+
+Imagine the following stack:
+
+```text
+          Top
+           ↓
+
++---------+
+| Book 4  |
++---------+
+| Book 3  |
++---------+
+| Book 2  |
++---------+
+| Book 1  |
++---------+
+```
+
+Can you remove **Book 2** directly?
+
+❌ No.
+
+Can you remove **Book 1** first?
+
+❌ No.
+
+You must first remove:
+
+```text
+Book 4
+```
+
+Then
+
+```text
+Book 3
+```
+
+Only after removing them can you access **Book 2**.
+
+This is exactly how a Stack works in programming.
+
+---
+
+# The Same Concept in JavaScript
+
+Suppose we have:
+
+```javascript
+const stack = [10, 20, 30, 40];
+```
+
+Think of it as:
+
+```text
+          Top
+           ↓
+
++----+
+| 40 |
++----+
+| 30 |
++----+
+| 20 |
++----+
+| 10 |
++----+
+```
+
+Removing an element:
+
+```javascript
+stack.pop();
+```
+
+Result:
+
+```text
+40 is removed.
+```
+
+Remaining Stack:
+
+```text
+          Top
+           ↓
+
++----+
+| 30 |
++----+
+| 20 |
++----+
+| 10 |
++----+
+```
+
+Again,
+
+```javascript
+stack.pop();
+```
+
+Result:
+
+```text
+30 is removed.
+```
+
+The last inserted element is always removed first.
+
+---
+
+# Can We Remove an Element from the Middle?
+
+JavaScript arrays technically allow this.
+
+```javascript
+const stack = [10, 20, 30, 40];
+
+stack.splice(1, 1);
+
+console.log(stack);
+
+// [10, 30, 40]
+```
+
+But this is **not** a valid Stack operation.
+
+Why?
+
+Because a Stack **never allows removing a middle element**.
+
+Only the **Top** element can be removed.
+
+Using methods like:
+
+* `splice()`
+* `shift()`
+* `unshift()`
+
+breaks the Stack behaviour.
+
+---
+
+# Why Do Developers Create a Stack Class?
+
+Although arrays can behave like stacks, developers often create a dedicated **Stack class**.
+
+The main reason is to **restrict operations**.
+
+Instead of allowing every array method, a Stack class exposes only the operations that belong to a Stack.
+
+Example:
+
+```javascript
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+
+    push(value) {
+        this.items.push(value);
+    }
+
+    pop() {
+        return this.items.pop();
+    }
+
+    peek() {
+        return this.items[this.items.length - 1];
+    }
+
+    isEmpty() {
+        return this.items.length === 0;
+    }
+
+    size() {
+        return this.items.length;
+    }
+}
+```
+
+Now users can only perform valid Stack operations.
+
+---
+
+# Array vs Stack
+
+| Array                                                          | Stack                                                        |
+| -------------------------------------------------------------- | ------------------------------------------------------------ |
+| General-purpose data structure                                 | Specialised linear data structure                            |
+| Can insert anywhere                                            | Insert only at the Top                                       |
+| Can remove from anywhere                                       | Remove only from the Top                                     |
+| Supports many methods (`push`, `pop`, `shift`, `splice`, etc.) | Supports only Stack operations (`push`, `pop`, `peek`, etc.) |
+| Does not enforce LIFO                                          | Always follows LIFO                                          |
+
+---
+
+# Key Points
+
+* JavaScript **does not have a built-in Stack class**.
+* A Stack is usually implemented using an **Array**.
+* An Array is **not** a Stack by itself.
+* An Array behaves like a Stack **only when we use Stack operations** (`push`, `pop`, `peek`).
+* A Stack always follows the **LIFO (Last In, First Out)** principle.
+* In production applications, developers often create a **Stack class** to enforce Stack rules and prevent invalid operations.
+
+---
+
+# Interview Answer ⭐
+
+> **JavaScript does not provide a built-in Stack data structure. Instead, we implement a Stack using an Array because arrays already support `push()` and `pop()`, which naturally follow the LIFO principle. However, an Array itself is not a Stack—it is a general-purpose data structure. An Array behaves like a Stack only when we restrict its operations to `push()`, `pop()`, and `peek()`. To enforce these rules and prevent invalid operations, developers often create a dedicated `Stack` class.**
