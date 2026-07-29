@@ -627,6 +627,12 @@ The answer is **No**.
 
 JavaScript **does not provide a built-in `Stack` class**. Instead, we **implement a Stack using an Array** because arrays already provide the operations needed to follow the **LIFO (Last In, First Out)** principle.
 
+```
+stack == array (with restricted access)
+```
+
+- you can only push the element at the top and remove element from the top . stack is noting but a array with restricted access
+
 ---
 
 # Is Every Array a Stack?
@@ -980,6 +986,8 @@ Now users can only perform valid Stack operations.
 | Does not enforce LIFO                                          | Always follows LIFO                                          |
 
 ---
+
+
 
 # Key Points
 
