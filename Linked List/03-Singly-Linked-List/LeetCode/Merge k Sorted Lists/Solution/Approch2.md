@@ -122,6 +122,8 @@ lists = [
 ]
 ```
 
+![List](../Image/A2/Lists2.png)
+
 Initially, we take the **first linked list** as our answer.
 
 ```text
@@ -136,15 +138,9 @@ ans =
 
 Merge `ans` with the second linked list.
 
-```text
-ans
 
-1 → 4 → 5
 
-List2
-
-1 → 3 → 4 → 6
-```
+![Queue](../Image/A2/A2DryRunQuestion.png)
 
 ### Comparison 1
 
@@ -163,11 +159,8 @@ Merged List
 
 Move `L1`
 
-```text
-L1
 
-4 → 5
-```
+![Queue](../Image/A2/Iteration%201.png)
 
 ---
 
@@ -186,6 +179,9 @@ Merged List
 1 → 1
 ```
 
+![Queue](../Image/Iteration2%20ML.png)
+
+
 Move `L2`
 
 ```text
@@ -193,6 +189,8 @@ L2
 
 3 → 4 → 6
 ```
+
+![Queue](../Image/Iteration2.png)
 
 ---
 
@@ -209,6 +207,8 @@ Merged List
 1 → 1 → 3
 ```
 
+![Queue](../Image/C3.png)
+
 Move `L2`
 
 ```text
@@ -216,6 +216,7 @@ L2
 
 4 → 6
 ```
+
 
 ---
 

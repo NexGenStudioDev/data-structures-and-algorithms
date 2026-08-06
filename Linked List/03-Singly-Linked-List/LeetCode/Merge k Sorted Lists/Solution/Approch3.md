@@ -1,24 +1,22 @@
 
 
-## Merge K Sorted Lists | Priority Queue (Min Heap) | JavaScript
+##  Merge K Sorted Lists | Optimal Priority Queue (Min Heap) Solution | JavaScript
 
-Each linked list is already sorted in ascending order. This means the **smallest element of every linked list is always at its head**.
+## Intuition
 
-Instead of merging two linked lists repeatedly, we can always choose the **smallest node among the heads of all linked lists**.
+Each linked list is already sorted in ascending order. This means the smallest remaining element of a linked list is always at its current head.
 
-To efficiently find the smallest node at every step, we use a **Priority Queue (Min Heap)**.
+Instead of repeatedly merging two linked lists, we can keep track of the smallest available node from every linked list using a **Priority Queue (Min Heap)**.
 
-The idea is simple:
+The algorithm works as follows:
 
-* Insert the head node of every non-empty linked list into the min heap.
-* Remove the smallest node from the heap.
-* Add it to the answer.
-* If the removed node has a next node, insert that next node into the heap.
-* Repeat until the heap becomes empty.
+- Insert the head node of every non-empty linked list into the min heap.
+- Remove the smallest node from the heap.
+- Append it to the merged linked list.
+- If the removed node has a next node, insert that next node into the heap.
+- Repeat until the heap becomes empty.
 
-Since the heap always gives us the smallest available node, the final linked list remains sorted.
-
----
+Since the heap always returns the smallest available node, the merged linked list is built in sorted order.
 
 # Approach
 
@@ -38,6 +36,10 @@ Create a **Priority Queue (Min Heap)** that stores linked list nodes.
 
 The heap compares nodes based on their values, so the smallest node is always at the top.
 
+The priority queue stores **linked list nodes**, not integer values.
+
+A custom comparator compares the node values (`node.val`) so that the node with the smallest value always stays at the top of the heap.
+
 ```javascript
 const pq = new MinPriorityQueue({
     compare: (a, b) => a.val - b.val
@@ -51,6 +53,9 @@ const pq = new MinPriorityQueue({
 Traverse the array of linked lists.
 
 For every non-empty linked list, insert **only its head node** into the heap.
+
+
+
 
 Suppose the input is
 
@@ -219,6 +224,8 @@ lists =
   2 → 6
 ]
 ```
+
+![Lists](../Image/Lists.png)
 
 ---
 
