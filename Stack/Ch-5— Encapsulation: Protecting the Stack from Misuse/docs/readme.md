@@ -1,14 +1,52 @@
-# 📚 Chapter 5 – Protecting Our Stack (Encapsulation)
+# 📚 Chapter 5 – Protecting the Stack: Encapsulation & Data Hiding
 
-> **Goal:** Build a professional Stack that cannot be misused like a normal JavaScript array.
+> **Goal:** Understand why our complete Stack is still vulnerable, learn Encapsulation and Data Hiding, and create a protected Stack whose internal data cannot be directly manipulated from outside.
 
 ---
 
-# Chapter Flow
+# 5.1 Introduction
 
-## Step 1 — We Successfully Built Our Stack 🎉
+In Chapter 4, we built our **complete functional Stack**.
 
-Start by reminding the reader what they already have.
+We implemented:
+
+```text
+push()
+pop()
+peek()
+isEmpty()
+size()
+print()
+clear()
+```
+
+Our Stack follows:
+
+```text
+LIFO
+↓
+Last In → First Out
+```
+
+And internally, we use:
+
+```javascript
+this.stack = [];
+```
+
+Functionally, everything works.
+
+But now we have a problem.
+
+> **Our Stack is complete, but it is not protected.**
+
+Let's understand why.
+
+---
+
+# 5.2 The Problem With Our Current Stack
+
+Our current implementation:
 
 ```javascript
 class Stack {
@@ -22,10 +60,18 @@ class Stack {
     }
 
     pop() {
+        if (this.isEmpty()) {
+            return null;
+        }
+
         return this.stack.pop();
     }
 
     peek() {
+        if (this.isEmpty()) {
+            return null;
+        }
+
         return this.stack[this.stack.length - 1];
     }
 
@@ -37,26 +83,17 @@ class Stack {
         return this.stack.length;
     }
 
+    print() {
+        console.log(this.stack);
+    }
+
+    clear() {
+        this.stack = [];
+    }
 }
 ```
 
-Ask the reader:
-
-> **Is our Stack complete?**
-
-Most beginners will answer **Yes**.
-
-Then say...
-
-> **Actually... No.**
-
-This Stack has a serious design flaw.
-
----
-
-# Step 2 — Let's Test Our Stack
-
-Create a Stack.
+Now create a Stack:
 
 ```javascript
 const stack = new Stack();
@@ -66,302 +103,1244 @@ stack.push(20);
 stack.push(30);
 ```
 
-Current Stack
+Current Stack:
 
 ```text
-Top
-
-30
-20
-10
+        Top
+         ↓
+        30
+        20
+        10
 ```
 
-Everything looks perfect.
+Everything looks good.
 
----
-
-# Step 3 — Can Someone Break Our Stack?
-
-Ask another question.
-
-> **Can another developer change our Stack without using `push()` or `pop()`?**
-
-Let's try.
+But look at this:
 
 ```javascript
 console.log(stack.stack);
 ```
 
-Output
+Output:
 
-```javascript
-[10,20,30]
+```text
+[10, 20, 30]
 ```
 
-Wait...
-
-We can access the internal array.
-
-That means we can also modify it.
+The internal Array is accessible.
 
 ---
 
-# Step 4 — Breaking the Stack
+# 5.3 Anyone Can Break the Stack
 
-Example 1
+Because `stack.stack` is public, someone can do:
 
 ```javascript
 stack.stack.shift();
 ```
 
-Before
+This removes:
 
 ```text
-Top
-
-30
-20
 10
 ```
 
-After
+But Stack should remove:
 
 ```text
-Top
-
 30
-20
 ```
 
-Question
-
-> Which element was removed?
-
-Answer
-
-The bottom element.
-
-But Stack removes only from the Top.
-
-Our Stack rule is broken.
+So LIFO has been violated.
 
 ---
 
-Example 2
+## Another Example
 
 ```javascript
-stack.stack.splice(1,1);
+stack.stack.splice(1, 1);
 ```
 
-Now the middle element disappears.
+This removes an element from the middle.
 
-Can Stack remove middle elements?
-
-No.
+A normal Stack should not allow arbitrary middle deletion.
 
 ---
 
-Example 3
+## Another Example
 
 ```javascript
 stack.stack.reverse();
 ```
 
-Order becomes
-
-```text
-10
-20
-30
-```
-
-LIFO is gone.
+Now the internal order changes.
 
 ---
 
-Example 4
+## Another Example
 
 ```javascript
-stack.stack.sort();
+stack.stack[0] = 100;
 ```
 
-Everything changes again.
+Now the internal data has been changed without using any Stack operation.
 
 ---
 
-Example 5
+## Worst Case
 
 ```javascript
 stack.stack = [];
 ```
 
-Entire Stack deleted.
+The entire internal storage has been replaced.
 
 ---
 
-# Step 5 — Conclusion
+# 5.4 What Is the Actual Problem?
 
-Ask
-
-> **Did our Stack fail?**
-
-Technically,
-
-No.
-
-Our implementation works.
-
-Our **design** failed.
-
----
-
-# Step 6 — Where Is the Problem?
-
-Look carefully.
+The problem isn't:
 
 ```javascript
-this.stack = [];
+push()
 ```
 
-Question
+The problem isn't:
 
-What is
+```javascript
+pop()
+```
+
+The problem is:
 
 ```javascript
 this.stack
 ```
 
-It is a **public property**.
+is exposed to the outside world.
 
-Public means
-
-Everyone can access it.
-
-Diagram
-
-```text
-User
-
-↓
-
-Stack Object
-
-↓
-
-stack
-
-↓
-
-[]
-```
-
-Anyone reaches it.
+Our class has no control over its internal data.
 
 ---
 
-# Step 7 — What Should Happen?
+# 5.5 What Should We Want?
 
-Instead,
+We want developers to use:
 
-users should never reach
+```javascript
+stack.push(10);
+stack.pop();
+stack.peek();
+stack.size();
+```
+
+We don't want them to use:
+
+```javascript
+stack.stack.push(10);
+stack.stack.pop();
+stack.stack.shift();
+stack.stack.splice(1, 1);
+```
+
+The user should interact with the **Stack API**, not its internal implementation.
+
+---
+
+# 5.6 The Correct Architecture
+
+Instead of:
+
+```text
+User
+  ↓
+Internal Array
+```
+
+we want:
+
+```text
+User
+  ↓
+Stack API
+  ↓
+Stack Methods
+  ↓
+Internal Storage
+```
+
+For example:
+
+```text
+                 User
+                   │
+          ┌────────┼────────┐
+          ↓        ↓        ↓
+        push()    pop()    peek()
+          │        │        │
+          └────────┼────────┘
+                   ↓
+            Internal Storage
+                   ↓
+                 Array
+```
+
+This is a much better design.
+
+---
+
+# 5.7 Encapsulation
+
+This brings us to one of the most important Object-Oriented Programming concepts:
+
+# Encapsulation
+
+### Definition
+
+> **Encapsulation is the practice of bundling data and the methods that operate on that data into a single unit while controlling access to the internal state.**
+
+In simple words:
+
+> **Keep the data inside the object and control how the outside world interacts with it.**
+
+Our Stack contains:
+
+```text
+Data
+ ↓
+Stack elements
+
+Behaviour
+ ↓
+push()
+pop()
+peek()
+size()
+```
+
+Encapsulation keeps these together.
+
+---
+
+# 5.8 Real-Life Example – ATM
+
+Consider an ATM.
+
+You can interact with it through:
+
+```text
+Withdraw
+Deposit
+Check Balance
+Change PIN
+```
+
+But you cannot open the machine and directly manipulate the cash.
+
+You interact through controlled operations.
+
+Similarly, with our Stack:
+
+```javascript
+stack.push(10);
+```
+
+is like:
+
+```text
+ATM → Withdraw
+```
+
+while:
+
+```javascript
+stack.stack.splice(0, 1);
+```
+
+is like:
+
+```text
+Opening the ATM and manually changing the money
+```
+
+The second approach should not be allowed.
+
+---
+
+# 5.9 Data Hiding
+
+Encapsulation is closely related to:
+
+# Data Hiding
+
+Data hiding means:
+
+> **Preventing outside code from directly accessing or modifying internal implementation data.**
+
+Our goal is:
+
+```text
+Outside Code
+     ↓
+Stack Methods
+     ↓
+Private Data
+```
+
+Not:
+
+```text
+Outside Code
+     ↓
+Internal Array
+```
+
+---
+
+# 5.10 Abstraction
+
+Another important concept is:
+
+# Abstraction
+
+Abstraction means:
+
+> **Expose what the user needs and hide unnecessary implementation details.**
+
+For example:
+
+```javascript
+stack.push(10);
+```
+
+The user only needs to know:
+
+> "This adds 10 to the Stack."
+
+They don't need to know:
+
+```javascript
+this.#stack.push(10);
+```
+
+or even whether the Stack internally uses an Array.
+
+The implementation can remain hidden.
+
+---
+
+# 5.11 Encapsulation vs Abstraction
+
+These concepts are related but different.
+
+| Encapsulation                   | Abstraction                              |
+| ------------------------------- | ---------------------------------------- |
+| Controls access to data         | Hides unnecessary implementation details |
+| Protects internal state         | Simplifies usage                         |
+| Focuses on how data is accessed | Focuses on what the user needs           |
+| Uses access control             | Uses interfaces/APIs                     |
+
+A simple mental model:
+
+```text
+Encapsulation
+     ↓
+Protect the inside
+
+Abstraction
+     ↓
+Hide unnecessary details
+```
+
+---
+
+# 5.12 Public vs Private
+
+Our current code:
+
+```javascript
+this.stack = [];
+```
+
+creates a public property.
+
+That means:
 
 ```javascript
 stack.stack
 ```
 
-They should only use
+can be accessed from outside.
+
+We need a private field.
+
+Modern JavaScript provides:
 
 ```javascript
-stack.push()
-
-stack.pop()
-
-stack.peek()
+#
 ```
 
-Diagram
+for private class fields.
+
+---
+
+# 5.13 Private Fields in JavaScript
+
+Example:
+
+```javascript
+class Stack {
+
+    #stack = [];
+
+}
+```
+
+Here:
+
+```text
+#stack
+```
+
+is private.
+
+It can be accessed from methods inside the class.
+
+It cannot be directly accessed from outside.
+
+---
+
+# 5.14 Updating Our Stack
+
+Previously:
+
+```javascript
+class Stack {
+
+    constructor() {
+        this.stack = [];
+    }
+
+}
+```
+
+Now:
+
+```javascript
+class Stack {
+
+    #stack = [];
+
+}
+```
+
+Notice something important:
+
+We don't need:
+
+```javascript
+constructor() {
+    this.stack = [];
+}
+```
+
+because the private field is initialized directly.
+
+---
+
+# 5.15 Private Field Initialization
+
+```javascript
+#stack = [];
+```
+
+means:
+
+> Create a private field called `stack` and initialize it with an empty Array.
+
+Every Stack instance gets its own private field.
+
+---
+
+# 5.16 Updating Push
+
+Old:
+
+```javascript
+push(value) {
+    this.stack.push(value);
+}
+```
+
+New:
+
+```javascript
+push(value) {
+    this.#stack.push(value);
+}
+```
+
+The Stack itself can access its private data.
+
+---
+
+# 5.17 Updating Pop
+
+```javascript
+pop() {
+
+    if (this.isEmpty()) {
+        return null;
+    }
+
+    return this.#stack.pop();
+}
+```
+
+---
+
+# 5.18 Updating Peek
+
+```javascript
+peek() {
+
+    if (this.isEmpty()) {
+        return null;
+    }
+
+    return this.#stack[this.#stack.length - 1];
+}
+```
+
+---
+
+# 5.19 Updating isEmpty
+
+```javascript
+isEmpty() {
+
+    return this.#stack.length === 0;
+}
+```
+
+---
+
+# 5.20 Updating Size
+
+```javascript
+size() {
+
+    return this.#stack.length;
+}
+```
+
+---
+
+# 5.21 Updating Print
+
+```javascript
+print() {
+
+    console.log(this.#stack);
+}
+```
+
+The method is inside the class, so it can access the private field.
+
+---
+
+# 5.22 Updating Clear
+
+```javascript
+clear() {
+
+    this.#stack = [];
+}
+```
+
+---
+
+# 5.23 Complete Protected Stack
+
+```javascript
+class Stack {
+
+    #stack = [];
+
+    // Add an element to the Top
+    push(value) {
+        this.#stack.push(value);
+    }
+
+    // Remove and return the Top element
+    pop() {
+
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        return this.#stack.pop();
+    }
+
+    // Return the Top element without removing it
+    peek() {
+
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        return this.#stack[this.#stack.length - 1];
+    }
+
+    // Check whether Stack is empty
+    isEmpty() {
+        return this.#stack.length === 0;
+    }
+
+    // Return Stack size
+    size() {
+        return this.#stack.length;
+    }
+
+    // Display Stack
+    print() {
+        console.log(this.#stack);
+    }
+
+    // Remove all elements
+    clear() {
+        this.#stack = [];
+    }
+
+}
+```
+
+---
+
+# 5.24 Testing the Protected Stack
+
+```javascript
+const stack = new Stack();
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log(stack.peek());
+```
+
+Output:
+
+```text
+30
+```
+
+Now:
+
+```javascript
+console.log(stack.size());
+```
+
+Output:
+
+```text
+3
+```
+
+Now:
+
+```javascript
+console.log(stack.pop());
+```
+
+Output:
+
+```text
+30
+```
+
+Stack:
+
+```text
+[10,20]
+```
+
+Everything still works.
+
+---
+
+# 5.25 Trying to Access `#stack`
+
+Now try:
+
+```javascript
+console.log(stack.#stack);
+```
+
+This is invalid.
+
+The private field cannot be directly accessed outside the class.
+
+Similarly:
+
+```javascript
+stack.#stack.push(100);
+```
+
+is not allowed.
+
+This is exactly what we wanted.
+
+---
+
+# 5.26 Why Does This Protect Our Stack?
+
+Previously:
 
 ```text
 User
-
-↓
-
-push()
-
-↓
-
-Stack
-
-↓
-
-Internal Array
+ ↓
+stack.stack
+ ↓
+Array
 ```
 
-Notice
+The user could do anything the Array allowed.
 
-User never touches the array.
+Now:
+
+```text
+User
+ ↓
+Stack API
+ ↓
+Private #stack
+```
+
+The user can only interact through the methods we expose.
 
 ---
 
-# Step 8 — Real World Example
+# 5.27 Public API
 
-Think about an ATM.
+Our public Stack API is:
 
-Customers press buttons.
+```text
+Stack
+│
+├── push()
+├── pop()
+├── peek()
+├── isEmpty()
+├── size()
+├── print()
+└── clear()
+```
 
-✔ Withdraw
+Our internal implementation is:
 
-✔ Deposit
+```text
+#stack
+```
 
-✔ Balance
+The user doesn't need to know about it.
 
-Can they open the ATM?
+---
+
+# 5.28 `_stack` vs `#stack`
+
+You may see developers write:
+
+```javascript
+this._stack = [];
+```
+
+Does this make it private?
+
+### No.
+
+The underscore is only a convention.
+
+This is still possible:
+
+```javascript
+stack._stack.push(100);
+```
+
+Therefore:
+
+```text
+_stack
+  ↓
+Not truly private
+```
+
+Whereas:
+
+```javascript
+#stack
+```
+
+is a real JavaScript private field.
+
+---
+
+# 5.29 Comparison
+
+| Property      | Private? | Can outside code access it? |
+| ------------- | -------: | --------------------------: |
+| `this.stack`  |        ❌ |                         Yes |
+| `this._stack` |        ❌ |                         Yes |
+| `#stack`      |        ✅ |                          No |
+
+---
+
+# 5.30 Why Not Just Use `_stack`?
+
+You might say:
+
+> "I can simply tell developers not to touch `_stack`."
+
+That's possible in a team, but it relies on developer discipline.
+
+For example:
+
+```javascript
+stack._stack.pop();
+```
+
+JavaScript will allow it.
+
+With:
+
+```javascript
+#stack
+```
+
+JavaScript itself enforces the restriction.
+
+Therefore:
+
+> **`_stack` communicates intent; `#stack` enforces privacy.**
+
+---
+
+# 5.31 Does Private Storage Change Complexity?
 
 No.
 
-The money stays hidden.
+Before:
 
-Exactly the same idea.
+```text
+push → O(1) amortized
+pop  → O(1)
+peek → O(1)
+```
 
-The internal array should stay hidden.
+After:
 
----
+```text
+push → O(1) amortized
+pop  → O(1)
+peek → O(1)
+```
 
-# Step 9 — What Is This Concept Called?
-
-Professional developers call this
-
-# Encapsulation
-
-Definition
-
-> **Encapsulation is the process of hiding internal data and exposing only the operations needed to interact with that data.**
-
-Simple Definition
-
-> Hide the implementation.
-
-Expose the behaviour.
+Encapsulation changes the **design**, not the algorithmic complexity.
 
 ---
 
-# Step 10 — Data Hiding
+# 5.32 Does Encapsulation Make the Stack More Secure?
 
-Encapsulation gives us
+It improves protection of internal state within the program.
 
-Data Hiding.
+But don't confuse this with:
 
-Meaning
+* Authentication
+* Authorization
+* Encryption
+* Network security
 
-Users cannot directly change internal data.
+Private fields are primarily a **language-level access-control and software-design feature**.
 
-Instead of
+---
+
+# 5.33 Safe Access to Stack Data
+
+Sometimes we may want to let users see the Stack contents.
+
+We should not simply return the internal Array:
+
+```javascript
+get items() {
+    return this.#stack;
+}
+```
+
+Why?
+
+Because:
+
+```javascript
+stack.items.push(100);
+```
+
+would modify the original internal Array.
+
+Instead, return a copy:
+
+```javascript
+get items() {
+    return [...this.#stack];
+}
+```
+
+Now the user gets a separate Array.
+
+---
+
+# 5.34 Why Return a Copy?
+
+Suppose:
+
+```javascript
+const values = stack.items;
+```
+
+If `items` returns:
+
+```javascript
+return this.#stack;
+```
+
+then:
+
+```text
+values
+  ↓
+same Array
+  ↑
+#stack
+```
+
+Changing `values` changes the Stack.
+
+But:
+
+```javascript
+return [...this.#stack];
+```
+
+creates:
+
+```text
+#stack
+  ↓
+[10,20,30]
+
+values
+  ↓
+[10,20,30]
+```
+
+They are separate Arrays.
+
+---
+
+# 5.35 Complete Professional Version
+
+```javascript
+class Stack {
+
+    #stack = [];
+
+    push(value) {
+        this.#stack.push(value);
+    }
+
+    pop() {
+
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        return this.#stack.pop();
+    }
+
+    peek() {
+
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        return this.#stack[this.#stack.length - 1];
+    }
+
+    isEmpty() {
+        return this.#stack.length === 0;
+    }
+
+    size() {
+        return this.#stack.length;
+    }
+
+    print() {
+        console.log(this.#stack);
+    }
+
+    clear() {
+        this.#stack = [];
+    }
+
+    get items() {
+        return [...this.#stack];
+    }
+
+}
+```
+
+---
+
+# 5.36 Full Test
+
+```javascript
+const stack = new Stack();
+
+console.log(stack.isEmpty());
+// true
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log(stack.items);
+// [10, 20, 30]
+
+console.log(stack.peek());
+// 30
+
+console.log(stack.pop());
+// 30
+
+console.log(stack.items);
+// [10, 20]
+
+console.log(stack.size());
+// 2
+
+console.log(stack.isEmpty());
+// false
+
+stack.clear();
+
+console.log(stack.items);
+// []
+```
+
+---
+
+# 5.37 Complete Architecture
+
+Our final design now looks like:
+
+```text
+                 Stack Object
+              ┌─────────────────┐
+              │                 │
+Outside ─────→│ Public Methods  │
+              │                 │
+              │ push()          │
+              │ pop()           │
+              │ peek()          │
+              │ size()          │
+              │ isEmpty()       │
+              │ clear()         │
+              │                 │
+              │ ─────────────── │
+              │                 │
+              │ Private Data    │
+              │ #stack          │
+              │                 │
+              └─────────────────┘
+```
+
+The outside world interacts through the public API.
+
+The internal storage remains protected.
+
+---
+
+# 5.38 Why This Is Better
+
+### Without Encapsulation
+
+```text
+User
+ ↓
+Array
+ ↓
+Can do anything
+```
+
+### With Encapsulation
+
+```text
+User
+ ↓
+Stack API
+ ↓
+Controlled operations
+ ↓
+Private Array
+```
+
+This gives us:
+
+* Better data protection
+* Better abstraction
+* Cleaner API
+* Less accidental misuse
+* Better maintainability
+* Better separation of interface and implementation
+
+---
+
+# 5.39 Interview Questions
+
+## Q1. What is Encapsulation?
+
+> Encapsulation is the practice of bundling data and the methods that operate on that data while controlling access to the internal state.
+
+---
+
+## Q2. What is Data Hiding?
+
+> Data hiding means preventing external code from directly accessing or modifying an object's internal implementation data.
+
+---
+
+## Q3. Why should Stack's internal Array be private?
+
+> Because external code could otherwise use operations such as `shift()`, `splice()`, or direct index assignment that violate Stack's LIFO rules.
+
+---
+
+## Q4. Is `_stack` private?
+
+> No. `_stack` is only a naming convention.
+
+---
+
+## Q5. What is `#stack`?
+
+> `#stack` is a JavaScript private class field that can only be accessed from within the class.
+
+---
+
+## Q6. What is the difference between `_stack` and `#stack`?
+
+> `_stack` is convention-based and can still be accessed externally. `#stack` is enforced by JavaScript and cannot be directly accessed from outside the class.
+
+---
+
+## Q7. Does Encapsulation improve time complexity?
+
+> No. Encapsulation changes access and design, not the algorithmic complexity of Stack operations.
+
+---
+
+## Q8. Can a Stack still use an Array internally if the Array is private?
+
+> Yes. The underlying implementation can still be an Array. Making it private simply prevents external code from directly manipulating it.
+
+---
+
+## Q9. Can we change the internal implementation later?
+
+> Yes. A well-designed Stack API allows the internal implementation to change without requiring users to change how they interact with the Stack.
+
+For example:
+
+```text
+Array
+ ↓
+Linked List
+```
+
+The public API can remain:
+
+```javascript
+push()
+pop()
+peek()
+```
+
+---
+
+## Q10. Why is abstraction useful?
+
+> Abstraction allows users to interact with the functionality they need without knowing unnecessary implementation details.
+
+---
+
+# 5.40 Interview-Level Answer
+
+### Interviewer:
+
+> "Why would you create a Stack class when JavaScript Arrays already have push and pop?"
+
+A strong answer:
+
+> "JavaScript Arrays can be used as the underlying implementation of a Stack because they provide efficient push and pop operations. However, an Array is general-purpose and exposes many operations that can violate Stack's LIFO rules. A Stack class provides a controlled API, encapsulates the internal storage, and separates the public behaviour from the implementation. This makes the data structure safer, easier to maintain, and easier to change internally."
+
+---
+
+# 5.41 Common Mistakes
+
+### ❌ Mistake 1
+
+```javascript
+this._stack = [];
+```
+
+Thinking `_stack` is private.
+
+It isn't.
+
+---
+
+### ❌ Mistake 2
+
+Returning the internal Array directly:
+
+```javascript
+get items() {
+    return this.#stack;
+}
+```
+
+This exposes the internal reference.
+
+Prefer:
+
+```javascript
+get items() {
+    return [...this.#stack];
+}
+```
+
+---
+
+### ❌ Mistake 3
+
+Allowing external code to manipulate internal storage.
+
+Avoid:
 
 ```javascript
 stack.stack.push(100);
 ```
 
-they should write
+Use:
 
 ```javascript
 stack.push(100);
@@ -369,256 +1348,31 @@ stack.push(100);
 
 ---
 
-# Step 11 — Different Solutions
+# 5.42 Final Mental Model
 
-### Solution 1
-
-```javascript
-this.stack=[]
-```
-
-Easy.
-
-But public.
-
----
-
-### Solution 2
-
-```javascript
-this._stack=[]
-```
-
-Looks private.
-
-Actually isn't.
-
-Still accessible.
-
----
-
-### Solution 3
-
-```javascript
-#stack=[]
-```
-
-Completely hidden.
-
-Recommended.
-
----
-
-# Step 12 — Why `#stack`?
-
-JavaScript introduced Private Fields.
-
-```javascript
-class Stack{
-
-    #stack=[];
-
-}
-```
-
-Only methods inside the class can access it.
-
-Nobody else can.
-
----
-
-# Step 13 — Update Our Stack
-
-Before
-
-```javascript
-this.stack=[]
-```
-
-After
-
-```javascript
-#stack=[]
-```
-
-Now update every method.
-
-```javascript
-push(value){
-
-    this.#stack.push(value);
-
-}
-```
-
-Likewise for
-
-* pop
-* peek
-* size
-* isEmpty
-
----
-
-# Step 14 — Testing
-
-```javascript
-const stack=new Stack();
-```
-
-Works.
-
----
-
-```javascript
-stack.push(10);
-```
-
-Works.
-
----
-
-```javascript
-console.log(stack.peek());
-```
-
-Works.
-
----
-
-Now
-
-```javascript
-stack.#stack
-```
-
-Immediately
+Remember the entire journey:
 
 ```text
-SyntaxError
+Array
+  ↓
+Used as internal storage
+  ↓
+Stack Rules
+  ↓
+LIFO
+  ↓
+push / pop / peek
+  ↓
+Stack Class
+  ↓
+Encapsulation
+  ↓
+Private #stack
+  ↓
+Protected Stack
 ```
 
-Mission accomplished.
+The most important idea:
 
----
+> **A Stack is not simply an Array. The Array is an implementation detail. The Stack is defined by its behaviour and rules.**
 
-# Step 15 — Memory Diagram
-
-Before
-
-```text
-User
-
-↓
-
-Stack
-
-↓
-
-stack
-
-↓
-
-[]
-```
-
----
-
-After
-
-```text
-User
-
-↓
-
-Stack Methods
-
-↓
-
-#stack
-
-↓
-
-Hidden
-```
-
-Notice
-
-The user cannot reach the data anymore.
-
----
-
-# Step 16 — Why Is This Better?
-
-✔ Nobody can misuse the Stack.
-
-✔ LIFO is always maintained.
-
-✔ Cleaner API.
-
-✔ Better security.
-
-✔ Easier maintenance.
-
-✔ Professional implementation.
-
----
-
-# Step 17 — Interview Corner
-
-### Q1. Why is `this.stack` considered bad design?
-
-**Answer**
-
-Because anyone can modify it directly and violate Stack rules.
-
----
-
-### Q2. Why do we use `#stack`?
-
-**Answer**
-
-To make the internal array private so users cannot access or modify it directly.
-
----
-
-### Q3. Does `#stack` improve performance?
-
-**Answer**
-
-No.
-
-It improves software design, not algorithmic complexity.
-
----
-
-### Q4. What is the difference between `_stack` and `#stack`?
-
-**Answer**
-
-`_stack` is only a naming convention.
-
-`#stack` is enforced by JavaScript and is truly private.
-
----
-
-### Q5. Why is Encapsulation important?
-
-**Answer**
-
-It protects internal data, prevents misuse, and ensures users interact only through the intended API.
-
----
-
-# Step 18 — Summary
-
-* We built a working Stack.
-* We discovered a design flaw: the internal array was public.
-* We demonstrated how the Stack could be broken.
-* We identified the root cause: exposing internal state.
-* We introduced Encapsulation and Data Hiding.
-* We compared public fields, `_stack`, and `#stack`.
-* We updated the implementation using private fields.
-* We verified that the internal array could no longer be accessed.
-
----
