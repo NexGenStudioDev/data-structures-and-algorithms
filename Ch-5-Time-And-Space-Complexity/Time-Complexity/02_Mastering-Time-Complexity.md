@@ -1,7 +1,6 @@
 # Mastering Time Complexity — Big O, Best/Worst/Average, and Real Examples
 
-Progress: 0%
-Status: Done
+
 
 # ⏱️ What Is Time Complexity?
 
@@ -140,7 +139,7 @@ This table explains common time complexities in easy words, shows how fast they 
 | **O(kⁿ)** | Like 2ⁿ, but with more choices per step (k > 1) | 🐌🐌 Very Slow | Word Break (recursive with choices) |
 | **O(n!)** | All possible arrangements — extremely slow | ☠️ Extremely Slow | Permutations, Traveling Salesman Problem |
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0t2pagnck4u8ch5e1itu.png)
+![Image description](./Images/0t2pagnck4u8ch5e1itu.png)
 
 ## ✅ Speed Ranking (from Best to Worst):
 
@@ -161,7 +160,7 @@ O(1) < O(log log n) < O(log n) < O(√n) < O(n) < O(n log n) < O(n²) < O(n³) <
 
 This makes **O(1)** the **fastest and best time complexity** for accessing elements even in the **worst case**.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6oq0xw8adyfqwv1lw5w6.png)
+![Image description](./Images/6oq0xw8adyfqwv1lw5w6.png)
 
 ### 🔹 When is O(1) Used?
 
@@ -223,7 +222,7 @@ value = arr[i]    // Access element at index i directly
 - When you plot input size against time on a graph, the line goes straight up.
 - This shows a direct one-to-one increase: more input means more time.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tlg2b67q1z476c50gc35.png)
+![Image description](./Images/tlg2b67q1z476c50gc35.png)
 
 ### 3. When do we use O(n)?
 
@@ -338,7 +337,7 @@ To use an **O(log n)** (logarithmic time) approach, follow these steps:
 
 ## 
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w2ba2460huy5se5yj6i7.png)
+![Image description](./Images/w2ba2460huy5se5yj6i7.png)
 
 ### Key Points
 
@@ -397,7 +396,7 @@ This is known as **quadratic time complexity**.
 
 The word **"quadratic"** comes from **"square"**, referring to `n²` (n squared). It means that the number of steps grows with the **square** of the input size.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/e37lfys1hjkmrxibq2ns.png)
+![Image description](./Images/e37lfys1hjkmrxibq2ns.png)
 
 ### Example:
 
