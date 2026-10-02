@@ -71,13 +71,13 @@ current = 'a'
 stack = []
 ```
 
-![Screenshot_20261002_234331.png](https://assets.leetcode.com/users/images/5b9adeb0-6698-43de-b03d-3681269c35d3_1790964874.1300743.png)
+![Screenshot_20261002_234331.png](./Images/Screenshot_20261002_234331.png)
 
 
 
 Push `'a'`:
 
-![Screenshot_20261002_232043.png](https://assets.leetcode.com/users/images/c50676d4-d451-4fd0-bae4-408a33839c28_1790964859.1560915.png)
+![Screenshot_20261002_232043.png](./Images/Screenshot_20261002_232043.png)
 
 ---
 
@@ -90,7 +90,7 @@ current = 'b'
 top = 'a'
 ```
 
-![Screenshot_20261002_234528.png](https://assets.leetcode.com/users/images/af5491b2-6a33-4289-8b17-4ab432818119_1790964971.2036097.png)
+![Screenshot_20261002_234528.png](./Images/Screenshot_20261002_234528.png)
 
 
 They are different:
@@ -101,7 +101,7 @@ They are different:
 
 So push `'b'`:
 
-![Screenshot_20261002_234652.png](https://assets.leetcode.com/users/images/d77ecb34-d204-447f-8d63-6db7a9729c7f_1790965055.3742032.png)
+![Screenshot_20261002_234652.png](./Images/Screenshot_20261002_234652.png)
 
 
 ---
@@ -115,7 +115,7 @@ current = 'b'
 top = 'b'
 ```
 
-![Screenshot_20261002_234755.png](https://assets.leetcode.com/users/images/a83ef667-435c-420d-842b-90fec0447661_1790965119.0700471.png)
+![Screenshot_20261002_234755.png](./Images/Screenshot_20261002_234755.png)
 
 
 They are equal:
@@ -138,7 +138,7 @@ stack.pop()
 
 Now:
 
-![Screenshot_20261002_232043.png](https://assets.leetcode.com/users/images/c50676d4-d451-4fd0-bae4-408a33839c28_1790964859.1560915.png)
+![Screenshot_20261002_232043.png](./Images/Screenshot_20261002_232043.png)
 
 
 The current `'b'` is **not pushed**, because both `'b'` characters are removed.
@@ -149,7 +149,7 @@ The current `'b'` is **not pushed**, because both `'b'` characters are removed.
 
 The top of the stack is `'a'`.
 
-![Screenshot_20261003_000602.png](https://assets.leetcode.com/users/images/d906b307-b37d-4eaf-bc36-b80c8a022a3e_1790966215.0745535.png)
+![Screenshot_20261003_000602.png](./Images/Screenshot_20261003_000602.png)
 
 ```text
 current = 'a'
@@ -176,7 +176,7 @@ stack.pop()
 
 Now:
 
-![Screenshot_20261003_000914.png](https://assets.leetcode.com/users/images/0de579ab-6f28-4d78-9153-1ad05ee1f7b2_1790966408.4420078.png)
+![Screenshot_20261003_000914.png](./Images/Screenshot_20261003_000914.png)
 
 
 Both `'a'` characters are removed.
@@ -192,7 +192,7 @@ current = 'c'
 stack = []
 ```
 
-![Screenshot_20261003_001735.png](https://assets.leetcode.com/users/images/9cd67e98-185e-4522-bab9-98873fc65cb4_1790966895.10945.png)
+![Screenshot_20261003_001735.png](./Images/Screenshot_20261003_001735.png)
 
 
 There is nothing to compare, so push `'c'`:
@@ -200,7 +200,7 @@ There is nothing to compare, so push `'c'`:
 ```text
 stack = ['c']
 ```
-![Screenshot_20261003_001709.png](https://assets.leetcode.com/users/images/424d4bac-caec-47ab-852f-e5fb867845a0_1790966921.5681562.png)
+![Screenshot_20261003_001709.png](./Images/Screenshot_20261003_001709.png)
 
 
 
@@ -215,7 +215,7 @@ current = 'a'
 top = 'c'
 ```
 
-![Screenshot_20261003_001900.png](https://assets.leetcode.com/users/images/7be0254f-51f5-4e92-a12b-1ae55357981e_1790966982.4006228.png)
+![Screenshot_20261003_001900.png](./Images/Screenshot_20261003_001900.png)
 
 
 They are different:
@@ -231,7 +231,7 @@ stack = ['c', 'a']
 ```
 
 
-![Screenshot_20261003_001956.png](https://assets.leetcode.com/users/images/17d244cd-7537-44a8-afe6-e2122cbd9184_1790967038.8368196.png)
+![Screenshot_20261003_001956.png](./Images/Screenshot_20261003_001956.png)
 
 
 
