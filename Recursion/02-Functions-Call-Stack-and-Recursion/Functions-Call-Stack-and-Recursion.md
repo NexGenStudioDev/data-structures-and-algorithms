@@ -522,7 +522,38 @@ In DSA discussions, **Execution Context**, **Stack Frame**, and **Activation Rec
 
 ---
 
-# 15. What Is the Call Stack? (Managing GEC & FECs)
+# 15. Where the Call Stack Lives in RAM (Stack vs Heap vs Code Segment)
+
+To truly understand how function calls and recursion use memory, look at how an operating system partitions computer RAM for a running program:
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                    RAM (MEMORY MAP)                         │
+├─────────────────────────────────────────────────────────────┤
+│ 1. CODE SEGMENT (Text)                                      │
+│    - Contains compiled instructions of your program.        │
+│    - Read-only; shared across all function calls.           │
+├─────────────────────────────────────────────────────────────┤
+│ 2. DATA SEGMENT (Global / Static)                           │
+│    - Stores global variables (managed by GEC).              │
+├─────────────────────────────────────────────────────────────┤
+│ 3. HEAP SEGMENT                                             │
+│    - Stores dynamic objects, arrays, and big collections.   │
+│    - Memory is allocated manually or by garbage collector.  │
+├─────────────────────────────────────────────────────────────┤
+│ 4. STACK SEGMENT (THE CALL STACK!)                          │
+│    - Stores GEC and all active FEC Stack Frames!            │
+│    - Extremely fast, contiguous, organized strictly LIFO.   │
+│    - Automatically grows when a function is called.         │
+│    - Automatically shrinks when a function returns.         │
+└─────────────────────────────────────────────────────────────┘
+```
+
+> **Key Takeaway:** The Call Stack is not an imaginary diagram—it is a physical, high-speed memory segment in your computer's RAM. Every recursive call occupies real bytes in this stack segment!
+
+---
+
+# 16. What Is the Call Stack? (Managing GEC & FECs)
 
 The **Call Stack** is the specialized data structure used by the computer runtime to keep track of all currently active Execution Contexts.
 
@@ -544,17 +575,38 @@ LIFO = Last In, First Out
 └──────────────────────────────────────────────┘
 ```
 
-### Real-Life Analogy: A Stack of Cafeteria Trays
+---
 
-Think of a spring-loaded tray dispenser in a cafeteria:
-1. The bottom tray is placed first (like the **GEC**).
-2. New trays are placed on top as meals are prepared (like **FECs**).
-3. Customers can **only pick up the topmost tray** (the newest call).
-4. You cannot remove a tray from the bottom or middle without first removing all the trays above it!
+# 17. Real-World Software Stack Analogies
+
+You already use stacks every single day in software without realizing it!
+
+### 1. Browser Navigation (Back / Forward Button)
+When you browse the web:
+1. You visit `google.com` (Pushed to history stack).
+2. You click a link to `github.com` (Pushed on top).
+3. You navigate to `leetcode.com` (Pushed on top).
+When you click the **"Back"** button:
+- `leetcode.com` is **popped** off the stack.
+- You are back at `github.com`.
+This is exactly how function returns work: popping the current page/call to reveal the previous one!
+
+### 2. Text Editor Undo (`Ctrl + Z`)
+When you type an essay:
+1. You type "Hello" (Action 1 pushed).
+2. You type "World" (Action 2 pushed).
+3. You hit `Ctrl + Z` (Undo):
+   - Action 2 is **popped** and undone first!
+The last action you performed is always the first action undone.
+
+### 3. Cafeteria Plate Dispenser
+- Fresh plates are added to the top.
+- People take plates from the top.
+- The plate at the very bottom was put there first and will be taken last.
 
 ---
 
-# 16. Why Does the Call Stack Use LIFO?
+# 18. Why Does the Call Stack Use LIFO?
 
 Why must the Call Stack be **Last In, First Out**?
 
@@ -589,7 +641,7 @@ This reverse completion order is the definition of **LIFO (Last In, First Out)**
 
 ---
 
-# 17. Push and Pop of Execution Contexts
+# 19. Push and Pop of Execution Contexts
 
 The Call Stack changes dynamically during execution using two core operations:
 
@@ -609,7 +661,7 @@ Function returns  →  POP FEC from stack
 
 ---
 
-# 18. Complete Function Call Lifecycle
+# 20. Complete Function Call Lifecycle
 
 Here is the complete journey of how code runs from launch to termination:
 
@@ -653,7 +705,7 @@ GEC PUSH → FUNCTION CALL → FEC PUSH → EXECUTE → RETURN → FEC POP → R
 
 ---
 
-# 19. Simple Code Example: Visualizing GEC and FECs on the Call Stack
+# 21. Simple Code Example: Visualizing GEC and FECs on the Call Stack
 
 Let us trace a simple program from start to finish to see the Call Stack in action:
 
@@ -758,7 +810,7 @@ Call Stack:
 
 ---
 
-# 20. A Function Does Not Replace Its Caller (Context Isolation)
+# 22. A Function Does Not Replace Its Caller (Context Isolation)
 
 This is one of the most critical concepts for understanding recursion:
 
@@ -782,7 +834,7 @@ Look at the Call Stack when `greet()` runs:
 
 ---
 
-# 21. Caller Waits & Resume Point (Continuation Point)
+# 23. Caller Waits & Resume Point (Continuation Point)
 
 While the callee is running, where does the caller wait?
 
@@ -810,7 +862,7 @@ A:
 
 ---
 
-# 22. Nested Function Calls (Multi-Level FEC Stacks)
+# 24. Nested Function Calls (Multi-Level FEC Stacks)
 
 A function can call another function, which in turn calls another function:
 
@@ -838,7 +890,7 @@ The stack depth increases with each nested call.
 
 ---
 
-# 23. Stack Unwinding (Popping FECs in Reverse Order)
+# 25. Stack Unwinding (Popping FECs in Reverse Order)
 
 When `C()` finishes, the computer must return back through the chain of callers.
 
@@ -865,7 +917,7 @@ Summary:
 - **Returning functions (Coming Out)**: Stack shrinks (Pop / Unwind).
 ---
 
-# 24. Now: What Is Recursion? (The Heart of Recursion!)
+# 26. Now: What Is Recursion? (The Heart of Recursion!)
 
 Now that you understand **Global Execution Context (GEC)**, **Function Execution Context (FEC)**, and the **Call Stack**, you are ready to understand recursion at the deepest level.
 
@@ -892,7 +944,7 @@ In both cases, execution loops by repeatedly pushing new FECs onto the Call Stac
 
 ---
 
-# 25. The Most Important Fact About Recursion: Brand-New FEC Every Call!
+# 27. The Most Important Fact About Recursion: Brand-New FEC Every Call!
 
 When a function calls itself:
 
@@ -942,7 +994,7 @@ They are completely separate active FECs residing simultaneously in memory!
 
 ---
 
-# 26. Why Doesn't `fun(3)` Become `fun(2)`?
+# 28. Why Doesn't `fun(3)` Become `fun(2)`?
 
 This is the single most common mistake beginners make when visualizing recursion:
 
@@ -967,7 +1019,7 @@ fun(3)  ──transforms into──►  fun(2)
 
 ---
 
-# 27. Every Recursive Call Gets Its Own Separate State (FEC Isolation)
+# 29. Every Recursive Call Gets Its Own Separate State (FEC Isolation)
 
 Consider:
 
@@ -999,7 +1051,7 @@ Each FEC is completely isolated. `fun(1)` can never accidentally change `fun(3)`
 
 ---
 
-# 28. Recursive Function Structure: Base Case + Recursive Case
+# 30. Recursive Function Structure: Base Case + Recursive Case
 
 Every correct recursive function must have two essential parts:
 
@@ -1026,7 +1078,7 @@ function recursiveFunction(input):
 
 ---
 
-# 29. Base Case: The Stopping Condition for FEC Creation
+# 31. Base Case: The Stopping Condition for FEC Creation
 
 The **Base Case** is the condition that tells the function to stop calling itself.
 
@@ -1049,7 +1101,7 @@ Base Case = THE BRAKES OF RECURSION 🛑
 
 ---
 
-# 30. Recursive Case: Pushing the Next FEC
+# 32. Recursive Case: Pushing the Next FEC
 
 The **Recursive Case** is the statement where the function calls itself with a modified, smaller input:
 
@@ -1068,7 +1120,7 @@ Recursive Case = STEPPING CLOSER TO THE BASE CASE 🔄
 
 ---
 
-# 31. Base Case + Recursive Case Example (`countDown`)
+# 33. Base Case + Recursive Case Example (`countDown`)
 
 Let us look at a simple recursive countdown function:
 
@@ -1091,7 +1143,7 @@ Breakdown:
 
 ---
 
-# 32. Recursion Must Move Toward the Base Case
+# 34. Recursion Must Move Toward the Base Case
 
 Every single recursive call must make steady progress toward the base case.
 
@@ -1104,7 +1156,7 @@ If base case is `n == 0`:
 
 ---
 
-# 33. The Two Phases of Recursion (In Terms of FECs & Call Stack)
+# 35. The Two Phases of Recursion (In Terms of FECs & Call Stack)
 
 Every recursive execution consists of **two distinct journey phases**:
 
@@ -1122,7 +1174,7 @@ Phase 1: Going Down                             Phase 2: Coming Back
 
 ---
 
-# 34. Going Down (Stack Grows with FECs)
+# 36. Going Down (Stack Grows with FECs)
 
 During the **downward phase**, each call pauses and pushes a new child FEC onto the stack:
 
@@ -1146,7 +1198,7 @@ Every step consumes more memory on the Call Stack.
 
 ---
 
-# 35. What Happens at the Base Case? (The Turning Point)
+# 37. What Happens at the Base Case? (The Turning Point)
 
 At the deepest level (`fun(0)`), the base case condition is met:
 
@@ -1164,7 +1216,7 @@ This is the **turning point** of recursion:
 
 ---
 
-# 36. Coming Back / Unwinding (Popping FECs)
+# 38. Coming Back / Unwinding (Popping FECs)
 
 Now the Call Stack shrinks as each paused FEC wakes up, finishes any remaining work, and pops off:
 
@@ -1179,7 +1231,7 @@ This reverse return journey is called **Stack Unwinding**.
 
 ---
 
-# 37. Code Before vs Code After the Recursive Call
+# 39. Code Before vs Code After the Recursive Call
 
 This is where beginners often get confused. Pay close attention to where code is placed:
 
@@ -1206,7 +1258,7 @@ function fun(n):
 
 ---
 
-# 38. Why Is the "After" Output Reversed? (LIFO Popping)
+# 40. Why Is the "After" Output Reversed? (LIFO Popping)
 
 Look at the output when running `fun(3)`:
 
@@ -1230,7 +1282,7 @@ Because of **LIFO (Last In, First Out)**!
 
 ---
 
-# 39. Complete Recursive Dry Run (With GEC and FECs on Call Stack)
+# 41. Complete Recursive Dry Run: Printing Recursion (`fun(3)`)
 
 Let us do a complete, rigorous dry run of `fun(3)` tracking the exact state of the Call Stack at every single moment:
 
@@ -1395,7 +1447,178 @@ After 3
 
 ---
 
-# 40. The Most Important Recursion Diagram
+# 42. Real-World Case Study 1: Calculating Nested Folder Size (File System)
+
+In real life, how does Windows Explorer, macOS Finder, or the Linux `du` command calculate the total disk space of a folder?
+
+Folders can contain files and **other folders**, which can contain more folders:
+
+```text
+Projects/ (Folder)
+  ├── resume.pdf (2 MB)
+  └── source_code/ (Folder)
+        ├── app.js (1 MB)
+        └── data.csv (3 MB)
+```
+
+You cannot solve this with a simple single loop because the depth of folders is unknown. **Recursion is the natural solution!**
+
+### The Code:
+
+```text
+function getFolderSize(item):
+
+    # 🛑 BASE CASE: If this item is a simple file, just return its size!
+    if item.isFile:
+        return item.size
+
+    # 🔄 RECURSIVE CASE: It is a folder! Sum the sizes of all its contents
+    totalSize = 0
+    for child in item.children:
+        totalSize += getFolderSize(child)  # Recursive Call!
+
+    return totalSize
+```
+
+### Complete Call Stack Trace:
+
+```text
+1. GEC calls getFolderSize("Projects")
+   └── Pushes FEC: Projects
+       ├── Checks resume.pdf (File) ──► Returns 2 MB
+       └── Checks source_code (Folder)
+           └── Pushes FEC: source_code
+               ├── Checks app.js (File)    ──► Returns 1 MB
+               └── Checks data.csv (File)  ──► Returns 3 MB
+           └── source_code sums 1 + 3 = 4 MB
+           └── Pops FEC: source_code and returns 4 MB!
+   └── Projects sums 2 + 4 = 6 MB
+   └── Pops FEC: Projects and returns 6 MB to GEC!
+
+FINAL ANSWER: 6 MB
+```
+
+> **Why this matters:** In recursive tree structures (like folders or the HTML DOM), each folder pushes a new FEC to process its contents, and when the subfolder finishes, it returns its size up to the parent!
+
+---
+
+# 43. Real-World Case Study 2: Nested Comment / Reply Threads (Social Media)
+
+Think of a comment section on Reddit, YouTube, or Hacker News:
+
+```text
+[Comment 1: "Great tutorial!"]
+    └── [Reply 1.1: "Agreed, loved the Call Stack part."]
+            └── [Reply 1.1.1: "Especially the LIFO diagrams!"]
+```
+
+How does the platform count the **total number of messages** in this thread?
+
+### The Code:
+
+```text
+function countMessages(comment):
+
+    total = 1  # Count this message itself
+
+    # 🛑 BASE CASE: If comment has no replies, simply return 1!
+    if comment.replies.isEmpty():
+        return total
+
+    # 🔄 RECURSIVE CASE: Add the counts of all nested replies
+    for reply in comment.replies:
+        total += countMessages(reply)  # Recursive call!
+
+    return total
+```
+
+### The Call Stack Flow:
+
+```text
+CALL STACK AT DEEPEST POINT:
+┌──────────────────────────────────────────────┐
+│ FEC: countMessages(Reply 1.1.1)              │ ← Leaf! Returns 1, pops
+├──────────────────────────────────────────────┤
+│ FEC: countMessages(Reply 1.1)                │ ← Receives 1, returns 1 + 1 = 2, pops
+├──────────────────────────────────────────────┤
+│ FEC: countMessages(Comment 1)                │ ← Receives 2, returns 1 + 2 = 3, pops
+├──────────────────────────────────────────────┤
+│ Global Execution Context (GEC)               │ ← Receives total count: 3!
+└──────────────────────────────────────────────┘
+```
+
+---
+
+# 44. Real-World Case Study 3: Factorial Calculation (How Return Values Multiply During Unwinding)
+
+So far, `fun(n)` only printed numbers. But in algorithmic DSA problems, recursive functions **compute and return values**!
+
+Let us trace `factorial(4)` ($4! = 4 \times 3 \times 2 \times 1 = 24$):
+
+### The Code:
+
+```text
+function factorial(n):
+
+    # 🛑 BASE CASE: 1! = 1
+    if n <= 1:
+        return 1
+
+    # 🔄 RECURSIVE CASE: n! = n * (n - 1)!
+    return n * factorial(n - 1)
+
+result = factorial(4)
+```
+
+### The Big Insight: Multiplication Happens on the Way UP!
+
+Beginners often wonder: *"Where does 4 * 3 * 2 * 1 actually happen?"*
+It does **NOT** happen on the way down! It happens during **Stack Unwinding**!
+
+```text
+================================================================================
+PHASE 1: GOING DOWN (Calls are created, pausing on incomplete multiplications)
+================================================================================
+
+factorial(4)  ──► needs 4 * factorial(3)  (PAUSED: waiting for factorial(3))
+  factorial(3)  ──► needs 3 * factorial(2)  (PAUSED: waiting for factorial(2))
+    factorial(2)  ──► needs 2 * factorial(1)  (PAUSED: waiting for factorial(1))
+      factorial(1)  ──► hits Base Case! RETURNS 1 (NO MULTIPLICATION NEEDED)
+
+================================================================================
+PHASE 2: COMING BACK / UNWINDING (Multiplications happen as FECs pop!)
+================================================================================
+
+      factorial(1) returns 1  ──► pops FEC(1)
+    factorial(2) calculates: 2 * 1  = 2   ──► returns 2,  pops FEC(2)
+  factorial(3) calculates: 3 * 2  = 6   ──► returns 6,  pops FEC(3)
+factorial(4) calculates: 4 * 6  = 24  ──► returns 24, pops FEC(4)
+
+Global Context receives: 24!
+```
+
+---
+
+# 45. Passing Down (Parameters) vs Passing Up (Return Values)
+
+Notice the two fundamental data highways in recursion:
+
+```text
+HIGHWAY 1: PASSING DATA DOWN (via Parameters)
+n = 4  ──►  n = 3  ──►  n = 2  ──►  n = 1
+(Input gets smaller with each call)
+
+HIGHWAY 2: PASSING DATA UP (via Return Values)
+result = 24  ◄──  6  ◄──  2  ◄──  1
+(Results accumulate during unwinding)
+```
+
+- **Parameters** carry information **down** into deeper calls.
+- **Return values** carry solved subproblem answers **up** to waiting callers!
+
+---
+
+# 46. The Most Important Recursion Diagram
 
 ```text
 DOWNWARD PHASE (Pushing FECs)                UPWARD PHASE (Popping FECs)
@@ -1423,7 +1646,7 @@ DOWNWARD PHASE (Pushing FECs)                UPWARD PHASE (Popping FECs)
 
 ---
 
-# 41. Why Does Execution Return to the Correct Function?
+# 47. Why Does Execution Return to the Correct Function?
 
 How does the computer always know which function to wake up after a return?
 
@@ -1433,7 +1656,7 @@ Because of two built-in mechanisms:
 
 ---
 
-# 42. Return & Resume Point (Continuation Point)
+# 48. Return & Resume Point (Continuation Point)
 
 Whenever a function makes a call, it freezes its current state and marks its **resume point** (formally called the **continuation point**):
 
@@ -1449,7 +1672,7 @@ When `fun(n - 1)` finishes, the caller does **not** restart from line 1. It jump
 
 ---
 
-# 43. Recursion and the Call Stack: Complete Architecture
+# 49. Recursion and the Call Stack: Complete Architecture
 
 Let us summarize the entire relationship:
 
@@ -1465,7 +1688,7 @@ Termination       ──►   Last recursive FEC pops, returning to GEC
 
 ---
 
-# 44. Direct Recursion
+# 50. Direct Recursion
 
 A function calls itself directly within its own body:
 
@@ -1479,7 +1702,7 @@ Flow: `count → count → count → count`.
 
 ---
 
-# 45. Indirect Recursion
+# 51. Indirect Recursion
 
 Function `A` calls function `B`, and function `B` calls function `A`:
 
@@ -1500,7 +1723,7 @@ Both functions participate in recursion because the cycle eventually returns to 
 
 ---
 
-# 46. Recursion Depth (Maximum Stacked FECs)
+# 52. Recursion Depth (Maximum Stacked FECs)
 
 **Recursion depth** is the maximum number of recursive Function Execution Contexts (FECs) sitting on the Call Stack simultaneously.
 
@@ -1512,7 +1735,7 @@ For `fun(3)` calling down to `fun(0)`:
 
 ---
 
-# 47. Why Does Recursion Use Extra Space? (FEC Stack Frames)
+# 53. Why Does Recursion Use Extra Space? (FEC Stack Frames)
 
 Many beginners ask: *"Why does recursion take extra memory when a normal loop takes O(1) space?"*
 
@@ -1526,7 +1749,7 @@ Every recursive call creates a **brand-new FEC stack frame** in memory.
 
 ---
 
-# 48. Stack Overflow (Exceeding Call Stack FEC Capacity)
+# 54. Stack Overflow (Exceeding Call Stack FEC Capacity)
 
 The Call Stack has a finite memory limit (typically between 10,000 to 50,000 calls depending on the language and environment).
 
@@ -1554,7 +1777,7 @@ Common causes:
 
 ---
 
-# 49. Infinite Recursion (Never-Ending FEC Pushes)
+# 55. Infinite Recursion (Never-Ending FEC Pushes)
 
 Example of non-terminating recursion:
 
@@ -1571,7 +1794,7 @@ Because `n` never changes and there is no base case, new FECs are pushed relentl
 `RangeError: Maximum call stack size exceeded` (or `java.lang.StackOverflowError`).
 ---
 
-# 50. Three Questions for Every Recursive Function
+# 56. Three Questions for Every Recursive Function
 
 Whenever you read, design, or debug any recursive code, ask these three questions:
 
@@ -1594,7 +1817,7 @@ If you can answer these three questions, you can understand any recursive functi
 
 ---
 
-# 51. Recursion Is Not Magic (It Is Just Automated FEC Management)
+# 57. Recursion Is Not Magic (It Is Just Automated FEC Management)
 
 Never think of recursion as a mysterious trick.
 
@@ -1608,7 +1831,7 @@ Recursion is simply **repeated function calls automated by the Call Stack**.
 
 ---
 
-# 52. Normal Function Calls vs Recursive Calls
+# 58. Normal Function Calls vs Recursive Calls
 
 ```text
 Normal Function Call (A calls B):
@@ -1636,7 +1859,7 @@ The underlying Call Stack mechanism is **100% identical**. The only difference i
 
 ---
 
-# 53. Function Calls vs Recursion (Master Comparison Table)
+# 59. Function Calls vs Recursion (Master Comparison Table)
 
 | Concept | Meaning in Simple Words |
 | :--- | :--- |
@@ -1656,7 +1879,7 @@ The underlying Call Stack mechanism is **100% identical**. The only difference i
 
 ---
 
-# 54. Call Stack vs Recursion Tree
+# 60. Call Stack vs Recursion Tree
 
 These are two different ways of visualizing recursion:
 
@@ -1681,7 +1904,7 @@ Call Stack (Snapshot in time)      Recursion Tree (Full history map)
 
 ---
 
-# 55. Recursion vs Iteration (Loops vs Stacked FECs)
+# 61. Recursion vs Iteration (Loops vs Stacked FECs)
 
 | Feature | Recursion | Iteration (Loops) |
 | :--- | :--- | :--- |
@@ -1695,7 +1918,7 @@ Call Stack (Snapshot in time)      Recursion Tree (Full history map)
 
 ---
 
-# 56. Recursion and Space Complexity (Auxiliary Stack Space)
+# 62. Recursion and Space Complexity (Auxiliary Stack Space)
 
 When calculating the space complexity of a recursive algorithm:
 
@@ -1709,7 +1932,7 @@ Because each active call requires an FEC (Stack Frame):
 
 ---
 
-# 57. One Recursive Call vs Multiple Recursive Calls
+# 63. One Recursive Call vs Multiple Recursive Calls
 
 ### 1. Single Recursive Call (Linear Recursion)
 The function calls itself once per level:
@@ -1733,7 +1956,7 @@ fib(n):
 
 ---
 
-# 58. A Better Mental Model for Recursion
+# 64. A Better Mental Model for Recursion
 
 ### Analogy: Russian Nesting Dolls (Matryoshka)
 - Opening a doll reveals a smaller doll inside (Recursive Call $ightarrow$ new FEC).
@@ -1742,7 +1965,7 @@ fib(n):
 
 ---
 
-# 59. The Three Most Important Ideas (GEC, FEC, Call Stack)
+# 65. The Three Most Important Ideas (GEC, FEC, Call Stack)
 
 If you remember only three ideas from this chapter, remember these:
 
@@ -1752,7 +1975,7 @@ If you remember only three ideas from this chapter, remember these:
 
 ---
 
-# 60. Common Mistakes (And How to Avoid Them)
+# 66. Common Mistakes (And How to Avoid Them)
 
 ### Mistake 1: Thinking calls overwrite each other
 - **Wrong:** Believing `fun(3)` changes into `fun(2)`.
@@ -1776,7 +1999,7 @@ If you remember only three ideas from this chapter, remember these:
 
 ---
 
-# 61. Language-Independent Execution Model
+# 67. Language-Independent Execution Model
 
 Whether you write in **C++, Java, Python, JavaScript, Go, or Rust**:
 
@@ -1792,7 +2015,7 @@ The syntax differs, but the **underlying computer architecture is universal**:
 
 ---
 
-# 62. Universal Recursion Model
+# 68. Universal Recursion Model
 
 ```text
                     PROGRAM STARTS
@@ -1834,7 +2057,7 @@ The syntax differs, but the **underlying computer architecture is universal**:
 
 ---
 
-# 63. Complete Master Diagram
+# 69. Complete Master Diagram
 
 ```text
 NORMAL FUNCTION CALL:
@@ -1857,7 +2080,7 @@ GEC resumes
 
 ---
 
-# 64. The Ultimate Mental Model
+# 70. The Ultimate Mental Model
 
 ### The Shortest Formula:
 ```text
@@ -1886,7 +2109,7 @@ GEC POP
 
 ---
 
-# 65. One-Line Definitions
+# 71. One-Line Definitions
 
 ### Global Execution Context (GEC)
 > The foundational execution environment created at program startup that sits permanently at the bottom of the Call Stack.
@@ -1935,7 +2158,7 @@ GEC POP
 
 ---
 
-# 66. Interview Questions & Answers
+# 72. Interview Questions & Answers
 
 ## Q1. What is the difference between GEC and FEC?
 > **Answer:** The Global Execution Context (GEC) is created once when the program starts and stays at the bottom of the Call Stack until the program exits. A Function Execution Context (FEC) is created whenever a function is called and is popped off the Call Stack as soon as that function returns.
@@ -1999,7 +2222,7 @@ GEC POP
 
 ---
 
-# 67. How to Dry-Run Any Recursive Code
+# 73. How to Dry-Run Any Recursive Code
 
 Whenever you encounter a recursive problem in an interview:
 
@@ -2012,7 +2235,7 @@ Whenever you encounter a recursive problem in an interview:
 
 ---
 
-# 68. Recursion Dry-Run Template
+# 74. Recursion Dry-Run Template
 
 Use this table template while solving recursion problems:
 
@@ -2032,7 +2255,7 @@ Step | Active Call | State (n) | Stack Contents (Top to Bottom) | Action
 
 ---
 
-# 69. Chapter Memory Sheet
+# 75. Chapter Memory Sheet
 
 ```text
 NORMAL FUNCTION CALL:
@@ -2050,7 +2273,7 @@ Key takeaways:
 
 ---
 
-# 70. Final Mental Model
+# 76. Final Mental Model
 
 ```text
 1. The program starts in the Global Execution Context (GEC).
@@ -2065,7 +2288,7 @@ Key takeaways:
 
 ---
 
-# 71. Chapter 2 — Must-Know Checklist
+# 77. Chapter 2 — Must-Know Checklist
 
 Before moving to recursive problem-solving, verify that you can answer:
 
@@ -2086,6 +2309,10 @@ Before moving to recursive problem-solving, verify that you can answer:
 * [ ] What does the Recursive Case do to the Call Stack?
 * [ ] What is Stack Unwinding?
 * [ ] Why does code after a recursive call run in reverse order?
+* [ ] How does a real-world folder size calculator use recursion?
+* [ ] How does a social media comment thread use recursion?
+* [ ] How do values multiply and accumulate during unwinding in Factorial?
+* [ ] What is the difference between passing data DOWN (parameters) vs passing data UP (returns)?
 * [ ] What is Recursion Depth and how does it determine auxiliary space complexity?
 * [ ] What causes a Stack Overflow error?
 * [ ] How does recursion differ from iteration at the Call Stack level?
@@ -2093,7 +2320,7 @@ Before moving to recursive problem-solving, verify that you can answer:
 
 ---
 
-# 72. Final One-Page Revision
+# 78. Final One-Page Revision
 
 ```text
 ================================================================================
