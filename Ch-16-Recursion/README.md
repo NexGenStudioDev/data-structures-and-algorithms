@@ -22,7 +22,8 @@ Ch-16-Recursion/
 ├── 05-Linear-Recursion/                          # In-depth linear recursion: winding vs unwinding, head vs tail, TCO
 │   ├── README.md
 │   └── geeksforgeeks/
-│       └── Factorial/                            # Complete walkthrough, dry run, JS & Python code
+│       ├── Factorial/                            # Complete walkthrough, dry run, JS & Python code
+│       └── 1 to n Without Loop/                  # Head recursion unwinding print, JS & Python code
 ├── 06-LeetCode-Problems/                         # Curated interview problem collection
 ├── README.md                                     # Chapter master guide & roadmap (You are here)
 └── .gitignore                                    # Folder git tracking
@@ -144,7 +145,7 @@ Master recursion progressively from linear basics to advanced branching:
 |:---:|---|:---:|---|---|:---:|
 | 1 | [Factorial of a Number](./05-Linear-Recursion/geeksforgeeks/Factorial/) | Easy | GeeksforGeeks | Linear Recursion, Stack Trace, Dry Run | ✅ Completed |
 | 2 | Sum of First N Numbers | Easy | GeeksforGeeks | Mathematical Accumulation | ⏳ Practice |
-| 3 | Print 1 to N without Loops | Easy | GeeksforGeeks | Head Recursion (Unwinding print) | ⏳ Practice |
+| 3 | [Print 1 to N without Loops](./05-Linear-Recursion/geeksforgeeks/1%20to%20n%20Without%20Loop/) | Easy | GeeksforGeeks | Head Recursion (Unwinding print) | ✅ Completed |
 | 4 | Print N to 1 without Loops | Easy | GeeksforGeeks | Tail Recursion (Winding print) | ⏳ Practice |
 | 5 | Reverse an Array / String | Easy | LeetCode 344 | Two-Pointer Recursive Boundary | ⏳ Practice |
 | 6 | Check Palindrome Recursively | Easy | LeetCode 125 | Dual-End Boundary Check | ⏳ Practice |

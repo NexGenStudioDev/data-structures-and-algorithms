@@ -1,0 +1,9 @@
+# Ignore temporary and cache files
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
