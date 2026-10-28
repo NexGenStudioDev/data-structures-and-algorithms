@@ -274,6 +274,8 @@ function printNTo1(n) {
 
 For `n = 3`, output is `3 2 1`.
 
+*Complete Problem & Solution Walkthrough:* [GeeksforGeeks — Print N to 1 Without Loop](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/)
+
 ### B. Print `1` to `N`
 
 Make the recursive call before printing.
