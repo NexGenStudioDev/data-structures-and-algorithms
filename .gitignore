@@ -1,0 +1,77 @@
+# ==============================================================================
+# Global .gitignore for Data Structures and Algorithms Repository
+# ==============================================================================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE, Editor, and Tool configs
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# C / C++ compiled binaries and build artifacts
+*.o
+*.obj
+*.out
+*.exe
+*.dSYM/
+a.out
+
+# Java compiled classes and packages
+*.class
+*.jar
+*.war
+*.ear
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+
+# JavaScript, TypeScript & Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+.cache/
+
+# Scratch & Temporary Testing Files
+*.tmp
+*.temp
+*.bak
+input.txt
+output.txt
+scratch/
+
+# Environment Variables & Sensitive Keys
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+

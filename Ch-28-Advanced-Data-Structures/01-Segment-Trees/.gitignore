@@ -1,0 +1,12 @@
+# Folder gitignore
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.class
+*.exe
+*.o
+*.out
