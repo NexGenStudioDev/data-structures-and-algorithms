@@ -24,7 +24,8 @@ Ch-16-Recursion/
 │   └── geeksforgeeks/
 │       ├── Factorial/                            # Complete walkthrough, dry run, JS & Python code
 │       ├── 1 to n Without Loop/                  # Head recursion unwinding print, JS & Python code
-│       └── Print n to 1 Without Loop/            # Tail recursion winding print, JS & Python code
+│       ├── Print n to 1 Without Loop/            # Tail recursion winding print, JS & Python code
+│       └── Power Using Recursion/                # Exponentiation via linear recursion, JS & Python code
 ├── 06-LeetCode-Problems/                         # Curated interview problem collection
 ├── README.md                                     # Chapter master guide & roadmap (You are here)
 └── .gitignore                                    # Folder git tracking
@@ -148,14 +149,15 @@ Master recursion progressively from linear basics to advanced branching:
 | 2 | Sum of First N Numbers | Easy | GeeksforGeeks | Mathematical Accumulation | ⏳ Practice |
 | 3 | [Print 1 to N without Loops](./05-Linear-Recursion/geeksforgeeks/1%20to%20n%20Without%20Loop/) | Easy | GeeksforGeeks | Head Recursion (Unwinding print) | ✅ Completed |
 | 4 | [Print N to 1 without Loops](./05-Linear-Recursion/geeksforgeeks/Print%20n%20to%201%20Without%20Loop/) | Easy | GeeksforGeeks | Tail Recursion (Winding print) | ✅ Completed |
-| 5 | Reverse an Array / String | Easy | LeetCode 344 | Two-Pointer Recursive Boundary | ⏳ Practice |
-| 6 | Check Palindrome Recursively | Easy | LeetCode 125 | Dual-End Boundary Check | ⏳ Practice |
-| 7 | LeetCode 509: Fibonacci Number | Easy | LeetCode | Binary / Tree Recursion | ⏳ Practice |
-| 8 | LeetCode 50: Pow(x, n) | Medium | LeetCode | Divide & Conquer Linear Recursion $O(\log N)$ | ⏳ Practice |
-| 9 | LeetCode 206: Reverse Linked List | Easy | LeetCode | Pointer Rewiring on Unwinding | ⏳ Practice |
-| 10 | LeetCode 779: K-th Symbol in Grammar | Medium | LeetCode | State Inversion via Parent Index | ⏳ Practice |
-| 11 | Tower of Hanoi | Medium | Classical | 3-Peg Multi-Branch Transfer | ⏳ Practice |
-| 12 | LeetCode 78: Subsets | Medium | LeetCode | Pick / Don't Pick Choice Tree | ⏳ Practice |
+| 5 | [Power Using Recursion](./05-Linear-Recursion/geeksforgeeks/Power%20Using%20Recursion/Question.md) | Easy | GeeksforGeeks | Linear Exponentiation Chain | ✅ Completed |
+| 6 | Reverse an Array / String | Easy | LeetCode 344 | Two-Pointer Recursive Boundary | ⏳ Practice |
+| 7 | Check Palindrome Recursively | Easy | LeetCode 125 | Dual-End Boundary Check | ⏳ Practice |
+| 8 | LeetCode 509: Fibonacci Number | Easy | LeetCode | Binary / Tree Recursion | ⏳ Practice |
+| 9 | LeetCode 50: Pow(x, n) | Medium | LeetCode | Divide & Conquer Linear Recursion $O(\log N)$ | ⏳ Practice |
+| 10 | LeetCode 206: Reverse Linked List | Easy | LeetCode | Pointer Rewiring on Unwinding | ⏳ Practice |
+| 11 | LeetCode 779: K-th Symbol in Grammar | Medium | LeetCode | State Inversion via Parent Index | ⏳ Practice |
+| 12 | Tower of Hanoi | Medium | Classical | 3-Peg Multi-Branch Transfer | ⏳ Practice |
+| 13 | LeetCode 78: Subsets | Medium | LeetCode | Pick / Don't Pick Choice Tree | ⏳ Practice |
 
 ---
 

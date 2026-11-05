@@ -398,6 +398,17 @@ until the base case is reached.
 No. Complexity depends on how the input shrinks, how many recursive
 calls are made, and how much work each call performs.
 
+## Practice Problems Directory
+
+Explore the step-by-step problem guides, dry-runs, and dual-language implementations:
+
+| Problem | Difficulty | Category | Platform | Solution Links |
+|---|:---:|---|---|---|
+| [Factorial](./geeksforgeeks/Factorial/Question.md) | Basic | Head / Return Accumulation | GeeksforGeeks | [Guide](./geeksforgeeks/Factorial/Solution.md) • [JS](./geeksforgeeks/Factorial/code/factorial.js) • [Python](./geeksforgeeks/Factorial/code/factorial.py) |
+| [1 to n Without Loop](./geeksforgeeks/1%20to%20n%20Without%20Loop/Question.md) | Basic | Head Recursion (Unwinding print) | GeeksforGeeks | [Guide](./geeksforgeeks/1%20to%20n%20Without%20Loop/Solution.md) • [JS](./geeksforgeeks/1%20to%20n%20Without%20Loop/code/script.js) • [Python](./geeksforgeeks/1%20to%20n%20Without%20Loop/code/index.py) |
+| [Print n to 1 Without Loop](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Question.md) | Basic | Tail Recursion (Winding print) | GeeksforGeeks | [Guide](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Solution.md) • [JS](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/code/script.js) • [Python](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/code/index.py) |
+| [Power Using Recursion](./geeksforgeeks/Power%20Using%20Recursion/Question.md) | Basic | Linear Multiplication Chain | GeeksforGeeks | [Guide](./geeksforgeeks/Power%20Using%20Recursion/Solution.md) • [JS](./geeksforgeeks/Power%20Using%20Recursion/code/index.js) • [Python](./geeksforgeeks/Power%20Using%20Recursion/code/solution.py) |
+
 ## Quick Revision
 
 -   Linear recursion: at most one recursive call per execution.
@@ -406,6 +417,7 @@ calls are made, and how much work each call performs.
 -   Before the call: work happens while going down.
 -   After the call: work happens while returning.
 -   Factorial: `n! = n * (n - 1)!`, with `0! = 1`.
+-   Power: `n^p = n * n^(p - 1)`, with `n^0 = 1`.
 -   If the input decreases by one, time and stack space are commonly
     `O(n)`.
 -   Always dry-run a small input and check that each call moves toward

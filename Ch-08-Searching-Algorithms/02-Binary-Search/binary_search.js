@@ -1,24 +1,24 @@
-// Classic Binary Search & Bounds in O(log N)
-
 function binarySearch(arr, target) {
-    let low = 0, high = arr.length - 1;
-    while (low <= high) {
-        let mid = low + Math.floor((high - low) / 2);
-        if (arr[mid] === target) return mid;
-        else if (arr[mid] < target) low = mid + 1;
-        else high = mid - 1;
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+
+    if (arr[mid] === target) {
+      return mid; // 🎯 Found
     }
-    return -1;
+
+    if (arr[mid] < target) {
+      left = mid + 1; // 🔍 Search right half
+    } else {
+      right = mid - 1; // 🔍 Search left half
+    }
+  }
+
+  return -1; // ❌ Not found
 }
 
-function lowerBound(arr, target) {
-    let low = 0, high = arr.length;
-    while (low < high) {
-        let mid = low + Math.floor((high - low) / 2);
-        if (arr[mid] >= target) high = mid;
-        else low = mid + 1;
-    }
-    return low;
-}
-
-console.log("Found at index:", binarySearch([1, 3, 5, 7, 9], 7)); // 3
+// ✅ Example:
+const nums = [-1, 0, 3, 5, 9, 12];
+console.log(binarySearch(nums, 9)); // Output: 4

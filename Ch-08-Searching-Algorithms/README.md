@@ -11,6 +11,11 @@
 Ch-08-Searching-Algorithms/
 ├── 01-Linear-Search/
 ├── 02-Binary-Search/
+│   ├── README.md                                 # Zero-to-advanced binary search master guide
+│   ├── binary_search.js                          # Classical binary search implementation
+│   ├── binary_search.py                          # Python implementation with bisect patterns
+│   └── LeetCode/
+│       └── Sqrt(x)/                              # Complete walkthrough, dry run, images, JS & Python
 ├── 03-Binary-Search-on-Answer/
 ├── 04-2D-Matrix-Search/
 ├── 05-LeetCode-Problems/
@@ -54,6 +59,7 @@ When asked to minimize the maximum (or maximize the minimum), if a condition is 
 
 | Problem | Difficulty | Pattern | Status |
 |---|---|---|:---:|
+| [LeetCode 69: Sqrt(x)](./02-Binary-Search/LeetCode/Sqrt%28x%29/Approch1.md) | Easy | Binary Search on Answer Space | ✅ Completed |
 | LeetCode 704: Binary Search | Easy | Standard Binary Search | ⏳ To Do |
 | LeetCode 35: Search Insert Position | Easy | Lower Bound | ⏳ To Do |
 | LeetCode 34: First and Last Position | Medium | Lower & Upper Bound | ⏳ To Do |

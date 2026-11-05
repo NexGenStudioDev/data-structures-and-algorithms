@@ -78,7 +78,7 @@ Phase 9: Mathematical Foundations & Number Theory (Ch-30)
 |:---:|---|---|:---:|
 | [Ch-06](./Ch-06-Arrays/README.md) | **Arrays & 2D Matrices** | Contiguous memory, $O(1)$ access, prefix sums, difference arrays, 2D matrix traversal, LeetCode | Beginner–Inter |
 | [Ch-07](./Ch-07-Strings/README.md) | **Strings & Advanced Matching** | Immutability, character frequencies, palindromes, KMP, Rabin-Karp, Z-Algorithm, Manacher's | Beginner–Inter |
-| [Ch-08](./Ch-08-Searching-Algorithms/README.md) | **Searching Algorithms** | Linear search, binary search, lower/upper bounds, rotated arrays, binary search on answer space | Intermediate |
+| [Ch-08](./Ch-08-Searching-Algorithms/README.md) | **Searching Algorithms** | Linear search, binary search master guide, lower/upper bounds, rotated arrays, binary search on answer space (Sqrt(x)) | Intermediate |
 | [Ch-09](./Ch-09-Sorting-Algorithms/README.md) | **Sorting Algorithms** | Bubble, Selection, Insertion, Merge Sort, Quick Sort, Cyclic Sort, Counting/Radix Sort | Intermediate |
 | [Ch-10](./Ch-10-Two-Pointers-and-Sliding-Window/README.md) | **Two Pointers & Sliding Window** | Converging pointers, fixed/variable window, fast & slow pointers, interval sweep-line | Intermediate |
 
@@ -107,7 +107,7 @@ Phase 9: Mathematical Foundations & Number Theory (Ch-30)
 
 | Chapter | Topic | Description & Core Concepts | Primary Level |
 |:---:|---|---|:---:|
-| [Ch-16](./Ch-16-Recursion/README.md) | **Recursion** | Call stack, base cases, recurrence relations, tree recursion, linear recursion, Factorial | Intermediate |
+| [Ch-16](./Ch-16-Recursion/README.md) | **Recursion** | Call stack, base cases, recurrence relations, tree & linear recursion (Factorial, 1-to-N, N-to-1, Power) | Intermediate |
 | [Ch-17](./Ch-17-Backtracking/README.md) | **Backtracking** | State-space trees, pruning, subsets, permutations, combinations, N-Queens, Sudoku | Inter–Advanced |
 | [Ch-18](./Ch-18-Trees/README.md) | **Binary Trees** | Hierarchical structures, Preorder, Inorder, Postorder, BFS Level-Order, tree height & diameter | Intermediate |
 | [Ch-19](./Ch-19-Binary-Search-Trees/README.md) | **Binary Search Trees (BST)** | BST invariant, search, insert, delete (3 cases), LCA, validation, self-balancing tree intro | Inter–Advanced |

@@ -230,3 +230,12 @@ Try understanding these inputs and predicting their outputs before writing your 
 6. How will the recursive function return the final multiplication result?
 
 Your goal: Understand the problem, identify the base case, identify the recursive relationship, and implement the solution independently.
+
+---
+
+## 📖 Solutions & Code
+
+- **Step-by-Step Walkthrough:** [Solution Guide (Call Stack & Dry Run)](./Solution.md)
+- **Implementations:**
+  - [JavaScript Solution](./code/index.js)
+  - [Python 3 Solution](./code/solution.py)
