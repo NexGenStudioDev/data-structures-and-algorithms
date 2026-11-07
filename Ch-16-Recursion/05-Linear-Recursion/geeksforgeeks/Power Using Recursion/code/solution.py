@@ -37,3 +37,4 @@ if __name__ == "__main__":
     assert sol.recursivePower(10, 2) == 100
 
     print("All Power Using Recursion tests passed successfully!")
+

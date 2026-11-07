@@ -46,3 +46,4 @@ if __name__ == "__main__":
     assert sol.mySqrt(26) == 5
 
     print("All Sqrt(x) tests passed successfully!")
+

@@ -87,3 +87,4 @@ class Solution:
             return 1
         return n * self.recursivePower(n, p - 1)
 ```
+

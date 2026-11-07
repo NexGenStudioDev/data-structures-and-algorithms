@@ -36,3 +36,4 @@ console.log("mySqrt(0):", mySqrt(0)); // Expected: 0
 console.log("mySqrt(1):", mySqrt(1)); // Expected: 1
 console.log("mySqrt(16):", mySqrt(16)); // Expected: 4
 console.log("mySqrt(25):", mySqrt(25)); // Expected: 5
+
