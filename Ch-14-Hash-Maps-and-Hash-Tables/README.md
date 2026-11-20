@@ -47,11 +47,15 @@ Implementations often resize when load factor passes a chosen threshold. The thr
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Key Pattern | Status |
-|---|---|---|:---:|
-| [LeetCode 242: Valid Anagram](https://leetcode.com/problems/valid-anagram/)| Easy | Frequency Array / Map | ⏳ To Do |
-| [LeetCode 49: Group Anagrams](https://leetcode.com/problems/group-anagrams/)| Medium | Sorted String or Tuple Key | ⏳ To Do |
-| [LeetCode 380: Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)| Medium | Hash Map + Dynamic Array | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Frequency Array / Map | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Count Distinct Elements in Every Window](https://www.geeksforgeeks.org/problems/count-distinct-elements-in-every-window/1) | Hash Maps & Hash Tables | N/A | N/A | To Do |
+| Medium | LeetCode | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Sorted String or Tuple Key | N/A | N/A | To Do |
+| Medium | LeetCode | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Hash Map + Dynamic Array | N/A | N/A | To Do |
+| Medium | TakeUForward | [Longest Subarray with Sum K](https://takeuforward.org/practice/dsa/longest-subarray-with-sum-k) | Hash Maps & Hash Tables | N/A | N/A | To Do |

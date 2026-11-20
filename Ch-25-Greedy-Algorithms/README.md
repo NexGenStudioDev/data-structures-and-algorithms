@@ -26,14 +26,17 @@ A greedy approach is correct if and only if:
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Category | Status |
-|---|---|---|:---:|
-| [LeetCode 55: Jump Game](https://leetcode.com/problems/jump-game/)| Medium | Reachability Frontier | ⏳ To Do |
-| [LeetCode 45: Jump Game II](https://leetcode.com/problems/jump-game-ii/)| Medium | Range BFS / Greedy Leaps | ⏳ To Do |
-| [LeetCode 134: Gas Station](https://leetcode.com/problems/gas-station/)| Medium | Running Surplus Deficit Reset | ⏳ To Do |
-| [LeetCode 435: Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)| Medium | Sort by End Time | ⏳ To Do |
-| [LeetCode 452: Minimum Arrows to Burst Balloons](https://leetcode.com/problems/minimum-arrows-to-burst-balloons/)| Medium | Interval Intersection | ⏳ To Do |
-| [LeetCode 135: Candy](https://leetcode.com/problems/candy/)| Hard | Two-Pass Greedy (Left & Right) | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Medium | GeeksforGeeks | [Activity Selection](https://www.geeksforgeeks.org/problems/activity-selection-1587115620/1) | Greedy Algorithms | N/A | N/A | To Do |
+| Medium | LeetCode | [Gas Station](https://leetcode.com/problems/gas-station) | Running Surplus Deficit Reset | N/A | N/A | To Do |
+| Medium | LeetCode | [Jump Game II](https://leetcode.com/problems/jump-game-ii) | Range BFS / Greedy Leaps | N/A | N/A | To Do |
+| Medium | LeetCode | [Jump Game](https://leetcode.com/problems/jump-game) | Reachability Frontier | N/A | N/A | To Do |
+| Medium | LeetCode | [Minimum Arrows to Burst Balloons](https://leetcode.com/problems/minimum-arrows-to-burst-balloons) | Interval Intersection | N/A | N/A | To Do |
+| Medium | LeetCode | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Sort by End Time | N/A | N/A | To Do |
+| Hard | LeetCode | [Candy](https://leetcode.com/problems/candy) | Two-Pass Greedy (Left & Right) | N/A | N/A | To Do |

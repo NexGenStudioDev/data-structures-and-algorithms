@@ -36,14 +36,18 @@ Ch-27-Bit-Manipulation/
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Key Pattern | Status |
-|---|---|---|:---:|
-| [LeetCode 136: Single Number](https://leetcode.com/problems/single-number/)| Easy | XOR Cancellation | ⏳ To Do |
-| [LeetCode 191: Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)| Easy | Brian Kernighan Loop | ⏳ To Do |
-| [LeetCode 338: Counting Bits](https://leetcode.com/problems/counting-bits/)| Easy | DP + Lowest Bit | ⏳ To Do |
-| [LeetCode 137: Single Number II](https://leetcode.com/problems/single-number-ii/)| Medium | Bit Counting Modulo 3 | ⏳ To Do |
-| [LeetCode 260: Single Number III](https://leetcode.com/problems/single-number-iii/)| Medium | XOR Partitioning by Lowest Bit | ⏳ To Do |
-| [LeetCode 371: Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)| Medium | Bitwise Adder (Sum = XOR, Carry = AND) | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | TakeUForward | [Count the Number of Set Bits](https://takeuforward.org/practice/dsa/count-the-number-of-set-bits) | Bit Manipulation | N/A | N/A | To Do |
+| Easy | LeetCode | [Counting Bits](https://leetcode.com/problems/counting-bits) | DP + Lowest Bit | N/A | N/A | To Do |
+| Easy | LeetCode | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Brian Kernighan Loop | N/A | N/A | To Do |
+| Easy | LeetCode | [Single Number](https://leetcode.com/problems/single-number) | XOR Cancellation | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Count Set Bits in 1 to N](https://www.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1) | Bit Manipulation | N/A | N/A | To Do |
+| Medium | LeetCode | [Single Number II](https://leetcode.com/problems/single-number-ii) | Bit Counting Modulo 3 | N/A | N/A | To Do |
+| Medium | LeetCode | [Single Number III](https://leetcode.com/problems/single-number-iii) | XOR Partitioning by Lowest Bit | N/A | N/A | To Do |
+| Medium | LeetCode | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | Bitwise Adder (Sum = XOR, Carry = AND) | N/A | N/A | To Do |

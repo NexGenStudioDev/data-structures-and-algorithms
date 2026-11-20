@@ -67,16 +67,18 @@ JavaScript strings use UTF-16 code units. ASCII letters and digits have the code
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Key Pattern | Status |
-|---|---|---|:---:|
-| [LeetCode 125: Valid Palindrome](./LeetCode/Valid%20Palindrome/) | Easy | Two Pointers | ✅ Complete |
-| [LeetCode 13: Roman to Integer](./LeetCode/Roman%20to%20Integer/) | Easy | Left-to-Right Scan with Lookahead | ✅ Complete |
-| [LeetCode 28: First Occurrence (strStr)](./LeetCode/Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/) | Easy | Sliding Window / KMP | ✅ Complete |
-| [LeetCode 58: Length of Last Word](./LeetCode/Length%20of%20Last%20Word/) | Easy | Reverse Traversal | ✅ Complete |
-| [LeetCode 557: Reverse Words in String III](./LeetCode/Reverse%20Words%20in%20a%20String%20III/) | Easy | Reverse each word; output uses O(n) space in this implementation | ✅ Complete |
-| [LeetCode 2129: Capitalize the Title](./LeetCode/Capitalize%20the%20Title/) | Easy | String Tokenization | ✅ Complete |
-| [LeetCode 205: Isomorphic Strings](./LeetCode/Isomorphic%20Strings/) | Easy | Bi-directional Hash Map | ✅ Complete |
-| [LeetCode 5: Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| Medium | Expand Around Center / DP | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Capitalize the Title](https://leetcode.com/problems/capitalize-the-title) | String Tokenization | [Question](./LeetCode/Capitalize%20the%20Title/Question.md) | [Solution](./LeetCode/Capitalize%20the%20Title/Answer.md) | Completed |
+| Easy | LeetCode | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | String search / substring matching | [Question](./LeetCode/Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/Question.md) | [Solution](./LeetCode/Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/Solution.md) | Completed |
+| Easy | LeetCode | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | Bi-directional Hash Map | [Question](./LeetCode/Isomorphic%20Strings/Question.md) | [Solution](./LeetCode/Isomorphic%20Strings/Answer.md) | Completed |
+| Easy | LeetCode | [Length of Last Word](https://leetcode.com/problems/length-of-last-word) | Reverse Traversal | [Question](./LeetCode/Length%20of%20Last%20Word/Question.md) | [Solution](./LeetCode/Length%20of%20Last%20Word/Answer.md) | Completed |
+| Easy | LeetCode | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) | String traversal / per-word reversal | [Question](./LeetCode/Reverse%20Words%20in%20a%20String%20III/Question.md) | [Solution](./LeetCode/Reverse%20Words%20in%20a%20String%20III/Answer.md) | Completed |
+| Easy | LeetCode | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | Left-to-Right Scan with Lookahead | [Question](./LeetCode/Roman%20to%20Integer/question.md) | [Solution](./LeetCode/Roman%20to%20Integer/Answer.md) | Completed |
+| Easy | LeetCode | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Two Pointers | [Question](./LeetCode/Valid%20Palindrome/question.md) | [Solution](./LeetCode/Valid%20Palindrome/Answer.md) | Completed |
+| Medium | LeetCode | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Expand Around Center / DP | N/A | N/A | To Do |

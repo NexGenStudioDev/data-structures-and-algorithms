@@ -35,14 +35,17 @@ For a $0$-indexed array:
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Pattern | Status |
-|---|---|---|:---:|
-| [LeetCode 215: Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)| Medium | Min-Heap of Size K / Quickselect | ⏳ To Do |
-| [LeetCode 347: Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)| Medium | Frequency Map + Min-Heap | ⏳ To Do |
-| [LeetCode 295: Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)| Hard | Two Heaps (Max-Heap + Min-Heap) | ⏳ To Do |
-| [LeetCode 373: Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)| Medium | K-way Merge using Min-Heap | ⏳ To Do |
-| [LeetCode 621: Task Scheduler](https://leetcode.com/problems/task-scheduler/)| Medium | Max-Heap + Cooldown Queue | ⏳ To Do |
-| [LeetCode 973: K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)| Medium | Max-Heap of Size K | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Medium | LeetCode | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums) | K-way Merge using Min-Heap | N/A | N/A | To Do |
+| Medium | LeetCode | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Max-Heap of Size K | N/A | N/A | To Do |
+| Medium | LeetCode | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Min-Heap of Size K / Quickselect | N/A | N/A | To Do |
+| Medium | TakeUForward | [Kth Smallest Element in an Array](https://takeuforward.org/practice/dsa/kth-smallest-element-in-an-array) | Heaps & Priority Queues | N/A | N/A | To Do |
+| Medium | LeetCode | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | Max-Heap + Cooldown Queue | N/A | N/A | To Do |
+| Medium | LeetCode | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Frequency Map + Min-Heap | N/A | N/A | To Do |
+| Hard | LeetCode | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Two Heaps (Max-Heap + Min-Heap) | N/A | N/A | To Do |

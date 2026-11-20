@@ -142,25 +142,29 @@ When given a problem, follow this structured mental process:
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
 For the linked Easy / Medium / Advanced question list and repository-based completion status, see the [Recursion Practice Tracker](./Practice-Tracker.md).
 
 Master recursion progressively from linear basics to advanced branching:
 
-| # | Problem | Difficulty | Platform | Core Concept | Status |
-|:---:|---|:---:|---|---|:---:|
-| 1 | [Factorial of a Number](./geeksforgeeks/Factorial/) | Easy | GeeksforGeeks | Linear Recursion, Stack Trace, Dry Run | ✅ Completed |
-| 2 | Sum of First N Numbers | Easy | GeeksforGeeks | Mathematical Accumulation | ⏳ Practice |
-| 3 | [Print 1 to N without Loops](./geeksforgeeks/1%20to%20n%20Without%20Loop/) | Easy | GeeksforGeeks | Head Recursion (Unwinding print) | ✅ Completed |
-| 4 | [Print N to 1 without Loops](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/) | Easy | GeeksforGeeks | Tail Recursion (Winding print) | ✅ Completed |
-| 5 | [Power Using Recursion](./geeksforgeeks/Power%20Using%20Recursion/Question.md) | Easy | GeeksforGeeks | Linear Exponentiation Chain | ✅ Completed |
-| 6 | [First N Fibonacci Numbers](./geeksforgeeks/Fibonacci%20Series/Question.md) | Basic | GeeksforGeeks | Linear Recursion with an Accumulator | ✅ Completed |
-| 6 | Reverse an Array / String | Easy | LeetCode 344 | Two-Pointer Recursive Boundary | ⏳ Practice |
-| 8 | [LeetCode 509: Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)| Easy | LeetCode | Binary / Tree Recursion | ⏳ Practice |
-| 11 | [LeetCode 779: K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/)| Medium | LeetCode | State Inversion via Parent Index | ⏳ Practice |
-| 12 | Tower of Hanoi | Medium | Classical | 3-Peg Multi-Branch Transfer | ⏳ Practice |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | GeeksforGeeks | [Factorial](https://www.geeksforgeeks.org/problems/factorial5739/1) | Recursion | [Question](./geeksforgeeks/Factorial/Question.md) | [Solution](./geeksforgeeks/Factorial/Solution.md) | Completed |
+| Easy | LeetCode | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) | Binary / Tree Recursion | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [First N Fibonacci Numbers](https://www.geeksforgeeks.org/dsa/program-to-print-first-n-fibonacci-numbers) | Recursion | [Question](./geeksforgeeks/Fibonacci%20Series/Question.md) | [Solution](./geeksforgeeks/Fibonacci%20Series/Solution.md) | Completed |
+| Easy | GeeksforGeeks | [Power Using Recursion](https://www.geeksforgeeks.org/problems/power-using-recursion/1) | Recursion | [Question](./geeksforgeeks/Power%20Using%20Recursion/Question.md) | [Solution](./geeksforgeeks/Power%20Using%20Recursion/Solution.md) | Completed |
+| Easy | GeeksforGeeks | [Print 1 to N Without Loops](https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1) | Recursion | [Question](./geeksforgeeks/1%20to%20n%20Without%20Loop/Question.md) | [Solution](./geeksforgeeks/1%20to%20n%20Without%20Loop/Solution.md) | Completed |
+| Easy | GeeksforGeeks | [Print N to 1 Without Loop](https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1) | Recursion | [Question](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Question.md) | [Solution](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Solution.md) | Completed |
+| Easy | GeeksforGeeks | [Product of Digits](https://www.geeksforgeeks.org/dsa/program-to-calculate-product-of-digits-of-a-number) | Recursion | [Question](./geeksforgeeks/Product%20of%20Digits/Question.md) | [Solution](./geeksforgeeks/Product%20of%20Digits/Solution.md) | Completed |
+| Easy | LeetCode | [Reverse String](https://leetcode.com/problems/reverse-string/) | Recursive two-pointer string reversal | N/A | N/A | To Do |
+| Easy | TakeUForward | [Sum of First N Numbers](https://takeuforward.org/practice/dsa/sum-of-first-n-numbers) | Recursion basics | N/A | N/A | To Do |
+| Medium | LeetCode | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) | State Inversion via Parent Index | N/A | N/A | To Do |
+| Advanced | GeeksforGeeks | [Tower of Hanoi](https://www.geeksforgeeks.org/dsa/c-program-for-tower-of-hanoi) | Recursion | N/A | N/A | To Do |
+
 
 ---
 

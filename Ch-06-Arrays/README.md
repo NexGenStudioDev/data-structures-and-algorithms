@@ -54,15 +54,18 @@ These costs use common DSA models. State assumptions when they matter, and check
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Key Pattern | Status |
-|---|---|---|:---:|
-| [LeetCode 1: Two Sum](./LeetCode/Two%20Sum/) | Easy | Hash Map Lookup | ✅ Complete |
-| [Largest in Array](./LeetCode/Largest%20in%20Array/) | Basic | Single-pass Scan | ✅ Complete |
-| [LeetCode 27: Remove Element](./LeetCode/Remove%20Element/) | Easy | Two Pointers (In-place) | ✅ Complete |
-| [LeetCode 26: Remove Duplicates](./LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/) | Easy | Two Pointers (Fast/Slow) | ✅ Complete |
-| [LeetCode 14: Longest Common Prefix](./LeetCode/Longest%20Common%20Prefix/) | Easy | Horizontal/Vertical Scanning | ✅ Complete |
-| [LeetCode 53: Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)| Medium | Kadane's Algorithm | ⏳ To Do |
-| [LeetCode 238: Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)| Medium | Prefix & Suffix Products | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | TakeUForward | [Largest Element](https://takeuforward.org/practice/dsa/largest-element?category=fundamentals&source=strivers-a2z-dsa-sheet) | Arrays | [Question](./LeetCode/Largest%20in%20Array/Question.md) | [MD](./LeetCode/Largest%20in%20Array/Answer.md) | Completed |
+| Easy | LeetCode | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Horizontal/Vertical Scanning | [Question](./LeetCode/Longest%20Common%20Prefix/Question.md) | [MD](./LeetCode/Longest%20Common%20Prefix/Answer.md) | Completed |
+| Easy | LeetCode | [Remove Duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Two Pointers (Fast/Slow) | [Question](./LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/question.md) | [MD](./LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/answer.md) | Completed |
+| Easy | LeetCode | [Remove Element](https://leetcode.com/problems/remove-element) | Two Pointers (In-place) | [Question](./LeetCode/Remove%20Element/question.md) | [MD](./LeetCode/Remove%20Element/answer.md) | Completed |
+| Easy | GeeksforGeeks | [Reverse an Array](https://www.geeksforgeeks.org/problems/reverse-an-array/1) | Arrays | N/A | N/A | To Do |
+| Easy | LeetCode | [Two Sum](https://leetcode.com/problems/two-sum) | Hash Map Lookup | [Question](./LeetCode/Two%20Sum/Question.md) | [MD](./LeetCode/Two%20Sum/Answer.md) | Completed |
+| Medium | LeetCode | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Kadane's Algorithm | N/A | N/A | To Do |
+| Medium | LeetCode | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Prefix & Suffix Products | N/A | N/A | To Do |

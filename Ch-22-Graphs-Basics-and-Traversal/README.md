@@ -34,14 +34,18 @@ Ch-22-Graphs-Basics-and-Traversal/
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Category | Status |
-|---|---|---|:---:|
-| [LeetCode 200: Number of Islands](https://leetcode.com/problems/number-of-islands/)| Medium | Grid Connected Components (DFS/BFS) | ⏳ To Do |
-| [LeetCode 133: Clone Graph](https://leetcode.com/problems/clone-graph/)| Medium | Graph Copy via BFS/DFS with Map | ⏳ To Do |
-| [LeetCode 695: Max Area of Island](https://leetcode.com/problems/max-area-of-island/)| Medium | Grid Flood Fill | ⏳ To Do |
-| [LeetCode 733: Flood Fill](https://leetcode.com/problems/flood-fill/)| Easy | DFS / BFS Color Spread | ⏳ To Do |
-| [LeetCode 785: Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)| Medium | 2-Coloring via BFS/DFS | ⏳ To Do |
-| [LeetCode 994: Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)| Medium | Multi-source BFS | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | GeeksforGeeks | [BFS of Graph](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1) | Graphs (Basics & Traversal) | N/A | N/A | To Do |
+| Easy | LeetCode | [Flood Fill](https://leetcode.com/problems/flood-fill) | DFS / BFS Color Spread | N/A | N/A | To Do |
+| Medium | LeetCode | [Clone Graph](https://leetcode.com/problems/clone-graph) | Graph Copy via BFS/DFS with Map | N/A | N/A | To Do |
+| Medium | LeetCode | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite) | 2-Coloring via BFS/DFS | N/A | N/A | To Do |
+| Medium | LeetCode | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | Grid Flood Fill | N/A | N/A | To Do |
+| Medium | LeetCode | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Grid Connected Components (DFS/BFS) | N/A | N/A | To Do |
+| Medium | LeetCode | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | Multi-source BFS | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Topological Sorting](https://www.geeksforgeeks.org/dsa/topological-sorting/) | Directed graph traversal / ordering | N/A | N/A | To Do |

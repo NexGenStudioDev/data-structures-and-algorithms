@@ -38,13 +38,17 @@ Ch-13-Queues/
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Subtopic | Status |
-|---|---|---|:---:|
-| [LeetCode 622: Design Circular Queue](./02-Circular-Queue/leetCode-question/Design%20Circular%20Queue/) | Medium | Ring Buffer Modulo Math | ✅ Complete |
-| [LeetCode 232: Implement Queue using Stacks](../Ch-12-Stacks/06-LeetCode-Questions/Implement%20Queue%20using%20Stacks/Question.md) | Easy | Amortized $O(1)$ Dequeue | ✅ Complete · [Solution](../Ch-12-Stacks/06-LeetCode-Questions/Implement%20Queue%20using%20Stacks/docs/Approch1.Solution.md) |
-| [LeetCode 641: Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)| Medium | Double-ended Ring Buffer | ⏳ To Do |
-| [LeetCode 239: Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| Hard | Monotonic Deque | ⏳ To Do |
-| [LeetCode 933: Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)| Easy | Sliding Window Queue | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | TakeUForward | [Implement Queue Using Arrays](https://takeuforward.org/practice/dsa/implement-queue-using-arrays) | Queues | N/A | N/A | To Do |
+| Easy | LeetCode | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls) | Sliding Window Queue | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Queue Using Linked List](https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/0) | Queues | N/A | N/A | To Do |
+| Medium | LeetCode | [Design Circular Deque](https://leetcode.com/problems/design-circular-deque) | Double-ended Ring Buffer | N/A | N/A | To Do |
+| Medium | LeetCode | [Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) | Circular queue design | [Question](./02-Circular-Queue/leetCode-question/Design%20Circular%20Queue/question.md) | [Solution](./02-Circular-Queue/leetCode-question/Design%20Circular%20Queue/Solution/Approch1.md) | Completed |
+| Medium | LeetCode | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Queue implementation using stacks | [Question](../Ch-12-Stacks/06-LeetCode-Questions/Implement%20Queue%20using%20Stacks/Question.md) | [Solution](../Ch-12-Stacks/06-LeetCode-Questions/Implement%20Queue%20using%20Stacks/docs/Approch1.Solution.md) | Completed |
+| Hard | LeetCode | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Monotonic Deque | N/A | N/A | To Do |

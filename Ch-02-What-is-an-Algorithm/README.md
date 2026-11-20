@@ -196,3 +196,23 @@ You don’t always write code first. You explain your **algorithm**, your **appr
 ## 📌 Final Summary
 
 > 📘 An algorithm is a set of step-by-step instructions to solve a problem.
+
+
+## Practice Roadmap
+
+### Practice Check
+
+**Question:** Write pseudocode for finding the largest of three numbers, then trace it with sample input.
+
+**Difficulty:** Easy / Beginner · **Topic:** Pseudocode and algorithm steps
+
+**Answer:** N/A — complete the check in your own words, then review the chapter notes.
+
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | Local Review | [Practice check](#practice-check) | Pseudocode and algorithm steps | [Practice check](#practice-check) | N/A | To Do |
+
+
+
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)

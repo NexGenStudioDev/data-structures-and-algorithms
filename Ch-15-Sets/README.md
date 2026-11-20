@@ -34,13 +34,16 @@ These are common abstract implementation choices, not built-in names shared by e
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Key Pattern | Status |
-|---|---|---|:---:|
-| [LeetCode 217: Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)| Easy | Instant Set Insertion | ⏳ To Do |
-| [LeetCode 349: Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)| Easy | Set Intersection | ⏳ To Do |
-| [LeetCode 202: Happy Number](https://leetcode.com/problems/happy-number/)| Easy | Cycle Detection via Visited Set | ⏳ To Do |
-| [LeetCode 36: Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| Medium | 3 Sets per Row/Col/Box | ⏳ To Do |
-| [LeetCode 128: Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | Set Lookup from Sequence Start | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Instant Set Insertion | N/A | N/A | To Do |
+| Easy | LeetCode | [Happy Number](https://leetcode.com/problems/happy-number) | Cycle Detection via Visited Set | N/A | N/A | To Do |
+| Easy | LeetCode | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays) | Set Intersection | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Union of Arrays with Duplicates](https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1) | Sets | N/A | N/A | To Do |
+| Medium | LeetCode | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Set Lookup from Sequence Start | N/A | N/A | To Do |
+| Medium | LeetCode | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | 3 Sets per Row/Col/Box | N/A | N/A | To Do |

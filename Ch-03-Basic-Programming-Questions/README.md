@@ -2381,3 +2381,14 @@ Now you are ready to start the actual DSA journey:
 
 
 **Strong basics → Easier DSA learning 🚀**
+
+
+## Platform Practice Roadmap
+
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | Functions and arithmetic | N/A | N/A | To Do |
+| Easy | LeetCode | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | Loops and conditionals | N/A | N/A | To Do |
+
+
+See the [Abhishek tracker](../Abhishek%20tracker.md) and [Akanksha tracker](../Akanksha%20tracker.md) for the full progression.

@@ -58,19 +58,21 @@ When asked to minimize the maximum (or maximize the minimum), if a condition is 
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Pattern | Status |
-|---|---|---|:---:|
-| [LeetCode 69: Sqrt(x)](./02-Binary-Search/LeetCode/Sqrt%28x%29/Approch1.md) | Easy | Binary Search on Answer Space | ✅ Completed |
-| [LeetCode 704: Binary Search](https://leetcode.com/problems/binary-search/)| Easy | Standard Binary Search | ⏳ To Do |
-| [LeetCode 35: Search Insert Position](https://leetcode.com/problems/search-insert-position/)| Easy | Lower Bound | ⏳ To Do |
-| [LeetCode 34: First and Last Position](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)| Medium | Lower & Upper Bound | ⏳ To Do |
-| [LeetCode 33: Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)| Medium | Modified Binary Search | ⏳ To Do |
-| [LeetCode 153: Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)| Medium | Inflection Point Search | ⏳ To Do |
-| [LeetCode 74: Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| Medium | Flattened Matrix Binary Search | ⏳ To Do |
-| [LeetCode 240: Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)| Medium | Top-Right / Bottom-Left Staircase | ⏳ To Do |
-| [LeetCode 875: Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)| Medium | Binary Search on Answer | ⏳ To Do |
-| [LeetCode 1011: Capacity To Ship Packages](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)| Medium | Binary Search on Answer | ⏳ To Do |
-| [LeetCode 4: Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| Hard | Advanced Binary Search Partition | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Binary Search](https://leetcode.com/problems/binary-search) | Standard Binary Search | N/A | N/A | To Do |
+| Easy | LeetCode | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Lower Bound | N/A | N/A | To Do |
+| Easy | LeetCode | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Binary search / integer square root | [Question](./02-Binary-Search/LeetCode/Sqrt%28x%29/Question.md) | [Solution](./02-Binary-Search/LeetCode/Sqrt%28x%29/Approch1.md) | Completed |
+| Medium | LeetCode | [Capacity To Ship Packages](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days) | Binary Search on Answer | N/A | N/A | To Do |
+| Medium | LeetCode | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Inflection Point Search | N/A | N/A | To Do |
+| Medium | LeetCode | [First and Last Position](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Lower & Upper Bound | N/A | N/A | To Do |
+| Medium | LeetCode | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas) | Binary Search on Answer | N/A | N/A | To Do |
+| Medium | LeetCode | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) | Top-Right / Bottom-Left Staircase | N/A | N/A | To Do |
+| Medium | LeetCode | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Flattened Matrix Binary Search | N/A | N/A | To Do |
+| Medium | LeetCode | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Modified Binary Search | N/A | N/A | To Do |
+| Hard | LeetCode | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Advanced Binary Search Partition | N/A | N/A | To Do |

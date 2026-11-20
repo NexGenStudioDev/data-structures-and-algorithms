@@ -86,3 +86,23 @@ In these structures, one element can be connected to multiple other elements.
 - Graphs are used to represent networks such as social networks, maps, and routing systems.
 
 ---
+
+
+## Practice Roadmap
+
+### Practice Check
+
+**Question:** Explain data, data structures, and algorithms using one familiar example.
+
+**Difficulty:** Easy / Beginner · **Topic:** Foundations
+
+**Answer:** N/A — complete the check in your own words, then review the chapter notes.
+
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | Local Review | [Practice check](#practice-check) | Foundations | [Practice check](#practice-check) | N/A | To Do |
+
+
+
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)

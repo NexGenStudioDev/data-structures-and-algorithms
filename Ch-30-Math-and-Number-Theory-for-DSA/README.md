@@ -60,15 +60,18 @@ Applications:
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Category | Status |
-|---|---|---|:---:|
-| [LeetCode 204: Count Primes](https://leetcode.com/problems/count-primes/)| Medium | Sieve of Eratosthenes | ⏳ To Do |
-| [LeetCode 50: Pow(x, n)](https://leetcode.com/problems/powx-n/)| Medium | Fast Exponentiation | ⏳ To Do |
-| [LeetCode 1071: Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)| Easy | Euclidean GCD | ⏳ To Do |
-| [LeetCode 96: Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| Medium | Catalan Numbers / DP | ⏳ To Do |
-| [LeetCode 292: Nim Game](https://leetcode.com/problems/nim-game/)| Easy | Game Theory / Modulo 4 | ⏳ To Do |
-| [LeetCode 877: Stone Game](https://leetcode.com/problems/stone-game/)| Medium | Minimax / Game Theory DP | ✅ Complete |
-| [LeetCode 372: Super Pow](https://leetcode.com/problems/super-pow/)| Medium | Euler's Totient / Modular Exponentiation | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | TakeUForward | [GCD of Two Numbers](https://takeuforward.org/practice/dsa/gcd-of-two-numbers) | Math & Number Theory for DSA | N/A | N/A | To Do |
+| Easy | LeetCode | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings) | Euclidean GCD | N/A | N/A | To Do |
+| Easy | LeetCode | [Nim Game](https://leetcode.com/problems/nim-game) | Game Theory / Modulo 4 | N/A | N/A | To Do |
+| Medium | LeetCode | [Count Primes](https://leetcode.com/problems/count-primes) | Sieve of Eratosthenes | N/A | N/A | To Do |
+| Medium | LeetCode | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Fast Exponentiation | N/A | N/A | To Do |
+| Medium | LeetCode | [Stone Game](https://leetcode.com/problems/stone-game) | Minimax / Game Theory DP | [Question](../Ch-06-Arrays/LeetCode/Stone%20Game/Question.md) | [MD](../Ch-06-Arrays/LeetCode/Stone%20Game/Solution/Approch1/Approch1.md) | Completed |
+| Medium | LeetCode | [Super Pow](https://leetcode.com/problems/super-pow) | Euler's Totient / Modular Exponentiation | N/A | N/A | To Do |
+| Medium | LeetCode | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Catalan Numbers / DP | N/A | N/A | To Do |

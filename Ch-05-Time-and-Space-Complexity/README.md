@@ -64,3 +64,23 @@ Ch-05-Time-and-Space-Complexity/
 
 ## 📚 Study Next
 Proceed to [Ch-06-Arrays](../Ch-06-Arrays/README.md) to apply time and space complexity analysis on fundamental linear data structures.
+
+
+## Practice Roadmap
+
+### Practice Check
+
+**Question:** For a short loop-based program, state its time complexity and extra space in plain words.
+
+**Difficulty:** Easy / Beginner · **Topic:** Complexity analysis
+
+**Answer:** N/A — complete the check in your own words, then review the chapter notes.
+
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | Local Review | [Practice check](#practice-check) | Complexity analysis | [Practice check](#practice-check) | N/A | To Do |
+
+
+
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)

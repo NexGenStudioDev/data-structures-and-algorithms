@@ -35,11 +35,13 @@ The range-update costs depend on the exact operation and chosen variant. A stand
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Data Structure | Status |
-|---|---|---|:---:|
-| [LeetCode 307: Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)| Medium | Segment Tree / Fenwick Tree | ⏳ To Do |
-| [LeetCode 315: Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)| Hard | BIT / Merge Sort Inversion | ⏳ To Do |
-| [LeetCode 218: The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| Hard | Segment Tree / Priority Queue | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Medium | LeetCode | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable) | Segment Tree / Fenwick Tree | N/A | N/A | To Do |
+| Hard | LeetCode | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | BIT / Merge Sort Inversion | N/A | N/A | To Do |
+| Hard | LeetCode | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem) | Segment Tree / Priority Queue | N/A | N/A | To Do |

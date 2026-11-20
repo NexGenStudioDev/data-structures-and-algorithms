@@ -50,15 +50,19 @@ The table describes common textbook implementations. Quick Sort’s space column
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Target Technique | Status |
-|---|---|---|:---:|
-| [LeetCode 912: Sort an Array](https://leetcode.com/problems/sort-an-array/)| Medium | Merge Sort / Quick Sort | ⏳ To Do |
-| [LeetCode 75: Sort Colors](https://leetcode.com/problems/sort-colors/)| Medium | Dutch National Flag 3-Way Partition | ⏳ To Do |
-| [LeetCode 268: Missing Number](https://leetcode.com/problems/missing-number/)| Easy | Cyclic Sort / XOR | ⏳ To Do |
-| [LeetCode 448: Find All Numbers Disappeared](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| Easy | Cyclic Sort | ⏳ To Do |
-| [LeetCode 287: Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)| Medium | Floyd's Cycle / Cyclic Sort | ⏳ To Do |
-| [LeetCode 148: Sort List](https://leetcode.com/problems/sort-list/)| Medium | Merge Sort on Linked List | ⏳ To Do |
-| [LeetCode 56: Merge Intervals](https://leetcode.com/problems/merge-intervals/)| Medium | Sort by Start Time + Sweep | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Find All Numbers Disappeared](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array) | Cyclic Sort | N/A | N/A | To Do |
+| Easy | LeetCode | [Missing Number](https://leetcode.com/problems/missing-number) | Cyclic Sort / XOR | N/A | N/A | To Do |
+| Medium | TakeUForward | [Count Inversions](https://takeuforward.org/practice/dsa/count-inversions) | Sorting Algorithms | N/A | N/A | To Do |
+| Medium | LeetCode | [Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Floyd's Cycle / Cyclic Sort | N/A | N/A | To Do |
+| Medium | LeetCode | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Sort by Start Time + Sweep | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Merge Two Sorted Arrays Without Extra Space](https://www.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1) | Sorting Algorithms | N/A | N/A | To Do |
+| Medium | LeetCode | [Sort an Array](https://leetcode.com/problems/sort-an-array) | Merge Sort / Quick Sort | N/A | N/A | To Do |
+| Medium | LeetCode | [Sort Colors](https://leetcode.com/problems/sort-colors) | Dutch National Flag 3-Way Partition | N/A | N/A | To Do |
+| Medium | LeetCode | [Sort List](https://leetcode.com/problems/sort-list) | Merge Sort on Linked List | N/A | N/A | To Do |

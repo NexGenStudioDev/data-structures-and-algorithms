@@ -44,15 +44,21 @@ Use the [Binary Tree Traversal Practice Tracker](./04-Traversals/Practice-Tracke
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Subtopic | Status |
-|---|---|---|:---:|
-| [LeetCode 104: Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| Easy | DFS / Height Calculation | ⏳ To Do |
-| [LeetCode 543: Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)| Easy | Bottom-up Postorder | ⏳ To Do |
-| [LeetCode 110: Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)| Easy | Height Checking with Pruning | ⏳ To Do |
-| [LeetCode 100: Same Tree](./05-LeetCode-Questions/Same%20Tree/Question.md) | Easy | Simultaneous DFS | ✅ Completed · [Solution](./05-LeetCode-Questions/Same%20Tree/Solution.md) |
-| [LeetCode 236: Lowest Common Ancestor](https://leetcode.com/problems/lowest-common-ancestor/)| Medium | Postorder Discovery | ⏳ To Do |
-| [LeetCode 199: Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)| Medium | BFS Level End / DFS Reverse Preorder | ⏳ To Do |
-| [LeetCode 124: Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)| Hard | Subtree Contributions | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree) | Height Checking with Pruning | N/A | N/A | To Do |
+| Easy | LeetCode | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Tree traversal | [Question](./04-Traversals/Inorder%20Traversal/leetCode/Question.md) | [Solution](./04-Traversals/Inorder%20Traversal/leetCode/Solution.md) | Completed |
+| Easy | LeetCode | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal) | Tree traversal | N/A | N/A | To Do |
+| Easy | LeetCode | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | Tree traversal | [Question](./04-Traversals/Preorder-Traversal/leetCode/Question.md) | [Solution](./04-Traversals/Preorder-Traversal/leetCode/Answer.md) | Completed |
+| Easy | LeetCode | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | Bottom-up Postorder | N/A | N/A | To Do |
+| Easy | LeetCode | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | DFS / Height Calculation | N/A | N/A | To Do |
+| Easy | LeetCode | [Same Tree](https://leetcode.com/problems/same-tree/) | Recursive tree comparison | [Question](./05-LeetCode-Questions/Same%20Tree/Question.md) | [Solution](./05-LeetCode-Questions/Same%20Tree/Solution.md) | Completed |
+| Medium | LeetCode | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Tree traversal | N/A | N/A | To Do |
+| Medium | LeetCode | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | BFS Level End / DFS Reverse Preorder | N/A | N/A | To Do |
+| Medium | LeetCode | [Lowest Common Ancestor](https://leetcode.com/problems/lowest-common-ancestor) | Postorder Discovery | N/A | N/A | To Do |
+| Hard | LeetCode | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Subtree Contributions | N/A | N/A | To Do |

@@ -36,18 +36,21 @@ Ch-26-Dynamic-Programming/
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | DP Family | Status |
-|---|---|---|:---:|
-| [LeetCode 70: Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| Easy | 1D DP (Fibonacci) | ⏳ To Do |
-| [LeetCode 198: House Robber](https://leetcode.com/problems/house-robber/)| Medium | 1D DP (Include / Exclude) | ⏳ To Do |
-| [LeetCode 322: Coin Change](https://leetcode.com/problems/coin-change/)| Medium | Unbounded Knapsack | ⏳ To Do |
-| [LeetCode 300: Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)| Medium | 1D DP / Binary Search | ⏳ To Do |
-| [LeetCode 62: Unique Paths](https://leetcode.com/problems/unique-paths/)| Medium | 2D Grid DP | ⏳ To Do |
-| [LeetCode 64: Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| Medium | 2D Grid DP | ⏳ To Do |
-| [LeetCode 416: Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)| Medium | 0/1 Knapsack Decision | ⏳ To Do |
-| [LeetCode 1143: Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)| Medium | 2-String 2D DP | ⏳ To Do |
-| [LeetCode 72: Edit Distance](https://leetcode.com/problems/edit-distance/)| Medium | 2-String 2D DP | ⏳ To Do |
-| [LeetCode 312: Burst Balloons](https://leetcode.com/problems/burst-balloons/)| Hard | Partition / Interval DP | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | 1D DP (Fibonacci) | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Coin Change (Count Ways)](https://www.geeksforgeeks.org/problems/coin-change2448/1) | Dynamic programming / unbounded choices | N/A | N/A | To Do |
+| Medium | LeetCode | [Coin Change](https://leetcode.com/problems/coin-change) | Unbounded Knapsack | N/A | N/A | To Do |
+| Medium | LeetCode | [Edit Distance](https://leetcode.com/problems/edit-distance) | 2-String 2D DP | N/A | N/A | To Do |
+| Medium | LeetCode | [House Robber](https://leetcode.com/problems/house-robber) | 1D DP (Include / Exclude) | N/A | N/A | To Do |
+| Medium | LeetCode | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) | 2-String 2D DP | N/A | N/A | To Do |
+| Medium | LeetCode | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | 1D DP / Binary Search | N/A | N/A | To Do |
+| Medium | LeetCode | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | 2D Grid DP | N/A | N/A | To Do |
+| Medium | LeetCode | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | 0/1 Knapsack Decision | N/A | N/A | To Do |
+| Medium | LeetCode | [Unique Paths](https://leetcode.com/problems/unique-paths) | 2D Grid DP | N/A | N/A | To Do |
+| Hard | LeetCode | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | Partition / Interval DP | N/A | N/A | To Do |

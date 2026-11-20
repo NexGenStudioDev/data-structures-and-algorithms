@@ -50,15 +50,19 @@ Ch-11-Linked-Lists/
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Subtopic | Status |
-|---|---|---|:---:|
-| [LeetCode 141: Linked List Cycle](./02-Singly-Linked-List/LeetCode/Linked%20List%20Cycle/) | Easy | Floyd's Fast & Slow Pointers | ✅ Complete |
-| [LeetCode 328: Odd Even Linked List](./02-Singly-Linked-List/LeetCode/Odd%20Even%20Linked%20List/) | Medium | In-place Pointer Re-wiring | ✅ Complete |
-| [LeetCode 23: Merge k Sorted Lists](./02-Singly-Linked-List/LeetCode/Merge%20k%20Sorted%20Lists/) | Hard | Min-Heap / Divide & Conquer | ✅ Complete |
-| [LeetCode 206: Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| Easy | Iterative & Recursive Reversal | ⏳ To Do |
-| [LeetCode 21: Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| Easy | Two Pointers with Dummy Node | ⏳ To Do |
-| [LeetCode 19: Remove Nth Node From End](https://leetcode.com/problems/remove-nth-node-from-end/)| Medium | Two Pointers with Offset | ⏳ To Do |
-| [LeetCode 146: LRU Cache](https://leetcode.com/problems/lru-cache/)| Medium | Doubly Linked List + Hash Map | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | GeeksforGeeks | [Compare Two Linked Lists](https://www.geeksforgeeks.org/problems/compare-two-linked-lists/1) | Linked Lists | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Intersection of Two Sorted Linked Lists](https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-linked-lists/1) | Linked Lists | N/A | N/A | To Do |
+| Easy | LeetCode | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Floyd's Fast & Slow Pointers | [Question](./02-Singly-Linked-List/LeetCode/Linked%20List%20Cycle/question.md) | [MD](./02-Singly-Linked-List/LeetCode/Linked%20List%20Cycle/solution.md) | Completed |
+| Easy | LeetCode | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Two Pointers with Dummy Node | N/A | N/A | To Do |
+| Easy | LeetCode | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Iterative & Recursive Reversal | N/A | N/A | To Do |
+| Medium | LeetCode | [LRU Cache](https://leetcode.com/problems/lru-cache) | Doubly Linked List + Hash Map | N/A | N/A | To Do |
+| Medium | LeetCode | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | In-place Pointer Re-wiring | [Question](./02-Singly-Linked-List/LeetCode/Odd%20Even%20Linked%20List/Question.md) | [MD](./02-Singly-Linked-List/LeetCode/Odd%20Even%20Linked%20List/Approch1.md) | Completed |
+| Medium | LeetCode | [Remove Nth Node From End](https://leetcode.com/problems/remove-nth-node-from-end) | Two Pointers with Offset | N/A | N/A | To Do |
+| Hard | LeetCode | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Min-Heap / Divide & Conquer | [Question](./02-Singly-Linked-List/LeetCode/Merge%20k%20Sorted%20Lists/Question.md) | [MD](./02-Singly-Linked-List/LeetCode/Merge%20k%20Sorted%20Lists/Solution/Approch1.md) · [MD](./02-Singly-Linked-List/LeetCode/Merge%20k%20Sorted%20Lists/Solution/Approch2.md) · [MD](./02-Singly-Linked-List/LeetCode/Merge%20k%20Sorted%20Lists/Solution/Approch3.md) | Completed |

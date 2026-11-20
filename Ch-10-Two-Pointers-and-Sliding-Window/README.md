@@ -78,17 +78,21 @@ return false;
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
 
 
-| Problem | Difficulty | Pattern | Status |
-|---|---|---|:---:|
-| [LeetCode 167: Two Sum II (Sorted)](https://leetcode.com/problems/two-sum-ii-sorted/)| Medium | Opposite Direction | ⏳ To Do |
-| [LeetCode 15: 3Sum](https://leetcode.com/problems/3sum/)| Medium | Sort + Two Pointers | ⏳ To Do |
-| [LeetCode 11: Container With Most Water](https://leetcode.com/problems/container-with-most-water/)| Medium | Greedy Two Pointers | ⏳ To Do |
-| [LeetCode 42: Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| Hard | Two Pointers Left/Right Max | ⏳ To Do |
-| [LeetCode 643: Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)| Easy | Fixed Sliding Window | ⏳ To Do |
-| [LeetCode 3: Longest Substring Without Repeating](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| Medium | Variable Sliding Window | ⏳ To Do |
-| [LeetCode 424: Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)| Medium | Variable Sliding Window | ⏳ To Do |
-| [LeetCode 76: Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| Hard | Variable Sliding Window + Map | ⏳ To Do |
-| [LeetCode 142: Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)| Medium | Fast & Slow Cycle Entry | ⏳ To Do |
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i) | Fixed Sliding Window | N/A | N/A | To Do |
+| Medium | LeetCode | [3Sum](https://leetcode.com/problems/3sum) | Sort + Two Pointers | N/A | N/A | To Do |
+| Medium | TakeUForward | [4 Sum](https://takeuforward.org/practice/dsa/4-sum) | Two Pointers & Sliding Window | N/A | N/A | To Do |
+| Medium | LeetCode | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Greedy Two Pointers | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Count Pairs with Given Sum in a Sorted Array](https://www.geeksforgeeks.org/dsa/count-pairs-with-given-sum-in-sorted-array) | Two Pointers & Sliding Window | N/A | N/A | To Do |
+| Medium | LeetCode | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Fast & Slow Cycle Entry | N/A | N/A | To Do |
+| Medium | LeetCode | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) | Variable Sliding Window | N/A | N/A | To Do |
+| Medium | LeetCode | [Longest Substring Without Repeating](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Variable Sliding Window | N/A | N/A | To Do |
+| Medium | LeetCode | [Two Sum II (Sorted)](https://leetcode.com/problems/two-sum-ii-sorted) | Opposite Direction | N/A | N/A | To Do |
+| Hard | LeetCode | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Variable Sliding Window + Map | N/A | N/A | To Do |
+| Hard | LeetCode | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Two Pointers Left/Right Max | N/A | N/A | To Do |

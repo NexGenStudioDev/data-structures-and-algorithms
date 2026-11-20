@@ -212,3 +212,23 @@ In simple words:
 - Linear Search checks every item one by one (slow for big lists).
 - Binary Search quickly narrows down the search (fast even for huge lists).
 
+
+
+## Practice Roadmap
+
+### Practice Check
+
+**Question:** Compare the operation growth of a single loop and a nested loop using small input sizes.
+
+**Difficulty:** Easy / Beginner · **Topic:** Time growth intuition
+
+**Answer:** N/A — complete the check in your own words, then review the chapter notes.
+
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | Local Review | [Practice check](#practice-check) | Time growth intuition | [Practice check](#practice-check) | N/A | To Do |
+
+
+
+
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)

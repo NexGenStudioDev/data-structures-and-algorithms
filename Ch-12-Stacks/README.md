@@ -50,21 +50,25 @@ Used to find the **Next Greater Element**, **Next Smaller Element**, **Previous 
 
 ## 📝 Practice Roadmap
 
-For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../Abhishek%20tracker.md). LeetCode questions are linked below.
  (Existing & Suggested)
 
-| Problem | Difficulty | Subtopic | Status |
-|---|---|---|:---:|
-| [LeetCode 682: Baseball Game](./06-LeetCode-Questions/Baseball%20Game/) | Easy | Record Operations Stack | ✅ Complete |
-| [LeetCode 3174: Clear Digits](./06-LeetCode-Questions/Clear%20Digits/) | Easy | Character Elimination | ✅ Complete |
-| [LeetCode 1598: Crawler Log Folder](./06-LeetCode-Questions/Crawler%20Log%20Folder/) | Easy | Directory Depth Tracking | ✅ Complete |
-| [LeetCode 739: Daily Temperatures](./06-LeetCode-Questions/Daily%20Temperatures/) | Medium | Monotonic Stack | ✅ Complete |
-| [LeetCode 341: Flatten Nested List Iterator](./06-LeetCode-Questions/Flatten%20Nested%20List%20Iterator/) | Medium | Lazy Iterator Stack | ✅ Complete |
-| [LeetCode 225: Implement Stack using Queues](./06-LeetCode-Questions/Implement%20Stack%20using%20Queues/) | Easy | Queue Simulation | ✅ Complete |
-| [LeetCode 1544: Make The String Great](./06-LeetCode-Questions/Make%20The%20String%20Great/) | Easy | Adjacent Elimination | ✅ Complete |
-| [LeetCode 155: Min Stack](./06-LeetCode-Questions/Min%20Stack/) | Medium | $O(1)$ Min Tracking | ✅ Complete |
-| [LeetCode 496: Next Greater Element I](./06-LeetCode-Questions/next-greater-element-i/) | Easy | Monotonic Stack + Map | ✅ Complete |
-| [LeetCode 1047: Remove Adjacent Duplicates](./06-LeetCode-Questions/Remove%20All%20Adjacent%20Duplicates%20In%20String/) | Easy | Character Elimination | ✅ Complete |
-| [LeetCode 71: Simplify Path](./06-LeetCode-Questions/Simplify%20Path/) | Medium | Path Token Stack | ✅ Complete |
-| [LeetCode 20: Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| Easy | Bracket Matching | ⏳ To Do |
-| [LeetCode 84: Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)| Hard | Monotonic Stack Boundary | ⏳ To Do |
+[Abhishek tracker](../Abhishek%20tracker.md) · [Akanksha tracker](../Akanksha%20tracker.md)
+
+| Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | LeetCode | [Baseball Game](https://leetcode.com/problems/baseball-game) | Record Operations Stack | [Question](./06-LeetCode-Questions/Baseball%20Game/Question.md) | [Solution](./06-LeetCode-Questions/Baseball%20Game/docs/Approch1.Solution.md) | Completed |
+| Easy | LeetCode | [Clear Digits](https://leetcode.com/problems/clear-digits) | Character Elimination | [Question](./06-LeetCode-Questions/Clear%20Digits/Question.md) | [Solution](./06-LeetCode-Questions/Clear%20Digits/docs/Approch1.solution.md) | Completed |
+| Easy | LeetCode | [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder) | Directory Depth Tracking | [Question](./06-LeetCode-Questions/Crawler%20Log%20Folder/Question.md) | [Solution](./06-LeetCode-Questions/Crawler%20Log%20Folder/docs/Approch1.solution.md) | Completed |
+| Easy | LeetCode | [Make The String Great](https://leetcode.com/problems/make-the-string-great) | Adjacent Elimination | [Question](./06-LeetCode-Questions/Make%20The%20String%20Great/Question.md) | [Solution](./06-LeetCode-Questions/Make%20The%20String%20Great/docs/Approch1.md) | Completed |
+| Easy | LeetCode | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | Monotonic Stack + Map | [Question](./06-LeetCode-Questions/next-greater-element-i/Question.md) | [Solution](./06-LeetCode-Questions/next-greater-element-i/docs/Solution.md) | Completed |
+| Easy | LeetCode | [Remove Adjacent Duplicates](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string) | Character Elimination | [Question](./06-LeetCode-Questions/Remove%20All%20Adjacent%20Duplicates%20In%20String/Question.md) | [Solution](./06-LeetCode-Questions/Remove%20All%20Adjacent%20Duplicates%20In%20String/Solution/Approch%201/Approch1.Solution.md) | Completed |
+| Easy | LeetCode | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Bracket Matching | N/A | N/A | To Do |
+| Medium | LeetCode | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Monotonic Stack | [Question](./06-LeetCode-Questions/Daily%20Temperatures/Question.md) | [Solution](./06-LeetCode-Questions/Daily%20Temperatures/docs/Approch1.Solution.md) · [Solution](./06-LeetCode-Questions/Daily%20Temperatures/docs/Approch2.Solution.md) | Completed |
+| Medium | LeetCode | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | Lazy Iterator Stack | [Question](./06-LeetCode-Questions/Flatten%20Nested%20List%20Iterator/Question.md) | [Solution](./06-LeetCode-Questions/Flatten%20Nested%20List%20Iterator/docs/Approch1.solution.md) | Completed |
+| Medium | GeeksforGeeks | [Implement Stack Using Array](https://www.geeksforgeeks.org/problems/implement-stack-using-array/1) | Stacks | N/A | N/A | To Do |
+| Medium | LeetCode | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Stack implementation using queues | [Question](./06-LeetCode-Questions/Implement%20Stack%20using%20Queues/Question.md) | [Solution](./06-LeetCode-Questions/Implement%20Stack%20using%20Queues/docs/Approch1.Solution.md) | Completed |
+| Medium | LeetCode | [Min Stack](https://leetcode.com/problems/min-stack/) | Stack design / minimum tracking | [Question](./06-LeetCode-Questions/Min%20Stack/Question.md) | [Solution](./06-LeetCode-Questions/Min%20Stack/docs/Approch1.Solution.md) | Completed |
+| Medium | TakeUForward | [Next Greater Element II](https://takeuforward.org/practice/dsa/next-greater-element---2) | Stacks | N/A | N/A | To Do |
+| Medium | LeetCode | [Simplify Path](https://leetcode.com/problems/simplify-path) | Path Token Stack | [Question](./06-LeetCode-Questions/Simplify%20Path/Question.md) | [Solution](./06-LeetCode-Questions/Simplify%20Path/docs/Approch1.Solution.md) | Completed |
+| Hard | LeetCode | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Monotonic Stack Boundary | N/A | N/A | To Do |
