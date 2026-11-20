@@ -159,6 +159,8 @@ printUp(3); // prints 1, 2, 3
 
 Both functions count down to `0`. Moving `console.log` below the recursive call reverses the print order.
 
+These printing examples also assume `n` is a non-negative integer.
+
 ## 7. A Simple Dry-Run Method
 
 When tracing code, write down:
@@ -213,6 +215,8 @@ More than one call can repeat work, so count all calls when estimating time. For
 - **Time** counts all work across all calls. A chain of `n` calls doing constant work per call usually takes `O(n)` time.
 - **Call-stack space** depends on the maximum number of calls active at once. A chain of depth `n` uses `O(n)` stack space.
 - **Total calls are not the same as maximum depth.** A branching solution may make many total calls but have a smaller maximum depth than its call count.
+
+For example, `sumToN(n)` makes about `n + 1` calls, so it takes `O(n)` time and `O(n)` call-stack space.
 
 For very deep inputs, recursion can exceed the runtime's stack limit. A loop or another approach may be safer. Do not assume JavaScript will optimize every recursive call to use constant stack space.
 
