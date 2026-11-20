@@ -66,13 +66,22 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 | Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
 |---|---|---|---|---|---|---|
 | Easy | LeetCode | [Binary Search](https://leetcode.com/problems/binary-search) | Standard Binary Search | N/A | N/A | To Do |
+| Easy | LeetCode | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | Binary Search / lower bound | N/A | N/A | To Do |
+| Easy | LeetCode | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | Binary Search / comparison API | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Linear Search in an Unsorted Array](https://www.geeksforgeeks.org/dsa/searching-elements-in-an-array-array-operations/) | Linear Search | N/A | N/A | To Do |
 | Easy | LeetCode | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Lower Bound | N/A | N/A | To Do |
 | Easy | LeetCode | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Binary search / integer square root | [Question](./02-Binary-Search/LeetCode/Sqrt%28x%29/Question.md) | [Solution](./02-Binary-Search/LeetCode/Sqrt%28x%29/Approch1.md) | Completed |
+| Easy | LeetCode | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) | Binary Search / numeric range | N/A | N/A | To Do |
 | Medium | LeetCode | [Capacity To Ship Packages](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days) | Binary Search on Answer | N/A | N/A | To Do |
 | Medium | LeetCode | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Inflection Point Search | N/A | N/A | To Do |
+| Medium | LeetCode | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Binary Search / local maximum | N/A | N/A | To Do |
 | Medium | LeetCode | [First and Last Position](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Lower & Upper Bound | N/A | N/A | To Do |
 | Medium | LeetCode | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas) | Binary Search on Answer | N/A | N/A | To Do |
+| Medium | LeetCode | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Binary Search / index-to-value gap | N/A | N/A | To Do |
+| Medium | LeetCode | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | Binary Search on Answer | N/A | N/A | To Do |
 | Medium | LeetCode | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) | Top-Right / Bottom-Left Staircase | N/A | N/A | To Do |
 | Medium | LeetCode | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Flattened Matrix Binary Search | N/A | N/A | To Do |
+| Medium | LeetCode | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | Binary Search / rotated array with duplicates | N/A | N/A | To Do |
 | Medium | LeetCode | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Modified Binary Search | N/A | N/A | To Do |
 | Hard | LeetCode | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Advanced Binary Search Partition | N/A | N/A | To Do |
+| Hard | LeetCode | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | Binary Search on Answer | N/A | N/A | To Do |

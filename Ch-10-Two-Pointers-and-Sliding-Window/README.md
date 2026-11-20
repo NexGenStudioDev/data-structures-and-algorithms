@@ -85,14 +85,23 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 
 | Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
 |---|---|---|---|---|---|---|
+| Easy | LeetCode | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | Two Pointers / reverse string scan | N/A | N/A | To Do |
 | Easy | LeetCode | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i) | Fixed Sliding Window | N/A | N/A | To Do |
+| Easy | LeetCode | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Two Pointers / in-place compaction | N/A | N/A | To Do |
+| Easy | LeetCode | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Two Pointers / opposite ends | N/A | N/A | To Do |
+| Medium | LeetCode | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Two Pointers / sorted array | N/A | N/A | To Do |
 | Medium | LeetCode | [3Sum](https://leetcode.com/problems/3sum) | Sort + Two Pointers | N/A | N/A | To Do |
 | Medium | TakeUForward | [4 Sum](https://takeuforward.org/practice/dsa/4-sum) | Two Pointers & Sliding Window | N/A | N/A | To Do |
+| Medium | LeetCode | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | Two Pointers / sorted pairing | N/A | N/A | To Do |
 | Medium | LeetCode | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Greedy Two Pointers | N/A | N/A | To Do |
 | Medium | GeeksforGeeks | [Count Pairs with Given Sum in a Sorted Array](https://www.geeksforgeeks.org/dsa/count-pairs-with-given-sum-in-sorted-array) | Two Pointers & Sliding Window | N/A | N/A | To Do |
-| Medium | LeetCode | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Fast & Slow Cycle Entry | N/A | N/A | To Do |
+| Medium | LeetCode | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | Sliding Window / frequency tracking | N/A | N/A | To Do |
+| Medium | LeetCode | [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Sliding Window / monotonic deques | N/A | N/A | To Do |
 | Medium | LeetCode | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) | Variable Sliding Window | N/A | N/A | To Do |
 | Medium | LeetCode | [Longest Substring Without Repeating](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Variable Sliding Window | N/A | N/A | To Do |
+| Medium | LeetCode | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Sliding Window / variable range | N/A | N/A | To Do |
+| Medium | LeetCode | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Sliding Window / fixed-size frequency counts | N/A | N/A | To Do |
+| Medium | LeetCode | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Two Pointers / in-place compaction | N/A | N/A | To Do |
 | Medium | LeetCode | [Two Sum II (Sorted)](https://leetcode.com/problems/two-sum-ii-sorted) | Opposite Direction | N/A | N/A | To Do |
 | Hard | LeetCode | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Variable Sliding Window + Map | N/A | N/A | To Do |
 | Hard | LeetCode | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Two Pointers Left/Right Max | N/A | N/A | To Do |

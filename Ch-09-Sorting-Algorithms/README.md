@@ -57,12 +57,23 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 
 | Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
 |---|---|---|---|---|---|---|
+| Easy | GeeksforGeeks | [Bubble Sort](https://www.geeksforgeeks.org/problems/bubble-sort/1) | Bubble Sort implementation | N/A | N/A | To Do |
 | Easy | LeetCode | [Find All Numbers Disappeared](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array) | Cyclic Sort | N/A | N/A | To Do |
+| Easy | TakeUForward | [Insertion Sorting](https://takeuforward.org/practice/dsa/insertion-sorting) | Insertion Sort implementation | N/A | N/A | To Do |
 | Easy | LeetCode | [Missing Number](https://leetcode.com/problems/missing-number) | Cyclic Sort / XOR | N/A | N/A | To Do |
+| Easy | LeetCode | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | Custom order / counting and sorting | N/A | N/A | To Do |
+| Easy | TakeUForward | [Selection Sort](https://takeuforward.org/practice/dsa/selection-sort) | Selection Sort implementation | N/A | N/A | To Do |
+| Easy | LeetCode | [Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/) | Custom sort key | N/A | N/A | To Do |
+| Easy | LeetCode | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | Partitioning by a sort key | N/A | N/A | To Do |
 | Medium | TakeUForward | [Count Inversions](https://takeuforward.org/practice/dsa/count-inversions) | Sorting Algorithms | N/A | N/A | To Do |
-| Medium | LeetCode | [Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Floyd's Cycle / Cyclic Sort | N/A | N/A | To Do |
+| Medium | LeetCode | [Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Cyclic Sort / index placement | N/A | N/A | To Do |
+| Medium | LeetCode | [H-Index](https://leetcode.com/problems/h-index/) | Sorting and ordered scan | N/A | N/A | To Do |
+| Medium | LeetCode | [Largest Number](https://leetcode.com/problems/largest-number/) | Custom comparator sorting | N/A | N/A | To Do |
 | Medium | LeetCode | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Sort by Start Time + Sweep | N/A | N/A | To Do |
 | Medium | GeeksforGeeks | [Merge Two Sorted Arrays Without Extra Space](https://www.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1) | Sorting Algorithms | N/A | N/A | To Do |
+| Medium | LeetCode | [Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) | Selection-based sorting | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Quick Sort](https://www.geeksforgeeks.org/problems/quick-sort/1) | Quick Sort / partitioning | N/A | N/A | To Do |
 | Medium | LeetCode | [Sort an Array](https://leetcode.com/problems/sort-an-array) | Merge Sort / Quick Sort | N/A | N/A | To Do |
 | Medium | LeetCode | [Sort Colors](https://leetcode.com/problems/sort-colors) | Dutch National Flag 3-Way Partition | N/A | N/A | To Do |
-| Medium | LeetCode | [Sort List](https://leetcode.com/problems/sort-list) | Merge Sort on Linked List | N/A | N/A | To Do |
+| Hard | LeetCode | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | Merge-sort counting | N/A | N/A | To Do |
+| Hard | LeetCode | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | In-place index placement / cyclic sort | N/A | N/A | To Do |

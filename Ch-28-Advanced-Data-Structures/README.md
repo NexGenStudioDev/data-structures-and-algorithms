@@ -43,5 +43,4 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 | Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
 |---|---|---|---|---|---|---|
 | Medium | LeetCode | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable) | Segment Tree / Fenwick Tree | N/A | N/A | To Do |
-| Hard | LeetCode | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | BIT / Merge Sort Inversion | N/A | N/A | To Do |
 | Hard | LeetCode | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem) | Segment Tree / Priority Queue | N/A | N/A | To Do |

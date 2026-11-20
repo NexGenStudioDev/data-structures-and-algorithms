@@ -52,13 +52,22 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 | Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
 |---|---|---|---|---|---|---|
 | Easy | LeetCode | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree) | Height Checking with Pruning | N/A | N/A | To Do |
-| Easy | LeetCode | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Tree traversal | [Question](./04-Traversals/Inorder%20Traversal/leetCode/Question.md) | [Solution](./04-Traversals/Inorder%20Traversal/leetCode/Solution.md) | Completed |
-| Easy | LeetCode | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal) | Tree traversal | N/A | N/A | To Do |
-| Easy | LeetCode | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | Tree traversal | [Question](./04-Traversals/Preorder-Traversal/leetCode/Question.md) | [Solution](./04-Traversals/Preorder-Traversal/leetCode/Answer.md) | Completed |
+| Easy | LeetCode | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Tree traversal / inorder | [Question](./04-Traversals/Inorder%20Traversal/leetCode/Question.md) | [Solution](./04-Traversals/Inorder%20Traversal/leetCode/Solution.md) | Completed |
+| Easy | LeetCode | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal) | Tree traversal / postorder | N/A | N/A | To Do |
+| Easy | LeetCode | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | Tree traversal / preorder | [Question](./04-Traversals/Preorder-Traversal/leetCode/Question.md) | [Solution](./04-Traversals/Preorder-Traversal/leetCode/Answer.md) | Completed |
 | Easy | LeetCode | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | Bottom-up Postorder | N/A | N/A | To Do |
+| Easy | LeetCode | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Tree DFS / swap children | N/A | N/A | To Do |
 | Easy | LeetCode | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | DFS / Height Calculation | N/A | N/A | To Do |
+| Easy | LeetCode | [Path Sum](https://leetcode.com/problems/path-sum/) | Tree DFS / root-to-leaf path | N/A | N/A | To Do |
 | Easy | LeetCode | [Same Tree](https://leetcode.com/problems/same-tree/) | Recursive tree comparison | [Question](./05-LeetCode-Questions/Same%20Tree/Question.md) | [Solution](./05-LeetCode-Questions/Same%20Tree/Solution.md) | Completed |
-| Medium | LeetCode | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Tree traversal | N/A | N/A | To Do |
+| Easy | LeetCode | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | Tree DFS / mirror comparison | N/A | N/A | To Do |
+| Medium | LeetCode | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | Tree traversal / bottom-up level order | N/A | N/A | To Do |
+| Medium | LeetCode | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Tree traversal / breadth-first level order | N/A | N/A | To Do |
 | Medium | LeetCode | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | BFS Level End / DFS Reverse Preorder | N/A | N/A | To Do |
+| Medium | LeetCode | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | Tree traversal / level order with alternating direction | N/A | N/A | To Do |
+| Medium | LeetCode | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Tree construction / inorder and postorder | N/A | N/A | To Do |
+| Medium | LeetCode | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Tree construction / preorder and inorder | N/A | N/A | To Do |
+| Medium | LeetCode | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Tree transformation / preorder order | N/A | N/A | To Do |
 | Medium | LeetCode | [Lowest Common Ancestor](https://leetcode.com/problems/lowest-common-ancestor) | Postorder Discovery | N/A | N/A | To Do |
 | Hard | LeetCode | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Subtree Contributions | N/A | N/A | To Do |
+| Hard | LeetCode | [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | Tree traversal / row and column ordering | N/A | N/A | To Do |

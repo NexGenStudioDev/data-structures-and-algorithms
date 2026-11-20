@@ -11,25 +11,39 @@ This list is only for problems where recursion is a central part of the task. Tr
 
 ## Easy
 
-| Problem | Question | Local question | Local answer / solution | Status |
-|---|---|---|---|---|
-| Print 1 to N Without Loops (GFG) | [GeeksforGeeks](https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1) | [Question](./geeksforgeeks/1%20to%20n%20Without%20Loop/Question.md) | [Solution](./geeksforgeeks/1%20to%20n%20Without%20Loop/Solution.md) | Completed |
-| Print N to 1 Without Loop (GFG) | [GeeksforGeeks](https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1) | [Question](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Question.md) | [Solution](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Solution.md) | Completed |
-| Factorial (GFG) | [GeeksforGeeks](https://www.geeksforgeeks.org/problems/factorial5739/1) | [Question](./geeksforgeeks/Factorial/Question.md) | [Solution](./geeksforgeeks/Factorial/Solution.md) | Completed |
-| First N Fibonacci Numbers (GFG) | [GeeksforGeeks problem](https://www.geeksforgeeks.org/dsa/program-to-print-first-n-fibonacci-numbers/) | [Question](./geeksforgeeks/Fibonacci%20Series/Question.md) | [Solution](./geeksforgeeks/Fibonacci%20Series/Solution.md) | Completed |
-| Power Using Recursion (GFG) | [GeeksforGeeks](https://www.geeksforgeeks.org/problems/power-using-recursion/1) | [Question](./geeksforgeeks/Power%20Using%20Recursion/Question.md) | [Solution](./geeksforgeeks/Power%20Using%20Recursion/Solution.md) | Completed |
-| Product of Digits (recursion exercise) | [GeeksforGeeks reference](https://www.geeksforgeeks.org/dsa/program-to-calculate-product-of-digits-of-a-number/) | [Question](./geeksforgeeks/Product%20of%20Digits/Question.md) | [Solution](./geeksforgeeks/Product%20of%20Digits/Solution.md) | Completed |
+| Difficulty | Problem | Recursion pattern | Local question | Local answer / solution | Status |
+|---|---|---|---|---|---|
+| Easy | [Factorial](https://www.geeksforgeeks.org/problems/factorial5739/1) — GeeksforGeeks | Recursion | [Question](./geeksforgeeks/Factorial/Question.md) | [Solution](./geeksforgeeks/Factorial/Solution.md) | Completed |
+| Easy | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) — LeetCode | Binary / Tree Recursion | N/A | N/A | To Do |
+| Easy | [First N Fibonacci Numbers](https://www.geeksforgeeks.org/dsa/program-to-print-first-n-fibonacci-numbers) — GeeksforGeeks | Recursion | [Question](./geeksforgeeks/Fibonacci%20Series/Question.md) | [Solution](./geeksforgeeks/Fibonacci%20Series/Solution.md) | Completed |
+| Easy | [Power Using Recursion](https://www.geeksforgeeks.org/problems/power-using-recursion/1) — GeeksforGeeks | Recursion | [Question](./geeksforgeeks/Power%20Using%20Recursion/Question.md) | [Solution](./geeksforgeeks/Power%20Using%20Recursion/Solution.md) | Completed |
+| Easy | [Print 1 to N Without Loops](https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1) — GeeksforGeeks | Recursion | [Question](./geeksforgeeks/1%20to%20n%20Without%20Loop/Question.md) | [Solution](./geeksforgeeks/1%20to%20n%20Without%20Loop/Solution.md) | Completed |
+| Easy | [Print N to 1 Without Loop](https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1) — GeeksforGeeks | Recursion | [Question](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Question.md) | [Solution](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Solution.md) | Completed |
+| Easy | [Product of Digits](https://www.geeksforgeeks.org/dsa/program-to-calculate-product-of-digits-of-a-number) — GeeksforGeeks | Recursion | [Question](./geeksforgeeks/Product%20of%20Digits/Question.md) | [Solution](./geeksforgeeks/Product%20of%20Digits/Solution.md) | Completed |
+| Easy | [Reverse String](https://leetcode.com/problems/reverse-string/) — LeetCode | Recursive two-pointer string reversal | N/A | N/A | To Do |
+| Easy | [Sum of First N Numbers](https://takeuforward.org/practice/dsa/sum-of-first-n-numbers) — TakeUForward | Recursion basics | N/A | N/A | To Do |
 
+| Easy | [Sum of Digits Using Recursion](https://www.geeksforgeeks.org/dsa/program-for-sum-of-the-digits-of-a-given-number/) — GeeksforGeeks | Reduce the number by one digit per call | N/A | N/A | To Do |
+| Easy | [Sum of Array Elements Using Recursion](https://www.geeksforgeeks.org/dsa/sum-array-elements-using-recursion/) — GeeksforGeeks | Linear recursion / smaller prefix | N/A | N/A | To Do |
+| Easy | [Minimum and Maximum Using Recursion](https://www.geeksforgeeks.org/dsa/recursive-programs-to-find-minimum-and-maximum-elements-of-array/) — GeeksforGeeks | Recurse over one smaller array prefix | N/A | N/A | To Do |
+| Easy | [Mean of Array Using Recursion](https://www.geeksforgeeks.org/dsa/mean-of-array-using-recursion/) — GeeksforGeeks | Build the mean from the previous prefix | N/A | N/A | To Do |
 ## Medium
 
-| Problem | Question | Local question | Local answer / solution | Status |
-|---|---|---|---|---|
+| Difficulty | Problem | Recursion pattern | Local question | Local answer / solution | Status |
+|---|---|---|---|---|---|
+| Medium | [Josephus Problem](https://www.geeksforgeeks.org/dsa/josephus-problem/) — GeeksforGeeks | Recursion / recurrence relation | N/A | N/A | To Do |
+| Medium | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) — LeetCode | State Inversion via Parent Index | N/A | N/A | To Do |
+| Medium | [Pow(x, n)](https://leetcode.com/problems/powx-n/) — LeetCode | Recursion / divide and conquer | N/A | N/A | To Do |
+| Medium | [Raise to Power of Its Own Reverse](https://www.geeksforgeeks.org/problems/power-of-numbers-1587115620/1) — GeeksforGeeks | Recursion / fast exponentiation | N/A | N/A | To Do |
 
-## Advanced
+| Medium | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) — LeetCode | Divide at each operator / combine recursive results | N/A | N/A | To Do |
+| Medium | [Maximize the Number of Segments](https://www.geeksforgeeks.org/dsa/maximize-the-number-of-segments-of-length-p-q-and-r/) — GeeksforGeeks | Three-way recursion with base cases | N/A | N/A | To Do |
+## Hard
 
-| Problem | Question | Local question | Local answer / solution | Status |
-|---|---|---|---|---|
-| Tower of Hanoi (recursive transfer) | [GeeksforGeeks explanation and practice reference](https://www.geeksforgeeks.org/dsa/c-program-for-tower-of-hanoi/) | N/A | N/A | To Do |
+| Difficulty | Problem | Recursion pattern | Local question | Local answer / solution | Status |
+|---|---|---|---|---|---|
+| Hard | [Tower of Hanoi](https://www.geeksforgeeks.org/dsa/c-program-for-tower-of-hanoi) — GeeksforGeeks | Divide into two smaller disk-transfer problems | N/A | N/A | To Do |
+
 
 ## Source pages and profile links
 

@@ -61,11 +61,31 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 
 | Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
 |---|---|---|---|---|---|---|
-| Easy | TakeUForward | [Largest Element](https://takeuforward.org/practice/dsa/largest-element?category=fundamentals&source=strivers-a2z-dsa-sheet) | Arrays | [Question](./LeetCode/Largest%20in%20Array/Question.md) | [MD](./LeetCode/Largest%20in%20Array/Answer.md) | Completed |
-| Easy | LeetCode | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Horizontal/Vertical Scanning | [Question](./LeetCode/Longest%20Common%20Prefix/Question.md) | [MD](./LeetCode/Longest%20Common%20Prefix/Answer.md) | Completed |
-| Easy | LeetCode | [Remove Duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Two Pointers (Fast/Slow) | [Question](./LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/question.md) | [MD](./LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/answer.md) | Completed |
-| Easy | LeetCode | [Remove Element](https://leetcode.com/problems/remove-element) | Two Pointers (In-place) | [Question](./LeetCode/Remove%20Element/question.md) | [MD](./LeetCode/Remove%20Element/answer.md) | Completed |
+| Easy | LeetCode | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Single-pass array scan | N/A | N/A | To Do |
+| Easy | LeetCode | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Array traversal / prefix sum | N/A | N/A | To Do |
+| Easy | TakeUForward | [Largest Element](https://takeuforward.org/practice/dsa/largest-element?category=fundamentals&source=strivers-a2z-dsa-sheet) | Arrays | [Question](./LeetCode/Largest%20in%20Array/Question.md) | [Solution](./LeetCode/Largest%20in%20Array/Answer.md) | Completed |
+| Easy | LeetCode | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | Single-pass array scan | N/A | N/A | To Do |
+| Easy | LeetCode | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Two-dimensional array construction | N/A | N/A | To Do |
+| Easy | LeetCode | [Plus One](https://leetcode.com/problems/plus-one/) | Array traversal / carry handling | N/A | N/A | To Do |
+| Easy | LeetCode | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | Prefix sums | N/A | N/A | To Do |
+| Easy | LeetCode | [Remove Duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Two Pointers (Fast/Slow) | [Question](./LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/question.md) | [Solution](./LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/answer.md) | Completed |
+| Easy | LeetCode | [Remove Element](https://leetcode.com/problems/remove-element) | Two Pointers (In-place) | [Question](./LeetCode/Remove%20Element/question.md) | [Solution](./LeetCode/Remove%20Element/answer.md) | Completed |
+| Easy | LeetCode | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) | Two-dimensional array indexing | N/A | N/A | To Do |
 | Easy | GeeksforGeeks | [Reverse an Array](https://www.geeksforgeeks.org/problems/reverse-an-array/1) | Arrays | N/A | N/A | To Do |
-| Easy | LeetCode | [Two Sum](https://leetcode.com/problems/two-sum) | Hash Map Lookup | [Question](./LeetCode/Two%20Sum/Question.md) | [MD](./LeetCode/Two%20Sum/Answer.md) | Completed |
+| Easy | LeetCode | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Array traversal / prefix sum | N/A | N/A | To Do |
+| Easy | LeetCode | [Two Sum](https://leetcode.com/problems/two-sum) | Hash Map Lookup | [Question](./LeetCode/Two%20Sum/Question.md) | [Solution](./LeetCode/Two%20Sum/Answer.md) | Completed |
+| Easy | LeetCode | [Majority Element](https://leetcode.com/problems/majority-element/) | Boyer–Moore majority vote | N/A | N/A | To Do |
+| Easy | LeetCode | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Single-pass run counting | N/A | N/A | To Do |
+| Easy | LeetCode | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Merge from the back / two pointers | N/A | N/A | To Do |
+| Easy | LeetCode | [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | Track three distinct maxima | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Sum of Array](https://www.geeksforgeeks.org/problems/sum-all-array-elements/1) | Array traversal / running sum | N/A | N/A | To Do |
+| Medium | LeetCode | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Array scan / running products | N/A | N/A | To Do |
 | Medium | LeetCode | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Kadane's Algorithm | N/A | N/A | To Do |
+| Medium | LeetCode | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | Array scan / circular Kadane pattern | N/A | N/A | To Do |
 | Medium | LeetCode | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Prefix & Suffix Products | N/A | N/A | To Do |
+| Medium | LeetCode | [Rotate Array](https://leetcode.com/problems/rotate-array/) | In-place array rotation | N/A | N/A | To Do |
+| Medium | LeetCode | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Two-dimensional array transformation | N/A | N/A | To Do |
+| Medium | LeetCode | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Two-dimensional array traversal | N/A | N/A | To Do |
+| Medium | LeetCode | [Game of Life](https://leetcode.com/problems/game-of-life/) | In-place 2D array simulation | N/A | N/A | To Do |
+| Medium | LeetCode | [Rotate Image](https://leetcode.com/problems/rotate-image/) | In-place matrix transpose and reverse | N/A | N/A | To Do |
+| Medium | LeetCode | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Prefix sums / count subarrays | N/A | N/A | To Do |

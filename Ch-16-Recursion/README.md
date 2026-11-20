@@ -162,8 +162,21 @@ Master recursion progressively from linear basics to advanced branching:
 | Easy | GeeksforGeeks | [Product of Digits](https://www.geeksforgeeks.org/dsa/program-to-calculate-product-of-digits-of-a-number) | Recursion | [Question](./geeksforgeeks/Product%20of%20Digits/Question.md) | [Solution](./geeksforgeeks/Product%20of%20Digits/Solution.md) | Completed |
 | Easy | LeetCode | [Reverse String](https://leetcode.com/problems/reverse-string/) | Recursive two-pointer string reversal | N/A | N/A | To Do |
 | Easy | TakeUForward | [Sum of First N Numbers](https://takeuforward.org/practice/dsa/sum-of-first-n-numbers) | Recursion basics | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Sum of Digits Using Recursion](https://www.geeksforgeeks.org/dsa/program-for-sum-of-the-digits-of-a-given-number/) | Reduce the number by one digit per call | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Sum of Array Elements Using Recursion](https://www.geeksforgeeks.org/dsa/sum-array-elements-using-recursion/) | Linear recursion / smaller prefix | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Minimum and Maximum Using Recursion](https://www.geeksforgeeks.org/dsa/recursive-programs-to-find-minimum-and-maximum-elements-of-array/) | Recurse over one smaller array prefix | N/A | N/A | To Do |
+| Easy | GeeksforGeeks | [Mean of Array Using Recursion](https://www.geeksforgeeks.org/dsa/mean-of-array-using-recursion/) | Build the mean from the previous prefix | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Josephus Problem](https://www.geeksforgeeks.org/dsa/josephus-problem/) | Recursion / recurrence relation | N/A | N/A | To Do |
 | Medium | LeetCode | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) | State Inversion via Parent Index | N/A | N/A | To Do |
-| Advanced | GeeksforGeeks | [Tower of Hanoi](https://www.geeksforgeeks.org/dsa/c-program-for-tower-of-hanoi) | Recursion | N/A | N/A | To Do |
+| Medium | LeetCode | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Recursion / divide and conquer | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Raise to Power of Its Own Reverse](https://www.geeksforgeeks.org/problems/power-of-numbers-1587115620/1) | Recursion / fast exponentiation | N/A | N/A | To Do |
+| Medium | LeetCode | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Divide at each operator / combine recursive results | N/A | N/A | To Do |
+| Medium | GeeksforGeeks | [Maximize the Number of Segments](https://www.geeksforgeeks.org/dsa/maximize-the-number-of-segments-of-length-p-q-and-r/) | Three-way recursion with base cases | N/A | N/A | To Do |
+| Hard | GeeksforGeeks | [Tower of Hanoi](https://www.geeksforgeeks.org/dsa/c-program-for-tower-of-hanoi) | Recursion | N/A | N/A | To Do |
+
+
+
+
 
 
 ---

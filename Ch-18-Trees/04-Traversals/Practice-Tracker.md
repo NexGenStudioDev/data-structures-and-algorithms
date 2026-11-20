@@ -10,21 +10,25 @@ Use this page for problems whose main task is to produce or reason about a binar
 
 ## Easy
 
-| Problem | Question | Local question | Local answer / solution | Status |
-|---|---|---|---|---|
-| Binary Tree Preorder Traversal (LeetCode 144) | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Question](./Preorder-Traversal/leetCode/Question.md) | [Answer](./Preorder-Traversal/leetCode/Answer.md) | Completed |
-| Binary Tree Inorder Traversal (LeetCode 94) | [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Question](./Inorder%20Traversal/leetCode/Question.md) | [Solution](./Inorder%20Traversal/leetCode/Solution.md) | Completed |
-| Binary Tree Postorder Traversal (LeetCode 145) | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | N/A | N/A | To Do |
+| Difficulty | Problem | Traversal type | Question | Local question | Local answer / solution | Status |
+|---|---|---|---|---|---|---|
+| Easy | [Binary Tree Inorder Traversal (LeetCode 94)](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Inorder: Left, Root, Right | [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Question](./Inorder%20Traversal/leetCode/Question.md) | [Solution](./Inorder%20Traversal/leetCode/Solution.md) | Completed |
+| Easy | [Binary Tree Postorder Traversal (LeetCode 145)](https://leetcode.com/problems/binary-tree-postorder-traversal/) | Postorder: Left, Right, Root | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | N/A | N/A | To Do |
+| Easy | [Binary Tree Preorder Traversal (LeetCode 144)](https://leetcode.com/problems/binary-tree-preorder-traversal/) | Preorder: Root, Left, Right | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Question](./Preorder-Traversal/leetCode/Question.md) | [Solution](./Preorder-Traversal/leetCode/Answer.md) | Completed |
 
 ## Medium
 
-| Problem | Question | Local question | Local answer / solution | Status |
-|---|---|---|---|---|
-| Binary Tree Level Order Traversal (LeetCode 102) | [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | N/A | N/A | To Do |
+| Difficulty | Problem | Traversal type | Question | Local question | Local answer / solution | Status |
+|---|---|---|---|---|---|---|
+| Medium | [Binary Tree Level Order Traversal (LeetCode 102)](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Level order: breadth-first by depth | [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | N/A | N/A | To Do |
+| Medium | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | Level order: bottom-up by depth | [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | N/A | N/A | To Do |
+| Medium | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | Level order: alternating direction | [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | N/A | N/A | To Do |
 
-## Advanced
+## Hard
 
-No advanced traversal-only problem is in this starter set yet. Add a problem here when its main task is traversal itself; keep construction, tree properties, BST operations, and graph traversal in their own topic lists.
+| Difficulty | Problem | Traversal type | Question | Local question | Local answer / solution | Status |
+|---|---|---|---|---|---|---|
+| Hard | [Vertical Order Traversal of a Binary Tree (LeetCode 987)](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | Vertical order: column, row, then value | [LeetCode](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | N/A | N/A | To Do |
 
 ## Sources and scope
 

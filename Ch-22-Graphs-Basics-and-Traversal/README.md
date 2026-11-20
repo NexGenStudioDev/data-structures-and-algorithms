@@ -48,4 +48,3 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 | Medium | LeetCode | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | Grid Flood Fill | N/A | N/A | To Do |
 | Medium | LeetCode | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Grid Connected Components (DFS/BFS) | N/A | N/A | To Do |
 | Medium | LeetCode | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | Multi-source BFS | N/A | N/A | To Do |
-| Medium | GeeksforGeeks | [Topological Sorting](https://www.geeksforgeeks.org/dsa/topological-sorting/) | Directed graph traversal / ordering | N/A | N/A | To Do |
