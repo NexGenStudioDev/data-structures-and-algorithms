@@ -1,7 +1,5 @@
 # Binary Search — Complete Notes (Zero to Advanced)
 
-See the [JavaScript implementation](../Code/binary_search.js) and [Python implementation](../Code/binary_search.py) in this chapter.
-
 
 # 1. What Is Binary Search?
 
@@ -11,7 +9,7 @@ It follows the **Divide and Conquer** approach.
 
 Instead of checking every element one by one, Binary Search repeatedly divides the search space into two halves.
 
-
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0o1taz9bf7xxhnkrbsg4.png)
 
 At every step:
 1. Find the middle element.

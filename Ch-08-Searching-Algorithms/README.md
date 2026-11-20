@@ -10,6 +10,8 @@
 ```text
 Ch-08-Searching-Algorithms/
 ├── 01-Linear-Search/
+│   ├── README.md
+│   └── code/                                    # JavaScript and Python examples
 ├── 02-Binary-Search/
 │   ├── Code/                                     # JavaScript and Python implementations
 │   ├── doc/                                      # Binary search notes and examples
