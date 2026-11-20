@@ -2146,3 +2146,13 @@ That means the developer can break the Queue's FIFO rules.
 
 So the next chapter will solve this problem:
 
+
+## Language examples
+
+The full implementation is available in three languages:
+
+- JavaScript: [`code/queue.js`](code/queue.js)
+- Python: [`code/queue.py`](code/queue.py)
+- C++: [`code/queue.cpp`](code/queue.cpp)
+
+All versions keep a head index so dequeue does not shift the remaining items on every operation.

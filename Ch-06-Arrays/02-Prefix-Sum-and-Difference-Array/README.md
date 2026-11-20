@@ -11,3 +11,5 @@ Use a zero-prefixed array: `prefix[0] = 0` and `prefix[i + 1] = prefix[i] + valu
 For an inclusive update `[left, right] += value`, add `value` at `diff[left]` and subtract it at `diff[right + 1]`. Use an `n + 1` difference array, then take a running sum once. This supports `q` range updates in `O(n + q)` total work.
 
 Check `0 <= left <= right < n`. If updates can be empty or out of range, define that behavior first. Examples: [`JavaScript`](./code/index.js) · [`Python`](./code/index.py).
+
+C++ example: [`code/index.cpp`](./code/index.cpp).

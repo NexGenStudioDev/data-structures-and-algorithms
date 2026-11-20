@@ -75,3 +75,7 @@ scratch/
 *.pem
 *.key
 
+
+# Root-level temporary work directories
+/tmp/
+/temp/

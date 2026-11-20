@@ -25,3 +25,5 @@ For `values = [7, 4, 9]`, indexes are `0`, `1`, and `2`. `values[1]` is `4`. A l
 4. Test one item and two items by hand.
 
 Examples are in [`code/index.js`](./code/index.js) and [`code/index.py`](./code/index.py). Continue to [prefix sums and difference arrays](../02-Prefix-Sum-and-Difference-Array/README.md).
+
+C++ example: [`code/index.cpp`](./code/index.cpp).

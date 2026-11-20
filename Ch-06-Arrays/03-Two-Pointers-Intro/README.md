@@ -18,3 +18,5 @@ Use a slow pointer for the next place to write and a fast pointer to inspect val
 - Test empty, one-item, duplicates, and no-answer cases.
 
 See [`code/index.js`](./code/index.js) and [`code/index.py`](./code/index.py). The LeetCode folder has a [remove duplicates](../LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/question.md) exercise.
+
+C++ example: [`code/index.cpp`](./code/index.cpp).

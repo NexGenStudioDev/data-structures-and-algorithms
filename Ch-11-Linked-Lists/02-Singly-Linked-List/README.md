@@ -14,6 +14,8 @@ A singly linked list is a chain of nodes. Each node stores a value and a link to
 
 Unlike an array, a linked list does not provide constant-time indexing. To reach position `i`, follow links from the head. The `01-Intro-Singly-Linked-List` lesson contains matching JavaScript and Python implementations; existing problem solutions and images are kept in their folders.
 
+The C++ implementation is in [`01-Intro-Singly-Linked-List/code/index.cpp`](./01-Intro-Singly-Linked-List/code/index.cpp).
+
 ## Common mistakes
 - Losing the rest of the list: save `node.next` before changing a link.
 - Forgetting to update `tail` when removing the last node.

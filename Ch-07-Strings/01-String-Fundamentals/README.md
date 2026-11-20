@@ -14,3 +14,5 @@ JavaScript string indexing reads UTF-16 code units. ASCII letters fit in one uni
 - For repeated concatenation, collect pieces and join them if the runtime cost matters.
 
 Examples: [`JavaScript`](./code/index.js) · [`Python`](./code/index.py). Advanced pattern matching is covered in [KMP, Rabin–Karp, and Z](../02-Advanced-String-Matching-KMP-Rabin-Karp-Z/README.md).
+
+C++ example: [`code/index.cpp`](./code/index.cpp).

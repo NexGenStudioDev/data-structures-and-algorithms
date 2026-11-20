@@ -15,5 +15,7 @@ Quick sort chooses a pivot, partitions values into groups, then sorts the groups
 
 Quick sort is usually in-place, but its recursive calls still use stack space. A poor pivot on already ordered input can cause the worst case; randomized or median-based pivot choices help reduce that risk.
 
+The C++ version is available at [`code/quick_sort.cpp`](code/quick_sort.cpp).
+
 ## Practice
 After each partition, mark the pivot's final index and the two ranges that still need sorting. Compare a sorted array with a shuffled array.

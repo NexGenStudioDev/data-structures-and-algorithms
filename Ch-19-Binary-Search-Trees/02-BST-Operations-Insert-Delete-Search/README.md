@@ -7,3 +7,5 @@ Search and insert follow comparisons from root to leaf. Deletion has three cases
 3. Two children: replace with the next key in inorder order (the minimum of the right subtree), then remove that replacement node from its old place.
 
 All operations are `O(h)` and use `O(h)` call stack in these recursive examples. See JavaScript and Python code.
+
+C++ example: [`code/index.cpp`](./code/index.cpp).

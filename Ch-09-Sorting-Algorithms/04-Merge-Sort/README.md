@@ -15,5 +15,7 @@ The merge step is the key: it is linear in the number of values being combined. 
 
 Use merge sort when predictable running time and stability matter. Its extra memory can be a drawback for arrays. The JavaScript file in this folder is retained; `code/merge_sort.py` provides the Python version.
 
+The C++ version is available at [`code/merge_sort.cpp`](code/merge_sort.cpp).
+
 ## Practice
 Trace `[8, 3, 5, 1]` through the split and merge steps. At each merge, write the two sorted inputs and the merged output.

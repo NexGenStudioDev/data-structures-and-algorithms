@@ -5,3 +5,5 @@ A binary heap is a complete binary tree stored in an array. For zero-based index
 In a min-heap each parent is no larger than its children, so the minimum is at the root. The array is not fully sorted. Bottom-up heapify takes `O(n)` time; inserting one item takes `O(log n)`.
 
 See `code/` for JavaScript and Python min-heaps.
+
+The C++ example is [`code/index.cpp`](./code/index.cpp).
