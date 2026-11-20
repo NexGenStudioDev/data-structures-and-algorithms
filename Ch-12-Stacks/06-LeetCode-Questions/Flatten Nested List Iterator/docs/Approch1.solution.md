@@ -750,3 +750,6 @@ Push      Recurse
 ```
 
 This problem is primarily testing **Recursion + Nested Data Structures + Iterator Design**.
+
+
+The implementation in `../code/script.js` uses an explicit stack of list/index frames, so it yields integers as `next()` is called instead of building a fully flattened copy up front. `hasNext()` may advance through nested lists to find the next integer. Each nested item is visited once: total traversal is `O(n)` and the stack uses `O(d)` frames for maximum nesting depth `d`.

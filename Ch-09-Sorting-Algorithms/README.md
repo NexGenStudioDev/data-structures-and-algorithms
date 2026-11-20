@@ -31,7 +31,7 @@ Ch-09-Sorting-Algorithms/
 | **Selection Sort**| $O(N^2)$ | $O(N^2)$ | $O(N^2)$ | $O(1)$ | No | Yes | Find minimum and swap to prefix |
 | **Insertion Sort**| $O(N)$ | $O(N^2)$ | $O(N^2)$ | $O(1)$ | Yes | Yes | Insert next item into sorted subarray |
 | **Merge Sort** | $O(N \log N)$ | $O(N \log N)$ | $O(N \log N)$ | $O(N)$ | Yes | No | Divide in half, sort halves, merge |
-| **Quick Sort** | $O(N \log N)$ | $O(N \log N)$ | $O(N^2)$ | $O(\log N)$| No | Yes | Partition around pivot (Lomuto/Hoare) |
+| **Quick Sort** | $O(N \log N)$ | $O(N \log N)$ | $O(N^2)$ | Expected $O(\log N)$ stack; worst $O(N)$ | No | Yes | Partition around pivot (Lomuto/Hoare) |
 | **Heap Sort** | $O(N \log N)$ | $O(N \log N)$ | $O(N \log N)$ | $O(1)$ | No | Yes | Build Max-Heap, swap root to end |
 | **Counting Sort** | $O(N + K)$ | $O(N + K)$ | $O(N + K)$ | $O(K)$ | Yes | No | Frequency count of discrete integer keys |
 | **Radix Sort** | $O(D \times (N + B))$| $O(D \times (N + B))$ | $O(D \times (N + B))$ | $O(N + B)$ | Yes | No | Digit-by-digit stable counting sort |
@@ -39,10 +39,12 @@ Ch-09-Sorting-Algorithms/
 
 ---
 
+The table describes common textbook implementations. Quick Sort’s space column counts the recursion stack; partitioning may be in place, but recursive calls still use stack space.
+
 ## 💡 Important Rules of Thumb
 1. **Stability:** A sort is stable if it preserves the relative order of elements with equal keys. Essential when sorting records by multiple fields.
 2. **Comparison Lower Bound:** Any comparison-based sorting algorithm has a theoretical lower bound of **$\Omega(N \log N)$** operations.
-3. **Cyclic Sort Pattern:** Whenever an array contains numbers from $1$ to $N$ (or $0$ to $N$), suspect Cyclic Sort to achieve $O(N)$ time and $O(1)$ auxiliary space.
+3. **Cyclic Sort Pattern:** When each value maps to a valid array index (for example, a permutation of $1$ through $N$), cyclic placement can take $O(N)$ time and $O(1)$ auxiliary space. Check the exact value range and duplicate behavior before using it.
 
 ---
 

@@ -199,3 +199,5 @@ Always handle these cases while removing a node:
 # Conclusion
 
 Removing nodes from a Doubly Linked List is straightforward once you understand how the `next` and `prev` pointers work. The key idea is to reconnect the neighboring nodes correctly while handling special cases like the head, tail, empty list, and single-node list.
+
+With a stored tail pointer, removing the tail is also `O(1)` in a doubly linked list. Removing a node by index requires locating it first, so that operation takes `O(n)` overall. Empty and one-node lists must be handled as special boundary cases.

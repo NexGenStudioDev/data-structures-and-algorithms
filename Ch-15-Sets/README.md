@@ -1,7 +1,7 @@
 # Chapter 15: Sets
 
 > **Master unique value collections, deduplication, and mathematical set theory in DSA.**  
-> A set is an abstract data type that stores unique elements with fast membership testing.
+> A set is an abstract data type that stores unique elements and supports membership checks. Exact ordering and performance depend on the language implementation.
 
 ---
 
@@ -18,13 +18,15 @@ Ch-15-Sets/
 
 ---
 
-## 🎯 Unordered Set vs Ordered Set
+## 🎯 Hash Sets and Sorted Sets
 
-| Feature | Hash Set (Unordered) | Tree Set (Ordered) |
+These are common abstract implementation choices, not built-in names shared by every language. JavaScript’s `Set` preserves insertion order and does not offer sorted range queries. A sorted set generally requires a separate ordered-tree library or a custom implementation.
+
+| Feature | Hash-based set (typical) | Sorted tree set (typical) |
 |---|---|---|
 | Underlying Data Structure | Hash Table | Self-Balancing BST (Red-Black Tree) |
-| Element Ordering | None (arbitrary) | Strictly sorted (ascending/descending) |
-| Insert / Delete / Search | $O(1)$ average, $O(N)$ worst | $O(\log N)$ guaranteed |
+| Element Ordering | Depends on language; JavaScript `Set` preserves insertion order | Sorted by key |
+| Insert / Delete / Search | Average often $O(1)$; worst case may be $O(N)$ | $O(\log N)$ in a balanced tree |
 | Range Queries (`lower_bound`, `floor`, `ceil`) | Not supported | $O(\log N)$ |
 | When to Use | Fast lookup, deduplication | Need sorted traversal or boundary queries |
 

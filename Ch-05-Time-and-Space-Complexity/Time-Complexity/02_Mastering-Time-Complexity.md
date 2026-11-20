@@ -49,11 +49,13 @@ Instead of seconds, we count **how many important steps** the algorithm takes as
 
 ## 🔤 What Notations Do We Use?
 
-We use special symbols called **notions** to describe these cases:
+We use special symbols called **asymptotic bounds** to describe how a function grows. These symbols are separate from best-, average-, and worst-case analysis:
 
-- **Big-O (O):** Shows the **worst-case** (maximum steps).
-- **Big-Omega (Ω):** Shows the **best-case** (minimum steps).
-- **Big-Theta (Θ):** Shows the **average case** (typical steps).
+- **Big-O (O):** An asymptotic upper bound on growth.
+- **Big-Omega (Ω):** An asymptotic lower bound on growth.
+- **Big-Theta (Θ):** A tight asymptotic bound: both an upper and a lower bound.
+
+An algorithm can have a best-, average-, or worst-case function, and each function can be described with O, Ω, or Θ when the bound applies. For example, linear search has a best case of Θ(1) and a worst case of Θ(n).
 
 ---
 
@@ -134,7 +136,7 @@ This table explains common time complexities in easy words, shows how fast they 
 | **O(n)** | Time grows directly with input size | ⚡⚡⚡ Fast | Looping through a list, Linear Search |
 | **O(n log n)** | A bit slower than linear, divide and conquer | ⚡⚡⚡ Decent | Merge Sort, Quick Sort (average case) |
 | **O(n²)** | Time = n × n, double nested loops | 🐢 Slow | Bubble Sort, Insertion Sort |
-| **O(n³)** | Time = n × n × n, triple nested loops | 🐢🐢 Slower | 3D Matrix multiplication |
+| **O(n³)** | Time can grow like n × n × n | 🐢🐢 Slower | Three nested loops over inputs of size n; classical square matrix multiplication |
 | **O(2ⁿ)** | Doubles every time input increases — grows fast | 🐌 Very Slow | Recursive Fibonacci, Subset problems |
 | **O(kⁿ)** | Like 2ⁿ, but with more choices per step (k > 1) | 🐌🐌 Very Slow | Word Break (recursive with choices) |
 | **O(n!)** | All possible arrangements — extremely slow | ☠️ Extremely Slow | Permutations, Traveling Salesman Problem |
@@ -158,7 +160,7 @@ O(1) < O(log log n) < O(log n) < O(√n) < O(n) < O(n log n) < O(n²) < O(n³) <
 
 - Whether you're accessing the 10th element or the 10,000th element in an array, it still takes the **same amount of time**.
 
-This makes **O(1)** the **fastest and best time complexity** for accessing elements even in the **worst case**.
+This is a constant-time operation under the array model used in DSA. O(1) describes how the work grows; it does not guarantee the smallest real-world runtime among all possible operations.
 
 ![Image description](./Images/6oq0xw8adyfqwv1lw5w6.png)
 

@@ -467,9 +467,11 @@ Instead:
 We don't physically move elements.
 
 We move the logical Front.
+
+This basic version keeps removed values in the backing array, so memory can grow with the total number of enqueues even when the live queue is small. A production version can periodically compact the array or use a circular buffer.
 ```
 
-This is the main idea behind the implementation.
+This is the main idea behind the implementation. For long-running use, periodically compact the consumed prefix (for example, when `frontIndex` is at least half the array length), or use a circular buffer; the simple version intentionally favors clarity and otherwise retains old entries.
 
 ---
 

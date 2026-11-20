@@ -36,7 +36,7 @@ for (let i = 0; i < 1000000; i++) {
 
 ### 🕐 Result:
 
-His program runs and finishes in just 1 second.
+The program may finish sooner on a faster system, but the exact time depends on the machine, runtime, background work, and output device. The example is about those differences; it is not a benchmark.
 
 ### 👩‍🎓 Student B
 
@@ -57,7 +57,7 @@ for (let i = 0; i < 1000000; i++) {
 
 ### 🕓 Result:
 
-Her program takes around 5 seconds to finish.
+The same program may take longer on a slower system. There is no fixed time such as five seconds that applies to every older computer.
 
 ## ❓ So, Is Student A’s Code Better?
 
@@ -76,17 +76,7 @@ So why the performance difference?
 
 ### 🧑‍💻 And it’s also dependent on the programming language used.
 
-For example, the same algorithm written in **C++** may run faster than in **Python** because:
-
-- **C++** is a **compiled language** — the code is converted directly into machine code before execution, which makes it run very fast.
-- **Python** is an **interpreted language** — the code is executed line-by-line by an interpreter at runtime, which usually makes it slower.
-
-### Examples of compiled vs interpreted languages:
-
-| Language | Type | Performance Impact |
-| --- | --- | --- |
-| **C, C++, Rust** | Compiled | Generally faster execution times due to direct machine code output |
-| **Python, JavaScript, Ruby** | Interpreted | Slower because code runs through an interpreter or virtual machine |
+Different languages and runtimes can have different constant costs for the same algorithm. The labels “compiled” and “interpreted” do not by themselves predict speed: JavaScript engines, for example, may compile and optimize code while it runs. For algorithm analysis, focus first on how the amount of work grows with input size; compare real runtimes only with a controlled benchmark.
 
 ---
 

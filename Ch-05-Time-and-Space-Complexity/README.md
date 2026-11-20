@@ -37,8 +37,8 @@ Ch-05-Time-and-Space-Complexity/
    - $O(N^3)$ - Cubic Time (Matrix multiplication naive)
    - $O(2^N)$ - Exponential Time (Power set, Recursive Fibonacci without memoization)
    - $O(N!)$ - Factorial Time (Generating all permutations of an array)
-4. **Input Constraints & The $10^8$ Operations Rule:**
-   - Standard online judges (LeetCode, Codeforces, HackerRank) allow approximately **$10^8$ operations per second** for a 1.0-second time limit.
+4. **Input Constraints & Rough Operation Estimates:**
+   - A rough contest rule sometimes estimates around **$10^7$–$10^8$ simple operations per second**, but there is no fixed conversion from time limit to operation count. Language, operation cost, memory behavior, and test data matter.
    - **$N \le 10$ to $12$:** $O(N!)$ or $O(N^2 \cdot 2^N)$ (Permutations, Traveling Salesman DP)
    - **$N \le 20$ to $25$:** $O(2^N)$ (Backtracking, Bitmask DP)
    - **$N \le 100$:** $O(N^4)$ or $O(N^3)$ (Floyd-Warshall, 3-loop brute force)

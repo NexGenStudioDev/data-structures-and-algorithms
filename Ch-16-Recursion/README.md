@@ -19,13 +19,14 @@ Ch-16-Recursion/
 │   └── How-to-Think-About-Recursive-Problems.md
 ├── 04-Basic-Recursion-Implementation-Patterns/   # Standard templates, return-value vs state accumulator patterns
 │   └── Basic_Recursion_Implementation_Patterns.md
-├── 05-Linear-Recursion/                          # In-depth linear recursion: winding vs unwinding, head vs tail, TCO
+├── 05-Linear-Recursion/                          # In-depth linear recursion: winding vs unwinding, head vs tail; runtime-dependent tail-call optimization
 │   ├── README.md
-│   └── geeksforgeeks/
-│       ├── Factorial/                            # Complete walkthrough, dry run, JS & Python code
-│       ├── 1 to n Without Loop/                  # Head recursion unwinding print, JS & Python code
-│       ├── Print n to 1 Without Loop/            # Tail recursion winding print, JS & Python code
-│       └── Power Using Recursion/                # Exponentiation via linear recursion, JS & Python code
+├── geeksforgeeks/                                # Recursion practice questions and solutions
+│   ├── Factorial/
+│   ├── Fibonacci Series/
+│   ├── 1 to n Without Loop/
+│   ├── Print n to 1 Without Loop/
+│   └── Power Using Recursion/
 ├── 06-LeetCode-Problems/                         # Curated interview problem collection
 ├── README.md                                     # Chapter master guide & roadmap (You are here)
 └── .gitignore                                    # Folder git tracking
@@ -49,7 +50,7 @@ Step 4: Master Common Implementation Patterns & Templates
 Step 5: Master Linear Recursion, Head/Tail & Call Stack Tracing
    └─► [05-Linear-Recursion](./05-Linear-Recursion/README.md)
 Step 6: Solve Curated Practice Problems (GFG & LeetCode)
-   └─► [05-Linear-Recursion/geeksforgeeks/Factorial](./05-Linear-Recursion/geeksforgeeks/Factorial/Question.md)
+   └─► [05-Linear-Recursion/geeksforgeeks/Factorial](./geeksforgeeks/Factorial/Question.md)
 ```
 
 ---
@@ -92,7 +93,7 @@ Types of Recursion
   │
   ├── 1. Linear Recursion (At most ONE call per invocation)
   │     ├── Head Recursion: Recursive call first, work happens on the way back (unwinding)
-  │     └── Tail Recursion: Work happens first, recursive call is the final operation (TCO eligible)
+  │     └── Tail Recursion: The recursive call is the final operation; tail-call optimization is not guaranteed in JavaScript, so stack space can still grow
   │
   ├── 2. Tree / Branching Recursion (TWO or more calls per invocation)
   │     ├── Binary Recursion: Fibonacci, Merge Sort, Binary Tree Traversals
@@ -145,11 +146,12 @@ Master recursion progressively from linear basics to advanced branching:
 
 | # | Problem | Difficulty | Platform | Core Concept | Status |
 |:---:|---|:---:|---|---|:---:|
-| 1 | [Factorial of a Number](./05-Linear-Recursion/geeksforgeeks/Factorial/) | Easy | GeeksforGeeks | Linear Recursion, Stack Trace, Dry Run | ✅ Completed |
+| 1 | [Factorial of a Number](./geeksforgeeks/Factorial/) | Easy | GeeksforGeeks | Linear Recursion, Stack Trace, Dry Run | ✅ Completed |
 | 2 | Sum of First N Numbers | Easy | GeeksforGeeks | Mathematical Accumulation | ⏳ Practice |
-| 3 | [Print 1 to N without Loops](./05-Linear-Recursion/geeksforgeeks/1%20to%20n%20Without%20Loop/) | Easy | GeeksforGeeks | Head Recursion (Unwinding print) | ✅ Completed |
-| 4 | [Print N to 1 without Loops](./05-Linear-Recursion/geeksforgeeks/Print%20n%20to%201%20Without%20Loop/) | Easy | GeeksforGeeks | Tail Recursion (Winding print) | ✅ Completed |
-| 5 | [Power Using Recursion](./05-Linear-Recursion/geeksforgeeks/Power%20Using%20Recursion/Question.md) | Easy | GeeksforGeeks | Linear Exponentiation Chain | ✅ Completed |
+| 3 | [Print 1 to N without Loops](./geeksforgeeks/1%20to%20n%20Without%20Loop/) | Easy | GeeksforGeeks | Head Recursion (Unwinding print) | ✅ Completed |
+| 4 | [Print N to 1 without Loops](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/) | Easy | GeeksforGeeks | Tail Recursion (Winding print) | ✅ Completed |
+| 5 | [Power Using Recursion](./geeksforgeeks/Power%20Using%20Recursion/Question.md) | Easy | GeeksforGeeks | Linear Exponentiation Chain | ✅ Completed |
+| 6 | [First N Fibonacci Numbers](./geeksforgeeks/Fibonacci%20Series/Question.md) | Basic | GeeksforGeeks | Linear Recursion with an Accumulator | ✅ Completed |
 | 6 | Reverse an Array / String | Easy | LeetCode 344 | Two-Pointer Recursive Boundary | ⏳ Practice |
 | 7 | Check Palindrome Recursively | Easy | LeetCode 125 | Dual-End Boundary Check | ⏳ Practice |
 | 8 | LeetCode 509: Fibonacci Number | Easy | LeetCode | Binary / Tree Recursion | ⏳ Practice |

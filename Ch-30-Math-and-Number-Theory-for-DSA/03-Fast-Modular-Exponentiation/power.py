@@ -1,8 +1,12 @@
-# Fast Modular Exponentiation - O(log N)
-
+# Fast modular exponentiation - O(log exp) time.
 def modular_pow(base: int, exp: int, mod: int) -> int:
-    result = 1
-    base %= mod
+    if mod <= 0:
+        raise ValueError("mod must be a positive integer")
+    if exp < 0:
+        raise ValueError("exp must be non-negative")
+
+    result = 1 % mod
+    base %= mod  # Python gives a non-negative residue when mod is positive.
     while exp > 0:
         if exp & 1:
             result = (result * base) % mod
@@ -11,4 +15,4 @@ def modular_pow(base: int, exp: int, mod: int) -> int:
     return result
 
 if __name__ == "__main__":
-    print("2^10 mod 1000:", modular_pow(2, 10, 1000))  # Output: 24
+    print("2^10 mod 1000:", modular_pow(2, 10, 1000))  # 24

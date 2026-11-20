@@ -19,6 +19,8 @@ Ch-27-Bit-Manipulation/
 
 ## 🎯 Essential Bitwise Tricks Cheatsheet
 
+**JavaScript note:** Number bitwise operators convert values to signed 32-bit integers (and shift counts are reduced to 5 bits). These Number formulas are for values in the supported 32-bit range. Use `BigInt` with BigInt operands for larger integer bit operations; do not mix `Number` and `BigInt` in one bitwise expression.
+
 | Goal | Bitwise Formula | Explanation |
 |---|---|---|
 | Check if Odd / Even | `(n & 1) === 1` | Lowest bit indicates odd parity |

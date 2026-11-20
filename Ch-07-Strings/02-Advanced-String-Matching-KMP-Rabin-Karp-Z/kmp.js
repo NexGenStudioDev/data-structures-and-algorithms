@@ -22,7 +22,8 @@ function buildLPS(pattern) {
 }
 
 function kmpSearch(text, pattern) {
-    if (!pattern.length) return 0;
+    // An empty pattern matches at every boundary between text characters.
+    if (!pattern.length) return Array.from({ length: text.length + 1 }, (_, index) => index);
     const lps = buildLPS(pattern);
     const indices = [];
     let i = 0, j = 0;

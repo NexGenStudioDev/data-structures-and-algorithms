@@ -1,7 +1,7 @@
 # Chapter 26: Dynamic Programming (DP)
 
 > **Master overlapping subproblems, optimal substructure, memoization, and bottom-up tabulation.**  
-> Dynamic Programming remembers answers to subproblems so they are computed exactly once.
+> Dynamic Programming stores subproblem answers so overlapping work can be reused. A correct state and transition may still compute some states more than once in top-down implementations unless memoization is applied.
 
 ---
 
@@ -16,7 +16,9 @@ Ch-26-Dynamic-Programming/
 ├── 05-String-DP/
 ├── 06-DP-on-Trees/
 ├── 07-Partition-DP-MCM/
+├── 08-Bitmask-DP/
 ├── 08-LeetCode-Problems/
+├── 09-Digit-DP/
 ├── README.md
 └── .gitignore
 ```

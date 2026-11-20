@@ -1,5 +1,7 @@
 # Binary Search — Complete Notes (Zero to Advanced)
 
+See the [JavaScript implementation](../Code/binary_search.js) and [Python implementation](../Code/binary_search.py) in this chapter.
+
 
 # 1. What Is Binary Search?
 
@@ -9,7 +11,7 @@ It follows the **Divide and Conquer** approach.
 
 Instead of checking every element one by one, Binary Search repeatedly divides the search space into two halves.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0o1taz9bf7xxhnkrbsg4.png)
+
 
 At every step:
 1. Find the middle element.
@@ -2376,8 +2378,8 @@ Explore the dedicated step-by-step problem walkthroughs, dry runs, diagrams, and
 
 | Problem | Difficulty | Search Type | Walkthrough & Code |
 |---|:---:|---|---|
-| [LeetCode 69: Sqrt(x)](./LeetCode/Sqrt%28x%29/Question.md) | Easy | Binary Search on Answer Space | [Full Guide & Diagrams](./LeetCode/Sqrt%28x%29/Approch1.md) • [JS](./LeetCode/Sqrt%28x%29/code/solution.js) • [Python](./LeetCode/Sqrt%28x%29/code/solution.py) |
+| [LeetCode 69: Sqrt(x)](../LeetCode/Sqrt%28x%29/Question.md) | Easy | Binary Search on Answer Space | [Full Guide & Diagrams](../LeetCode/Sqrt%28x%29/Approch1.md) • [JS](../LeetCode/Sqrt%28x%29/code/solution.js) • [Python](../LeetCode/Sqrt%28x%29/code/solution.py) |
 
 ### Code Implementations in this Chapter:
-- [Classical Binary Search (JavaScript)](./binary_search.js)
-- [Classical Binary Search & Bisect (Python)](./binary_search.py)
+- [Classical Binary Search (JavaScript)](../Code/binary_search.js)
+- [Classical Binary Search & Bisect (Python)](../Code/binary_search.py)

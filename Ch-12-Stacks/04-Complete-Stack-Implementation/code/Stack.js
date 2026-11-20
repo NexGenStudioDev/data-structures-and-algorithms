@@ -10,18 +10,12 @@ class Stack {
   }
 
   pop() {
-    if (this.isEmpty()) {
-      return "Stack is Empty. Can't perform pop.";
-    }
-
+    if (this.isEmpty()) return undefined;
     return this.stack.pop();
   }
 
   peek() {
-    if (this.isEmpty()) {
-      return "Stack is Empty. Can't perform peek.";
-    }
-
+    if (this.isEmpty()) return undefined;
     return this.stack[this.size() - 1];
   }
 
@@ -33,24 +27,24 @@ class Stack {
     return this.stack.length;
   }
 
-  printStack() {}
+  printStack() {
+    console.log([...this.stack].reverse());
+  }
 }
 
-const stack = new Stack();
+if (typeof module !== "undefined") module.exports = Stack;
 
-stack.push(10);
-stack.push(69);
-stack.push(420);
-
-console.log(stack.size());
-
-console.log(stack.pop());
-console.log(stack.pop());
-console.log(stack.pop());
-console.log(stack.pop());
-
-console.log(stack.peek());
-
-console.log(stack.isEmpty());
-
-console.log(stack.size());
+if (typeof require !== "undefined" && require.main === module) {
+  const stack = new Stack();
+  stack.push(10);
+  stack.push(69);
+  stack.push(420);
+  console.log(stack.size());
+  console.log(stack.pop());
+  console.log(stack.pop());
+  console.log(stack.pop());
+  console.log(stack.pop()); // undefined: stack is empty
+  console.log(stack.peek()); // undefined: stack is empty
+  console.log(stack.isEmpty());
+  console.log(stack.size());
+}

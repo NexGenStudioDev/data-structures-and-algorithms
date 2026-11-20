@@ -37,7 +37,7 @@ Constraints exist to:
 - Force efficient thinking
 - Separate beginners from problem solvers
 
-📌 **Interviewers don’t test coding — they test constraint handling.**
+Constraints help you judge whether an approach is likely to fit. Interviews can assess coding, reasoning, communication, testing, and trade-offs.
 
 ---
 
@@ -51,27 +51,13 @@ Constraints exist to:
 
 ```
 
-Used to decide:
-
-- Loop limits
-- Data structures
-- Data types (`int`, `long`, `long long`)
+Use these values to choose loop limits, data structures, and safe numeric representations. In JavaScript, `Number` represents integers exactly only through `Number.MAX_SAFE_INTEGER`; use `BigInt` when a problem needs larger exact integer arithmetic.
 
 ---
 
 ### 🔹 2. Time Constraints
 
-Usually:
-
-- **1 second**
-- **2 seconds**
-
-🧠 Rule of thumb:
-
-```
-1 second ≈ 10^7 – 10^8 operations
-
-```
+Time limits vary by platform and problem. There is no fixed conversion from seconds to operation count. Counts such as 10^7–10^8 simple operations per second are rough contest rules of thumb; actual limits depend on language, operation, memory behavior, and test data. Use them only as a first filter.
 
 ---
 
@@ -105,7 +91,7 @@ Limits:
 
 ## 5️⃣ The Most Important Truth in DSA
 
-> You NEVER choose an algorithm first.Constraints choose the algorithm for you.
+> Use the constraints to check whether an approach is practical. The required output, input data, and operations also shape the choice.
 > 
 
 ---
@@ -124,7 +110,7 @@ Limits:
 | n ≤ 10⁶ | O(n) |
 | n ≥ 10⁷ | O(log n) / O(1) |
 
-📌 **This table automatically filters wrong solutions.**
+This table is a starting point, not a guarantee. Check the full constraints, number of test cases, operation costs, memory limit, and language before choosing an approach.
 
 ---
 
@@ -158,14 +144,9 @@ n² = 10^10 operations ❌
 
 ```
 
-But computer can only do:
+The time required for those operations depends on the machine, language, implementation, and operation. Operation counts are estimates, not guarantees.
 
-```
-~10^8 operations/sec
-
-```
-
-➡️ **Guaranteed TLE**
+➡️ **Usually too much work under common contest limits**
 
 ---
 

@@ -23,3 +23,5 @@ read this doc
 
 
 ### 2. Adding Element at index
+
+The implementation stores both `head` and `tail`, so adding at either end is `O(1)`. Inserting at an arbitrary index still requires walking to that position and takes `O(n)` time.

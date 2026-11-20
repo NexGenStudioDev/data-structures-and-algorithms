@@ -11,7 +11,7 @@ An **algorithm** is a step-by-step process used to solve a problem or complete a
 | **Foundation of coding**         | Every program is built on one or more algorithms              |
 | **Language-independent**         | You can write it in English, pseudocode, or any programming language |
 | **Used everywhere**              | Websites, mobile apps, AI, databases, search engines, games, and more |
-| **Interviews**                  | Almost all tech job interviews test your algorithm skills      |
+| **Interviews**                  | Many software interviews include problem-solving questions     |
 | **Builds logical thinking**     | Trains your brain to think step-by-step and solve any kind of challenge |
 
 ## 🔍 Where Are Algorithms Used?
@@ -30,11 +30,11 @@ Algorithms are not just for programming. We use them in everyday life and in sof
   - Write code faster and better  
   - Avoid mistakes before coding starts  
 
-Planning the algorithm is the first and very important step in making software.
+For a small programming problem, writing down the steps before coding can make the goal and edge cases easier to see. Larger software projects also need design, testing, security, and maintenance; they are not described by one algorithm alone.
 
 ## 🧱 Basic Structure of an Algorithm
 
-Every algorithm generally includes these 5 parts:
+One useful way to describe a simple input-and-output algorithm is with these parts:
 
 | Step | Description                          |
 |-------|------------------------------------|
@@ -44,7 +44,7 @@ Every algorithm generally includes these 5 parts:
 | 4. **Output**    | Show the result                 |
 | 5. **End**       | Stop the process                |
 
-These steps are the **same across all problems**, whether you're:
+These steps fit many beginner examples, but not every algorithm has separate input and output steps. Some algorithms transform a collection, respond to a stream, or update a system over time. The details depend on the problem. For example:
 
 - Adding two numbers  
 - Searching in a list  
@@ -110,7 +110,7 @@ The user wants to see products that are:
 
 ## 🌐 Real-Life Example: Planning a Website
 
-Imagine you want to build a website. Before writing any code, you need to plan how the website will work. This plan is called an **algorithm**.
+Imagine you want to build a website. A website is a whole software project, not one algorithm. It contains many smaller algorithms, such as checking a password or filtering products. Planning the user flow and choosing technologies are design tasks that help shape those algorithms.
 
 Here’s a detailed algorithm for building a website:
 

@@ -1,14 +1,13 @@
-# 🚀 Data Structures and Algorithms (DSA) Mastery Handbook
+# 🚀 Data Structures and Algorithms (DSA) Handbook
 
 <p align="center">
   <img src="https://img.shields.io/badge/Curriculum-30%20Chapters-brightgreen?style=for-the-badge&logo=gitbook&logoColor=white" alt="30 Chapters" />
-  <img src="https://img.shields.io/badge/Language-JavaScript%20%7C%20Python%20%7C%20C%2B%2B%20%7C%20Java-blue?style=for-the-badge&logo=codeforces&logoColor=white" alt="Multi-Language" />
+  <img src="https://img.shields.io/badge/Primary%20Language-JavaScript-blue?style=for-the-badge&logo=javascript&logoColor=white" alt="Primary language: JavaScript" />
   <img src="https://img.shields.io/badge/Platforms-LeetCode%20%7C%20GFG%20%7C%20Codeforces-orange?style=for-the-badge&logo=leetcode&logoColor=white" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Status-Fully%20Organized%20%26%20Tracked-success?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/Learning%20Path-Beginner%20to%20Advanced-success?style=for-the-badge" alt="Learning path: beginner to advanced" />
 </p>
 
-> **The definitive, beautifully structured, 30-chapter curriculum to master Data Structures, Algorithms, Mathematical Foundations, and Technical Coding Interviews (FAANG / Big Tech / High-Frequency Trading) from ground zero.**
+> A JavaScript-first learning path through data structures, algorithms, mathematical foundations, and problem-solving practice.
 
 ---
 
@@ -56,6 +55,21 @@ Phase 8: Interview Patterns & 90-Day Gameplan     (Ch-29)
 Phase 9: Mathematical Foundations & Number Theory (Ch-30)
 ```
 
+## 🧭 Choose Your Starting Level
+
+For a complete study schedule, exam checklist, and interview answer framework, see the [Zero to Monster roadmap](./Learning-Paths/Zero-to-Monster.md).
+
+Follow the chapter numbers in order if you are new to DSA. If you already know the foundations, use these stages to find a suitable entry point. Each stage builds on earlier concepts; the labels describe the intended starting level, not a strict limit on who can study a chapter.
+
+| Stage | Chapters | Focus | You are ready to move on when you can… |
+|---|---|---|---|
+| **Beginner** | [Beginner guide](./Learning-Paths/Beginner.md) · Chapters 01–05 | DSA vocabulary, programming practice, algorithms, and complexity | Explain a simple algorithm and estimate how its work grows with input size. |
+| **Intermediate** | [Intermediate guide](./Learning-Paths/Intermediate.md) · Chapters 06–16, 18 | Arrays, strings, searching, sorting, pointers, linked lists, stacks, queues, hashing, sets, recursion, and binary trees | Choose a fitting structure or pattern and trace its state on a small example. |
+| **Advanced** | [Advanced guide](./Learning-Paths/Advanced.md) · Chapters 17, 19–28, 30 | Backtracking, BSTs, heaps, tries, graphs, DSU, greedy methods, dynamic programming, bit manipulation, advanced structures, and number theory | State the key invariant or correctness reason, analyze trade-offs, and handle constraints. |
+| **Interview practice** | [29](#-phase-8-interview-mastery--gameplan) | Patterns, problem tracking, revision, and study planning | Explain your approach, alternatives, correctness, and complexity clearly. |
+
+These stages are a navigation aid across the existing numbered chapters. Problem-solving practice can be used alongside any stage; chapter numbers and existing chapter folders remain the canonical structure.
+
 ---
 
 ## 📚 Complete Table of Contents
@@ -68,7 +82,7 @@ Phase 9: Mathematical Foundations & Number Theory (Ch-30)
 | [Ch-02](./Ch-02-What-is-an-Algorithm/README.md) | **What is an Algorithm** | Definition, characteristics, flowcharts, pseudocode, algorithm building blocks | Beginner |
 | [Ch-03](./Ch-03-Basic-Programming-Questions/README.md) | **Basic Programming Questions** | Loops, conditionals, functions, math fundamentals, building algorithmic logic | Beginner |
 | [Ch-04](./Ch-04-Time-Complexity-Fast-vs-Slow/README.md) | **Time Complexity: Fast vs Slow** | Why wall-clock time fails, growth rates, hardware independence, operations counting | Beginner |
-| [Ch-05](./Ch-05-Time-and-Space-Complexity/README.md) | **Time & Space Complexity & Constraints** | Big-$O$, Big-$\\Omega$, Big-$\\Theta$, $10^8$ operations rule, input constraints guide | Beginner |
+| [Ch-05](./Ch-05-Time-and-Space-Complexity/README.md) | **Time & Space Complexity & Constraints** | Asymptotic bounds, time/space growth, and constraint-aware estimates | Beginner |
 
 ---
 
@@ -76,7 +90,7 @@ Phase 9: Mathematical Foundations & Number Theory (Ch-30)
 
 | Chapter | Topic | Description & Core Concepts | Primary Level |
 |:---:|---|---|:---:|
-| [Ch-06](./Ch-06-Arrays/README.md) | **Arrays & 2D Matrices** | Contiguous memory, $O(1)$ access, prefix sums, difference arrays, 2D matrix traversal, LeetCode | Beginner–Inter |
+| [Ch-06](./Ch-06-Arrays/README.md) | **Arrays & 2D Matrices** | Indexed access, prefix sums, difference arrays, 2D matrix traversal, LeetCode | Beginner–Inter |
 | [Ch-07](./Ch-07-Strings/README.md) | **Strings & Advanced Matching** | Immutability, character frequencies, palindromes, KMP, Rabin-Karp, Z-Algorithm, Manacher's | Beginner–Inter |
 | [Ch-08](./Ch-08-Searching-Algorithms/README.md) | **Searching Algorithms** | Linear search, binary search master guide, lower/upper bounds, rotated arrays, binary search on answer space (Sqrt(x)) | Intermediate |
 | [Ch-09](./Ch-09-Sorting-Algorithms/README.md) | **Sorting Algorithms** | Bubble, Selection, Insertion, Merge Sort, Quick Sort, Cyclic Sort, Counting/Radix Sort | Intermediate |
@@ -155,24 +169,22 @@ Phase 9: Mathematical Foundations & Number Theory (Ch-30)
 
 ## ⚡ Master Time & Space Complexity Cheatsheet
 
-### Data Structure Operations
+### Typical Operation Costs
 
-| Data Structure | Average Access | Average Search | Average Insert | Average Delete | Worst Search | Worst Insert | Worst Delete | Space Complexity |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Array** | $O(1)$ | $O(N)$ | $O(N)$ | $O(N)$ | $O(N)$ | $O(N)$ | $O(N)$ | $O(N)$ |
-| **Stack** | $O(N)$ | $O(N)$ | $O(1)$ | $O(1)$ | $O(N)$ | $O(1)$ | $O(1)$ | $O(N)$ |
-| **Queue** | $O(N)$ | $O(N)$ | $O(1)$ | $O(1)$ | $O(N)$ | $O(1)$ | $O(1)$ | $O(N)$ |
-| **Singly Linked List** | $O(N)$ | $O(N)$ | $O(1)$* | $O(1)$* | $O(N)$ | $O(1)$* | $O(1)$* | $O(N)$ |
-| **Doubly Linked List** | $O(N)$ | $O(N)$ | $O(1)$ | $O(1)$ | $O(N)$ | $O(1)$ | $O(1)$ | $O(N)$ |
-| **Hash Table** | N/A | $O(1)$ | $O(1)$ | $O(1)$ | $O(N)$ | $O(N)$ | $O(N)$ | $O(N)$ |
-| **Binary Search Tree** | $O(\\log N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(N)$ | $O(N)$ | $O(N)$ | $O(N)$ |
-| **AVL / Red-Black Tree** | $O(\\log N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(N)$ |
-| **Binary Heap** | N/A | $O(N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(N)$ | $O(\\log N)$ | $O(\\log N)$ | $O(N)$ |
-| **Trie** | N/A | $O(L)$ | $O(L)$ | $O(L)$ | $O(L)$ | $O(L)$ | $O(L)$ | $O(N \\times L)$ |
-| **Graph (Adj List)** | N/A | $O(V + E)$ | $O(1)$ | $O(E)$ | $O(V + E)$ | $O(1)$ | $O(E)$ | $O(V + E)$ |
+These are common DSA models, not promises about every language implementation. `n` is the number of stored items, `h` is a tree's height, `L` is a key's length, and `deg(v)` is a graph vertex's number of neighbors.
 
-*\*Insertion and deletion at head/known pointer takes $O(1)$.*
-
+| Structure | Useful operation costs | Important assumption |
+|---|---|---|
+| **Array** | Index access $O(1)$; search $O(n)$; middle insert/delete $O(n)$; end add/remove usually amortized $O(1)$ | Dynamic-array model; JavaScript does not guarantee a physical memory layout. |
+| **Stack** | Push, pop, top $O(1)$ | Operations are limited to the top. |
+| **Queue** | Enqueue, dequeue, front $O(1)$ | Use a ring buffer or a queue implementation that avoids shifting all items. |
+| **Linked list** | Search/access by position $O(n)$; insert/delete at head or a known node $O(1)$ | For a singly linked list, deletion by known node generally also needs its predecessor. |
+| **Hash map / set** | Lookup, add, delete average $O(1)$; worst case can be $O(n)$ | Average costs depend on hashing, key size, and implementation. |
+| **Unbalanced BST** | Search, insert, delete $O(h)$; worst case $O(n)$ | A tree can become a chain. |
+| **Balanced BST** | Search, insert, delete $O(\log n)$ | Balancing keeps height logarithmic. |
+| **Binary heap** | Peek extreme $O(1)$; insert/remove extreme $O(\log n)$; search arbitrary item $O(n)$ | Heap order does not fully sort the elements. |
+| **Trie** | Search/insert $O(L)$ | Child lookup cost and memory depend on the alphabet and node representation. |
+| **Graph adjacency list** | List neighbors $O(\deg(v))$; full BFS/DFS $O(V+E)$ | The graph is stored with one neighbor list per vertex. |
 ---
 
 ### Sorting Algorithms
@@ -214,7 +226,7 @@ Phase 9: Mathematical Foundations & Number Theory (Ch-30)
 
 ## ⏱️ Input Constraints vs Target Complexity Target
 
-Standard technical interview platforms (LeetCode, Codeforces, HackerRank, GeeksforGeeks) enforce a **1.0-second time limit**, allowing approximately **$10^8$ operations per second**.
+Runtime limits differ by platform, problem, and language. An estimate such as $10^8$ simple operations per second is only a rough rule of thumb, not a promise. Use input limits, test-case counts, memory limits, and operation costs to judge an approach.
 
 | Input Size ($N$) | Target Time Complexity | Expected Algorithm / Paradigm |
 |---|:---:|---|

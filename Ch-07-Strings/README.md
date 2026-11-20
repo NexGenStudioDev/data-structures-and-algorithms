@@ -31,14 +31,13 @@ Ch-07-Strings/
 ## 🎯 Key Concepts & Pitfalls
 
 ### 1. Immutability & StringBuilder / Array Joins
-In languages like JavaScript, Python, and Java, strings are **immutable**.
-Concatenating strings inside a loop like:
+JavaScript, Python, and Java strings are immutable. Repeated concatenation may copy growing strings and can take quadratic time, but the exact cost depends on the language runtime and optimization. Do not assume every `+=` loop has the same cost. For predictable linear construction, collect pieces and join them:
 ```javascript
 let s = "";
 for (let i = 0; i < n; i++) {
     s += str[i]; // Copies entire string each iteration!
 }
-// Total Time Complexity: O(N^2)
+// May copy growing strings repeatedly; exact cost is runtime-dependent.
 ```
 **Optimal Approach:** Use an array/list and join at the end:
 ```javascript
@@ -46,11 +45,11 @@ let parts = [];
 for (let i = 0; i < n; i++) {
     parts.push(str[i]);
 }
-let s = parts.join(''); // Total Time: O(N)
+let s = parts.join(''); // Typically O(N) for N total output characters
 ```
 
 ### 2. Character Code Manipulation
-Characters correspond to ASCII/Unicode integers:
+JavaScript strings use UTF-16 code units. ASCII letters and digits have the code values below, but Unicode includes many characters outside ASCII; one visible symbol may use multiple code units. For full Unicode code points, consider `for...of` or `Array.from` instead of indexing by code unit. ASCII letters and digits have these values:
 - `'a'` to `'z'`: $97$ to $122$
 - `'A'` to `'Z'`: $65$ to $90$
 - `'0'` to `'9'`: $48$ to $57$
@@ -62,7 +61,7 @@ Characters correspond to ASCII/Unicode integers:
 3. **Substrings vs Subsequences:**
    - *Substring:* Contiguous slice of characters (Total non-empty substrings: $\frac{N(N+1)}{2}$).
    - *Subsequence:* Characters in order, not necessarily contiguous (Total subsequences: $2^N$).
-4. **Pattern Searching:** Naive ($O(N \times M)$), KMP ($O(N + M)$), Rabin-Karp ($O(N + M)$).
+4. **Pattern Searching:** Naive matching is $O(NM)$ in the worst case; KMP is $O(N+M)$; Rabin–Karp is expected $O(N+M)$ with a good rolling hash, with collision checks and a worse worst case.
 
 ---
 
@@ -74,7 +73,7 @@ Characters correspond to ASCII/Unicode integers:
 | [LeetCode 13: Roman to Integer](./LeetCode/Roman%20to%20Integer/) | Easy | Left-to-Right Scan with Lookahead | ✅ Complete |
 | [LeetCode 28: First Occurrence (strStr)](./LeetCode/Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/) | Easy | Sliding Window / KMP | ✅ Complete |
 | [LeetCode 58: Length of Last Word](./LeetCode/Length%20of%20Last%20Word/) | Easy | Reverse Traversal | ✅ Complete |
-| [LeetCode 557: Reverse Words in String III](./LeetCode/Reverse%20Words%20in%20a%20String%20III/) | Easy | Two Pointers In-place | ✅ Complete |
+| [LeetCode 557: Reverse Words in String III](./LeetCode/Reverse%20Words%20in%20a%20String%20III/) | Easy | Reverse each word; output uses O(n) space in this implementation | ✅ Complete |
 | [LeetCode 2129: Capitalize the Title](./LeetCode/Capitalize%20the%20Title/) | Easy | String Tokenization | ✅ Complete |
 | [LeetCode 205: Isomorphic Strings](./LeetCode/Isomorphic%20Strings/) | Easy | Bi-directional Hash Map | ✅ Complete |
 | LeetCode 3: Longest Substring Without Repeating Characters | Medium | Sliding Window with Set | ⏳ To Do |

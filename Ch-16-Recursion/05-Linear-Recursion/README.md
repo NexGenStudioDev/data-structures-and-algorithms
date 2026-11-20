@@ -274,7 +274,7 @@ function printNTo1(n) {
 
 For `n = 3`, output is `3 2 1`.
 
-*Complete Problem & Solution Walkthrough:* [GeeksforGeeks — Print N to 1 Without Loop](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/)
+*Complete Problem & Solution Walkthrough:* [GeeksforGeeks — Print N to 1 Without Loop](../geeksforgeeks/Print%20n%20to%201%20Without%20Loop/)
 
 ### B. Print `1` to `N`
 
@@ -294,7 +294,7 @@ For `n = 3`, output is `1 2 3`.
 **Key lesson:** moving the operation before or after the recursive call
 can change the output order.
 
-*Complete Problem & Solution Walkthrough:* [GeeksforGeeks — Print 1 to N Without Using Loops](./geeksforgeeks/1%20to%20n%20Without%20Loop/)
+*Complete Problem & Solution Walkthrough:* [GeeksforGeeks — Print 1 to N Without Using Loops](../geeksforgeeks/1%20to%20n%20Without%20Loop/)
 
 ### C. Sum from `1` to `N`
 
@@ -404,10 +404,10 @@ Explore the step-by-step problem guides, dry-runs, and dual-language implementat
 
 | Problem | Difficulty | Category | Platform | Solution Links |
 |---|:---:|---|---|---|
-| [Factorial](./geeksforgeeks/Factorial/Question.md) | Basic | Head / Return Accumulation | GeeksforGeeks | [Guide](./geeksforgeeks/Factorial/Solution.md) • [JS](./geeksforgeeks/Factorial/code/factorial.js) • [Python](./geeksforgeeks/Factorial/code/factorial.py) |
-| [1 to n Without Loop](./geeksforgeeks/1%20to%20n%20Without%20Loop/Question.md) | Basic | Head Recursion (Unwinding print) | GeeksforGeeks | [Guide](./geeksforgeeks/1%20to%20n%20Without%20Loop/Solution.md) • [JS](./geeksforgeeks/1%20to%20n%20Without%20Loop/code/script.js) • [Python](./geeksforgeeks/1%20to%20n%20Without%20Loop/code/index.py) |
-| [Print n to 1 Without Loop](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Question.md) | Basic | Tail Recursion (Winding print) | GeeksforGeeks | [Guide](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Solution.md) • [JS](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/code/script.js) • [Python](./geeksforgeeks/Print%20n%20to%201%20Without%20Loop/code/index.py) |
-| [Power Using Recursion](./geeksforgeeks/Power%20Using%20Recursion/Question.md) | Basic | Linear Multiplication Chain | GeeksforGeeks | [Guide](./geeksforgeeks/Power%20Using%20Recursion/Solution.md) • [JS](./geeksforgeeks/Power%20Using%20Recursion/code/index.js) • [Python](./geeksforgeeks/Power%20Using%20Recursion/code/solution.py) |
+| [Factorial](../geeksforgeeks/Factorial/Question.md) | Basic | Head / Return Accumulation | GeeksforGeeks | [Guide](../geeksforgeeks/Factorial/Solution.md) • [JS](../geeksforgeeks/Factorial/code/factorial.js) • [Python](../geeksforgeeks/Factorial/code/factorial.py) |
+| [1 to n Without Loop](../geeksforgeeks/1%20to%20n%20Without%20Loop/Question.md) | Basic | Head Recursion (Unwinding print) | GeeksforGeeks | [Guide](../geeksforgeeks/1%20to%20n%20Without%20Loop/Solution.md) • [JS](../geeksforgeeks/1%20to%20n%20Without%20Loop/code/script.js) • [Python](../geeksforgeeks/1%20to%20n%20Without%20Loop/code/index.py) |
+| [Print n to 1 Without Loop](../geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Question.md) | Basic | Tail Recursion (Winding print) | GeeksforGeeks | [Guide](../geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Solution.md) • [JS](../geeksforgeeks/Print%20n%20to%201%20Without%20Loop/code/script.js) • [Python](../geeksforgeeks/Print%20n%20to%201%20Without%20Loop/code/index.py) |
+| [Power Using Recursion](../geeksforgeeks/Power%20Using%20Recursion/Question.md) | Basic | Linear Multiplication Chain | GeeksforGeeks | [Guide](../geeksforgeeks/Power%20Using%20Recursion/Solution.md) • [JS](../geeksforgeeks/Power%20Using%20Recursion/code/index.js) • [Python](../geeksforgeeks/Power%20Using%20Recursion/code/solution.py) |
 
 ## Quick Revision
 

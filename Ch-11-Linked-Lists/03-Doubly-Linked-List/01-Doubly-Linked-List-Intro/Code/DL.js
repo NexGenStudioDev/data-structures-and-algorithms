@@ -9,6 +9,7 @@ class Node {
 class DLL {
   constructor() {
     this.head = null;
+    this.tail = null;
     this.len = 0;
   }
 
@@ -22,6 +23,7 @@ class DLL {
     }
 
     this.head = newNode;
+    if (this.tail === null) this.tail = newNode;
     this.len++;
   }
 
@@ -29,20 +31,14 @@ class DLL {
   addAtLast(name) {
     const newNode = new Node(name);
 
-    if (this.head === null) {
+    if (this.tail === null) {
       this.head = newNode;
-      this.len++;
-      return;
+      this.tail = newNode;
+    } else {
+      this.tail.next = newNode;
+      newNode.prev = this.tail;
+      this.tail = newNode;
     }
-
-    let current = this.head;
-
-    while (current.next !== null) {
-      current = current.next;
-    }
-
-    current.next = newNode;
-    newNode.prev = current;
 
     this.len++;
   }
@@ -81,45 +77,35 @@ class DLL {
     this.len++;
   }
 
-  removeHead(){
+  removeHead() {
+    if (this.head === null) return null;
 
-    let head = this.head
-    
-    this.head = head.next
-    head.prev = null
-    this.len--
-   
-    return this.head
+    const removed = this.head;
+    this.head = removed.next;
+    if (this.head !== null) {
+      this.head.prev = null;
+    } else {
+      this.tail = null;
+    }
+    removed.next = null;
+    this.len--;
+    return removed.val;
   }
 
-  removeTail(){
-   let Current = this.head
+  removeTail() {
+    if (this.head === null) return null;
 
- 
+    const current = this.tail;
+    this.tail = current.prev;
 
-   while(Current.next.next !== null){
-    Current = Current.next
-   }
-
-
-
-   Current.next.prev = null
-   Current.next = null
-
-   this.len--
-
-    return this.head
-
-
-
-   
-  //  Current.next = null
-
-    // this.len--
-
-
-
-
+    if (this.tail === null) {
+      this.head = null;
+    } else {
+      this.tail.next = null;
+    }
+    current.prev = null;
+    this.len--;
+    return current.val;
   }
 
 removeAtIndex(index) {
@@ -166,29 +152,19 @@ removeAtIndex(index) {
   }
 }
 
-// ----------------------
+if (typeof module !== "undefined") module.exports = DLL;
+
 // Example
-// ----------------------
-
-const students = new DLL();
-
-
-
-students.addAtFirst("Rahul");
-students.addAtFirst("Priya");
-students.addAtFirst("Amit");
-// students.addAtLast("Neha");
-
-students.addAtIndex(0, "Abhishek");
-
-
-students.addAtIndex(3, "Sneha");
-
-
-
-students.removeHead()
-students.removeTail()
-students.print();
-
-console.log("Length:", students.len);
+if (typeof require !== "undefined" && require.main === module) {
+  const students = new DLL();
+  students.addAtFirst("Rahul");
+  students.addAtFirst("Priya");
+  students.addAtFirst("Amit");
+  students.addAtIndex(0, "Abhishek");
+  students.addAtIndex(3, "Sneha");
+  students.removeHead();
+  students.removeTail();
+  students.print();
+  console.log("Length:", students.len);
+}
 

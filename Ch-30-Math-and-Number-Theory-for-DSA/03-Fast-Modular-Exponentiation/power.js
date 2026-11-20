@@ -1,19 +1,22 @@
-// Fast Modular Exponentiation - O(log N)
-
+// Fast modular exponentiation with BigInt to avoid Number precision loss.
 function modularPow(base, exp, mod) {
-    let result = 1n;
-    base = BigInt(base) % BigInt(mod);
-    exp = BigInt(exp);
-    mod = BigInt(mod);
+    let b = BigInt(base);
+    let e = BigInt(exp);
+    const m = BigInt(mod);
+    if (m <= 0n) throw new RangeError("mod must be a positive integer");
+    if (e < 0n) throw new RangeError("exp must be non-negative");
 
-    while (exp > 0n) {
-        if (exp & 1n) {
-            result = (result * base) % mod;
-        }
-        base = (base * base) % mod;
-        exp >>= 1n;
+    b = ((b % m) + m) % m;
+    let result = 1n % m;
+    while (e > 0n) {
+        if (e & 1n) result = (result * b) % m;
+        b = (b * b) % m;
+        e >>= 1n;
     }
-    return Number(result);
+    return result;
 }
 
-console.log("2^10 mod 1000:", modularPow(2, 10, 1000)); // Output: 24
+if (typeof module !== "undefined") module.exports = modularPow;
+if (typeof require !== "undefined" && require.main === module) {
+    console.log("2^10 mod 1000:", modularPow(2, 10, 1000).toString()); // 24
+}

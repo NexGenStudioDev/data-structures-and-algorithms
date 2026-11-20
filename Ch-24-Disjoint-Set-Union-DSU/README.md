@@ -21,7 +21,7 @@ Ch-24-Disjoint-Set-Union-DSU/
 ## 🎯 The Dual Optimizations
 1. **Path Compression:** During `find(x)`, make every visited node point directly to the representative root.
 2. **Union by Rank / Size:** Always attach the shallower tree underneath the root of the deeper tree.
-- Combined Time Complexity: **$O(\alpha(N))$** per operation (where $\alpha$ is the Inverse Ackermann Function, strictly $< 5$ for all universe-scale values of $N$).
+- With path compression and union by rank or size, operations take amortized $O(\alpha(N))$ time over a sequence of operations. The inverse Ackermann function grows so slowly that it is at most a small constant for practical input sizes; this is an amortized bound, not a worst-case guarantee for each individual call.
 
 ---
 

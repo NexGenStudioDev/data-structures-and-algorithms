@@ -45,8 +45,9 @@ $$a^b = \begin{cases} (a^{b/2})^2 & \text{if } b \text{ is even} \\ a \times (a^
 - $(a + b) \bmod M = ((a \bmod M) + (b \bmod M)) \bmod M$
 - $(a \times b) \bmod M = ((a \bmod M) \times (b \bmod M)) \bmod M$
 - **Modular Division:** $\frac{a}{b} \bmod M = a \times b^{-1} \bmod M$
-- If $M$ is prime, by Fermat's Little Theorem:
+- If $M$ is prime and $b$ is not divisible by $M$, Fermat's Little Theorem gives:
   $$b^{M-1} \equiv 1 \pmod M \implies b^{-1} \equiv b^{M-2} \pmod M$$
+- In JavaScript, use `BigInt` for large exact integers. `Number` can lose integer precision above `Number.MAX_SAFE_INTEGER`.
 
 ### 5. Catalan Numbers
 $$C_n = \frac{1}{n + 1} \binom{2n}{n} = \sum_{i=0}^{n-1} C_i C_{n-1-i}$$

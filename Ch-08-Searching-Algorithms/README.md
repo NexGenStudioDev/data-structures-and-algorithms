@@ -11,9 +11,8 @@
 Ch-08-Searching-Algorithms/
 ├── 01-Linear-Search/
 ├── 02-Binary-Search/
-│   ├── README.md                                 # Zero-to-advanced binary search master guide
-│   ├── binary_search.js                          # Classical binary search implementation
-│   ├── binary_search.py                          # Python implementation with bisect patterns
+│   ├── Code/                                     # JavaScript and Python implementations
+│   ├── doc/                                      # Binary search notes and examples
 │   └── LeetCode/
 │       └── Sqrt(x)/                              # Complete walkthrough, dry run, images, JS & Python
 ├── 03-Binary-Search-on-Answer/
@@ -39,12 +38,12 @@ Ch-08-Searching-Algorithms/
 - **Space Complexity:** $O(1)$ iterative, $O(\log N)$ recursive.
 - **Midpoint Formula:**
   $$\text{mid} = \text{low} + \lfloor \frac{\text{high} - \text{low}}{2} \rfloor$$
-  *Never use `(low + high) // 2` in typed languages like C++/Java because it can overflow a 32-bit signed integer!*
+  *In languages with fixed-width signed integers, `low + high` can overflow. The difference-based formula avoids that issue. In JavaScript, ordinary `Number` values do not have the same 32-bit integer overflow behavior, but the difference form is still clear.*
 
 ### 3. Binary Search Variants
 1. **Lower Bound:** Smallest index where `arr[i] >= target`.
 2. **Upper Bound:** Smallest index where `arr[i] > target`.
-3. **Search in Rotated Sorted Array:** At least one half (`[low..mid]` or `[mid..high]`) is always strictly sorted. Determine which half is sorted and check if the target falls within that sorted range.
+3. **Search in Rotated Sorted Array:** With distinct values, at least one half is sorted. With duplicates, both halves may look equal (for example `[1, 1, 1, 3, 1]`), so a search may need to shrink an endpoint; the worst case can become $O(N)$.
 
 ### 4. Binary Search on Answer Space
 When asked to minimize the maximum (or maximize the minimum), if a condition is monotonic:

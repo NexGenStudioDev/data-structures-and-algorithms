@@ -1,7 +1,7 @@
 # Chapter 10: Two Pointers & Sliding Window
 
 > **The two most powerful algorithmic paradigms for linear data structures.**  
-> Transform brute-force $O(N^2)$ quadratic nested loops into optimal $O(N)$ linear scans.
+> These patterns can reduce work to a linear scan when the problem has the right structure. They do not turn every quadratic solution into a linear one.
 
 ---
 
@@ -24,7 +24,7 @@ Ch-10-Two-Pointers-and-Sliding-Window/
 ## 🎯 Master Templates
 
 ### 1. Opposite-Direction Two Pointers (Convergence)
-Used primarily on sorted arrays, palindrome checking, or partition problems:
+For pair-sum pruning, the array must be sorted (or otherwise ordered in a way that justifies each pointer move). Palindrome checks and some partition problems use two pointers for different reasons. Example for a sorted array:
 ```javascript
 let left = 0, right = arr.length - 1;
 while (left < right) {
@@ -40,7 +40,7 @@ while (left < right) {
 ```
 
 ### 2. Variable-Size Sliding Window
-Find the longest/shortest contiguous subarray/substring satisfying condition $C$:
+Useful for contiguous ranges when expanding and shrinking the window maintains a condition that lets you discard earlier starts safely. Many sum-window problems need non-negative values; with negative values, use another method unless a different invariant applies:
 ```javascript
 let left = 0, result = 0;
 let windowState = {}; // or Map / Set / Count
