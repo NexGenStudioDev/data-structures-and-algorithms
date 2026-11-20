@@ -1,5 +1,7 @@
 # LeetCode 341 — Flatten Nested List Iterator
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/flatten-nested-list-iterator/)
+
 **Difficulty:** Medium
 **Topics:** Stack, Recursion, Iterator
 

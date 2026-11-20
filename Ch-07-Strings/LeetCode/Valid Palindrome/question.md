@@ -1,6 +1,8 @@
 
 # 125. Valid Palindrome
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/valid-palindrome/)
+
 **Difficulty:** Easy  
 **Topics:** Two Pointers, String  
 **Companies:** (Various top tech companies)

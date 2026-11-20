@@ -1,5 +1,7 @@
 # 205. Isomorphic Strings – Comprehensive Guide
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/isomorphic-strings/)
+
 ## 🧐 What Are "Isomorphic Strings"?
 
 In simple terms, two strings are **isomorphic** if they share the exact same **structural pattern** of character repetition, regardless of what the actual characters are.

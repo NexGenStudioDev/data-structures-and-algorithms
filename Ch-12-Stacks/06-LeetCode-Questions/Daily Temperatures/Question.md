@@ -1,6 +1,8 @@
 
 # LeetCode 739: Daily Temperatures
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/daily-temperatures/)
+
 ## 📌 Problem Description
 
 Given an array of integers `temperatures` representing the daily temperatures, return an array `answer` such that `answer[i]` is the number of days you have to wait after the `i`th day to get a **warmer** temperature. 

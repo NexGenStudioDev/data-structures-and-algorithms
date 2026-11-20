@@ -33,12 +33,15 @@ When deleting node $Z$:
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Key Pattern | Status |
 |---|---|---|:---:|
-| LeetCode 700: Search in a BST | Easy | Binary Search Property | ⏳ To Do |
-| LeetCode 701: Insert into a BST | Medium | Traversal to Leaf | ⏳ To Do |
-| LeetCode 450: Delete Node in a BST | Medium | Three Deletion Cases | ⏳ To Do |
-| LeetCode 98: Validate Binary Search Tree | Medium | Range Invariant `(minVal, maxVal)` | ⏳ To Do |
-| LeetCode 235: Lowest Common Ancestor of a BST | Medium | Directional Value Comparison | ⏳ To Do |
-| LeetCode 230: Kth Smallest Element in a BST | Medium | Inorder Traversal Counter | ⏳ To Do |
-| LeetCode 108: Convert Sorted Array to BST | Easy | Divide & Conquer Midpoint | ⏳ To Do |
+| [LeetCode 700: Search in a BST](https://leetcode.com/problems/search-in-a-bst/)| Easy | Binary Search Property | ⏳ To Do |
+| [LeetCode 701: Insert into a BST](https://leetcode.com/problems/insert-into-a-bst/)| Medium | Traversal to Leaf | ⏳ To Do |
+| [LeetCode 450: Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)| Medium | Three Deletion Cases | ⏳ To Do |
+| [LeetCode 98: Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| Medium | Range Invariant `(minVal, maxVal)` | ⏳ To Do |
+| [LeetCode 235: Lowest Common Ancestor of a BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-bst/)| Medium | Directional Value Comparison | ⏳ To Do |
+| [LeetCode 230: Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)| Medium | Inorder Traversal Counter | ⏳ To Do |
+| [LeetCode 108: Convert Sorted Array to BST](https://leetcode.com/problems/convert-sorted-array-to-bst/)| Easy | Divide & Conquer Midpoint | ⏳ To Do |

@@ -1,5 +1,7 @@
 # 496. Next Greater Element I
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/next-greater-element-i/)
+
 ## Difficulty
 
 **Easy**

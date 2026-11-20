@@ -54,6 +54,9 @@ These costs use common DSA models. State assumptions when they matter, and check
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Key Pattern | Status |
 |---|---|---|:---:|
 | [LeetCode 1: Two Sum](./LeetCode/Two%20Sum/) | Easy | Hash Map Lookup | ✅ Complete |
@@ -61,8 +64,5 @@ These costs use common DSA models. State assumptions when they matter, and check
 | [LeetCode 27: Remove Element](./LeetCode/Remove%20Element/) | Easy | Two Pointers (In-place) | ✅ Complete |
 | [LeetCode 26: Remove Duplicates](./LeetCode/Remove%20Duplicates%20from%20Sorted%20Array/) | Easy | Two Pointers (Fast/Slow) | ✅ Complete |
 | [LeetCode 14: Longest Common Prefix](./LeetCode/Longest%20Common%20Prefix/) | Easy | Horizontal/Vertical Scanning | ✅ Complete |
-| [LeetCode 877: Stone Game](./LeetCode/Stone%20Game/) | Medium | Minimax / DP / Game Theory | ✅ Complete |
-| LeetCode 53: Maximum Subarray | Medium | Kadane's Algorithm | ⏳ To Do |
-| LeetCode 75: Sort Colors | Medium | Dutch National Flag | ⏳ To Do |
-| LeetCode 238: Product of Array Except Self | Medium | Prefix & Suffix Products | ⏳ To Do |
-| LeetCode 42: Trapping Rain Water | Hard | Two Pointers / Monotonic Stack | ⏳ To Do |
+| [LeetCode 53: Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)| Medium | Kadane's Algorithm | ⏳ To Do |
+| [LeetCode 238: Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)| Medium | Prefix & Suffix Products | ⏳ To Do |

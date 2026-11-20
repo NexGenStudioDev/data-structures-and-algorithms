@@ -35,8 +35,11 @@ The range-update costs depend on the exact operation and chosen variant. A stand
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Data Structure | Status |
 |---|---|---|:---:|
-| LeetCode 307: Range Sum Query - Mutable | Medium | Segment Tree / Fenwick Tree | ⏳ To Do |
-| LeetCode 315: Count of Smaller Numbers After Self | Hard | BIT / Merge Sort Inversion | ⏳ To Do |
-| LeetCode 218: The Skyline Problem | Hard | Segment Tree / Priority Queue | ⏳ To Do |
+| [LeetCode 307: Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)| Medium | Segment Tree / Fenwick Tree | ⏳ To Do |
+| [LeetCode 315: Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)| Hard | BIT / Merge Sort Inversion | ⏳ To Do |
+| [LeetCode 218: The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| Hard | Segment Tree / Priority Queue | ⏳ To Do |

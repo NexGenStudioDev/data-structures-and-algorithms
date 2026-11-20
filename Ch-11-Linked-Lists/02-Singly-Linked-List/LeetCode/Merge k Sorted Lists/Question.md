@@ -1,5 +1,7 @@
 # 23. Merge K Sorted Lists
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/merge-k-sorted-lists/)
+
 # Problem Statement
 
 You are given an array named `lists` containing **k sorted singly linked lists**. Each element in the array represents the **head node** of a linked list, and every linked list is already sorted in **ascending order**.

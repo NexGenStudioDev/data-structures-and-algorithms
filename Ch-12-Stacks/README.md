@@ -48,7 +48,10 @@ Used to find the **Next Greater Element**, **Next Smaller Element**, **Previous 
 
 ---
 
-## 📝 Practice Roadmap (Existing & Suggested)
+## 📝 Practice Roadmap
+
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+ (Existing & Suggested)
 
 | Problem | Difficulty | Subtopic | Status |
 |---|---|---|:---:|
@@ -57,12 +60,11 @@ Used to find the **Next Greater Element**, **Next Smaller Element**, **Previous 
 | [LeetCode 1598: Crawler Log Folder](./06-LeetCode-Questions/Crawler%20Log%20Folder/) | Easy | Directory Depth Tracking | ✅ Complete |
 | [LeetCode 739: Daily Temperatures](./06-LeetCode-Questions/Daily%20Temperatures/) | Medium | Monotonic Stack | ✅ Complete |
 | [LeetCode 341: Flatten Nested List Iterator](./06-LeetCode-Questions/Flatten%20Nested%20List%20Iterator/) | Medium | Lazy Iterator Stack | ✅ Complete |
-| [LeetCode 232: Implement Queue using Stacks](./06-LeetCode-Questions/Implement%20Queue%20using%20Stacks/) | Easy | Two-Stack Amortized Queue | ✅ Complete |
 | [LeetCode 225: Implement Stack using Queues](./06-LeetCode-Questions/Implement%20Stack%20using%20Queues/) | Easy | Queue Simulation | ✅ Complete |
 | [LeetCode 1544: Make The String Great](./06-LeetCode-Questions/Make%20The%20String%20Great/) | Easy | Adjacent Elimination | ✅ Complete |
 | [LeetCode 155: Min Stack](./06-LeetCode-Questions/Min%20Stack/) | Medium | $O(1)$ Min Tracking | ✅ Complete |
 | [LeetCode 496: Next Greater Element I](./06-LeetCode-Questions/next-greater-element-i/) | Easy | Monotonic Stack + Map | ✅ Complete |
 | [LeetCode 1047: Remove Adjacent Duplicates](./06-LeetCode-Questions/Remove%20All%20Adjacent%20Duplicates%20In%20String/) | Easy | Character Elimination | ✅ Complete |
 | [LeetCode 71: Simplify Path](./06-LeetCode-Questions/Simplify%20Path/) | Medium | Path Token Stack | ✅ Complete |
-| LeetCode 20: Valid Parentheses | Easy | Bracket Matching | ⏳ To Do |
-| LeetCode 84: Largest Rectangle in Histogram | Hard | Monotonic Stack Boundary | ⏳ To Do |
+| [LeetCode 20: Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| Easy | Bracket Matching | ⏳ To Do |
+| [LeetCode 84: Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)| Hard | Monotonic Stack Boundary | ⏳ To Do |

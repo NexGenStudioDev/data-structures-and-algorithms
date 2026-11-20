@@ -1,5 +1,7 @@
 # 🪨 877. Stone Game
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/stone-game/)
+
 ## 📝 Problem Statement
 
 Alice and Bob are playing a game with a row of stone piles.

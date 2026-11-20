@@ -50,12 +50,15 @@ The table describes common textbook implementations. Quick Sort’s space column
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Target Technique | Status |
 |---|---|---|:---:|
-| LeetCode 912: Sort an Array | Medium | Merge Sort / Quick Sort | ⏳ To Do |
-| LeetCode 75: Sort Colors | Medium | Dutch National Flag 3-Way Partition | ⏳ To Do |
-| LeetCode 268: Missing Number | Easy | Cyclic Sort / XOR | ⏳ To Do |
-| LeetCode 448: Find All Numbers Disappeared | Easy | Cyclic Sort | ⏳ To Do |
-| LeetCode 287: Find Duplicate Number | Medium | Floyd's Cycle / Cyclic Sort | ⏳ To Do |
-| LeetCode 148: Sort List | Medium | Merge Sort on Linked List | ⏳ To Do |
-| LeetCode 56: Merge Intervals | Medium | Sort by Start Time + Sweep | ⏳ To Do |
+| [LeetCode 912: Sort an Array](https://leetcode.com/problems/sort-an-array/)| Medium | Merge Sort / Quick Sort | ⏳ To Do |
+| [LeetCode 75: Sort Colors](https://leetcode.com/problems/sort-colors/)| Medium | Dutch National Flag 3-Way Partition | ⏳ To Do |
+| [LeetCode 268: Missing Number](https://leetcode.com/problems/missing-number/)| Easy | Cyclic Sort / XOR | ⏳ To Do |
+| [LeetCode 448: Find All Numbers Disappeared](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| Easy | Cyclic Sort | ⏳ To Do |
+| [LeetCode 287: Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)| Medium | Floyd's Cycle / Cyclic Sort | ⏳ To Do |
+| [LeetCode 148: Sort List](https://leetcode.com/problems/sort-list/)| Medium | Merge Sort on Linked List | ⏳ To Do |
+| [LeetCode 56: Merge Intervals](https://leetcode.com/problems/merge-intervals/)| Medium | Sort by Start Time + Sweep | ⏳ To Do |

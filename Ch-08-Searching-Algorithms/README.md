@@ -58,16 +58,19 @@ When asked to minimize the maximum (or maximize the minimum), if a condition is 
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Pattern | Status |
 |---|---|---|:---:|
 | [LeetCode 69: Sqrt(x)](./02-Binary-Search/LeetCode/Sqrt%28x%29/Approch1.md) | Easy | Binary Search on Answer Space | ✅ Completed |
-| LeetCode 704: Binary Search | Easy | Standard Binary Search | ⏳ To Do |
-| LeetCode 35: Search Insert Position | Easy | Lower Bound | ⏳ To Do |
-| LeetCode 34: First and Last Position | Medium | Lower & Upper Bound | ⏳ To Do |
-| LeetCode 33: Search in Rotated Sorted Array | Medium | Modified Binary Search | ⏳ To Do |
-| LeetCode 153: Find Minimum in Rotated Sorted Array | Medium | Inflection Point Search | ⏳ To Do |
-| LeetCode 74: Search a 2D Matrix | Medium | Flattened Matrix Binary Search | ⏳ To Do |
-| LeetCode 240: Search a 2D Matrix II | Medium | Top-Right / Bottom-Left Staircase | ⏳ To Do |
-| LeetCode 875: Koko Eating Bananas | Medium | Binary Search on Answer | ⏳ To Do |
-| LeetCode 1011: Capacity To Ship Packages | Medium | Binary Search on Answer | ⏳ To Do |
-| LeetCode 4: Median of Two Sorted Arrays | Hard | Advanced Binary Search Partition | ⏳ To Do |
+| [LeetCode 704: Binary Search](https://leetcode.com/problems/binary-search/)| Easy | Standard Binary Search | ⏳ To Do |
+| [LeetCode 35: Search Insert Position](https://leetcode.com/problems/search-insert-position/)| Easy | Lower Bound | ⏳ To Do |
+| [LeetCode 34: First and Last Position](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)| Medium | Lower & Upper Bound | ⏳ To Do |
+| [LeetCode 33: Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)| Medium | Modified Binary Search | ⏳ To Do |
+| [LeetCode 153: Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)| Medium | Inflection Point Search | ⏳ To Do |
+| [LeetCode 74: Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| Medium | Flattened Matrix Binary Search | ⏳ To Do |
+| [LeetCode 240: Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)| Medium | Top-Right / Bottom-Left Staircase | ⏳ To Do |
+| [LeetCode 875: Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)| Medium | Binary Search on Answer | ⏳ To Do |
+| [LeetCode 1011: Capacity To Ship Packages](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)| Medium | Binary Search on Answer | ⏳ To Do |
+| [LeetCode 4: Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| Hard | Advanced Binary Search Partition | ⏳ To Do |

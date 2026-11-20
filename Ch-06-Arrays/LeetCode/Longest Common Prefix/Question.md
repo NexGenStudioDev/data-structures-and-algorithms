@@ -1,5 +1,7 @@
 # 14. Longest Common Prefix
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/longest-common-prefix/)
+
 **Difficulty:** Easy  
 **Topics:** Array, String, Trie  
 **Companies:** Amazon, Microsoft, Google, Adobe

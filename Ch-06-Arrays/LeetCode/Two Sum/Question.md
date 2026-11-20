@@ -1,5 +1,7 @@
 # 1. Two Sum
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/two-sum/)
+
 **Difficulty:** Easy  
 **Topics:** Array, Hash Table  
 **Companies:** Amazon, Microsoft, Google, Apple, Meta, and many more.

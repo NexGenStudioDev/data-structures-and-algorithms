@@ -1,5 +1,7 @@
 ## 🧩 LeetCode 3174 — Clear Digits
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/clear-digits/)
+
 **Difficulty:** Easy
 **Topic:** Stack, String
 

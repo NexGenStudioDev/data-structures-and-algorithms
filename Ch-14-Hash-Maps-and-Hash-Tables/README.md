@@ -47,12 +47,11 @@ Implementations often resize when load factor passes a chosen threshold. The thr
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Key Pattern | Status |
 |---|---|---|:---:|
-| LeetCode 1: Two Sum | Easy | Complement Map | ⏳ To Do |
-| LeetCode 242: Valid Anagram | Easy | Frequency Array / Map | ⏳ To Do |
-| LeetCode 49: Group Anagrams | Medium | Sorted String or Tuple Key | ⏳ To Do |
-| LeetCode 347: Top K Frequent Elements | Medium | Bucket Sort / Min-Heap | ⏳ To Do |
-| LeetCode 128: Longest Consecutive Sequence | Medium | Hash Set Lookup $O(N)$ | ⏳ To Do |
-| LeetCode 146: LRU Cache | Medium | Hash Map + Doubly Linked List | ⏳ To Do |
-| LeetCode 380: Insert Delete GetRandom O(1) | Medium | Hash Map + Dynamic Array | ⏳ To Do |
+| [LeetCode 242: Valid Anagram](https://leetcode.com/problems/valid-anagram/)| Easy | Frequency Array / Map | ⏳ To Do |
+| [LeetCode 49: Group Anagrams](https://leetcode.com/problems/group-anagrams/)| Medium | Sorted String or Tuple Key | ⏳ To Do |
+| [LeetCode 380: Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)| Medium | Hash Map + Dynamic Array | ⏳ To Do |

@@ -36,12 +36,14 @@ Ch-27-Bit-Manipulation/
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Key Pattern | Status |
 |---|---|---|:---:|
-| LeetCode 136: Single Number | Easy | XOR Cancellation | ⏳ To Do |
-| LeetCode 191: Number of 1 Bits | Easy | Brian Kernighan Loop | ⏳ To Do |
-| LeetCode 338: Counting Bits | Easy | DP + Lowest Bit | ⏳ To Do |
-| LeetCode 137: Single Number II | Medium | Bit Counting Modulo 3 | ⏳ To Do |
-| LeetCode 260: Single Number III | Medium | XOR Partitioning by Lowest Bit | ⏳ To Do |
-| LeetCode 78: Subsets | Medium | Bitmask State Enumeration ($0$ to $2^N - 1$) | ⏳ To Do |
-| LeetCode 371: Sum of Two Integers | Medium | Bitwise Adder (Sum = XOR, Carry = AND) | ⏳ To Do |
+| [LeetCode 136: Single Number](https://leetcode.com/problems/single-number/)| Easy | XOR Cancellation | ⏳ To Do |
+| [LeetCode 191: Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)| Easy | Brian Kernighan Loop | ⏳ To Do |
+| [LeetCode 338: Counting Bits](https://leetcode.com/problems/counting-bits/)| Easy | DP + Lowest Bit | ⏳ To Do |
+| [LeetCode 137: Single Number II](https://leetcode.com/problems/single-number-ii/)| Medium | Bit Counting Modulo 3 | ⏳ To Do |
+| [LeetCode 260: Single Number III](https://leetcode.com/problems/single-number-iii/)| Medium | XOR Partitioning by Lowest Bit | ⏳ To Do |
+| [LeetCode 371: Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)| Medium | Bitwise Adder (Sum = XOR, Carry = AND) | ⏳ To Do |

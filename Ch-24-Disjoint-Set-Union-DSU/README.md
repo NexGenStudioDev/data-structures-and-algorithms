@@ -27,9 +27,12 @@ Ch-24-Disjoint-Set-Union-DSU/
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Application | Status |
 |---|---|---|:---:|
-| LeetCode 547: Number of Provinces | Medium | Connected Component Counting | ⏳ To Do |
-| LeetCode 684: Redundant Connection | Medium | Cycle Detection in Undirected Graph | ⏳ To Do |
-| LeetCode 721: Accounts Merge | Medium | Equivalence Class Grouping | ⏳ To Do |
-| LeetCode 1319: Number of Operations to Connect Network | Medium | Spanning Component Counting | ⏳ To Do |
+| [LeetCode 547: Number of Provinces](https://leetcode.com/problems/number-of-provinces/)| Medium | Connected Component Counting | ⏳ To Do |
+| [LeetCode 684: Redundant Connection](https://leetcode.com/problems/redundant-connection/)| Medium | Cycle Detection in Undirected Graph | ⏳ To Do |
+| [LeetCode 721: Accounts Merge](https://leetcode.com/problems/accounts-merge/)| Medium | Equivalence Class Grouping | ⏳ To Do |
+| [LeetCode 1319: Number of Operations to Connect Network](https://leetcode.com/problems/number-of-operations-to-connect-network/)| Medium | Spanning Component Counting | ⏳ To Do |

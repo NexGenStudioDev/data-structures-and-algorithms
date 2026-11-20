@@ -1,5 +1,7 @@
 # 2620. Counter
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/counter/)
+
 **Difficulty:** Easy  
 **Topics:** Closure, Higher-Order Functions  
 **Companies:** (Various top tech companies)

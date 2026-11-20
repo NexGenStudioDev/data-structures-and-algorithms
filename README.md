@@ -15,6 +15,7 @@
 
 - [🗺️ Master Curriculum Roadmap](#️-master-curriculum-roadmap)
 - [📚 Complete Table of Contents](#-complete-table-of-contents)
+- [🧾 Repository Practice Tracker](./PRACTICE-TRACKER.md)
   - [Phase 1: Foundations & Complexity Analysis (`Ch-01` to `Ch-05`)](#-phase-1-foundations--complexity-analysis)
   - [Phase 2: Core Linear Data Structures (`Ch-06` to `Ch-10`)](#-phase-2-core-linear-data-structures--techniques)
   - [Phase 3: Pointer Structures, Stacks & Queues (`Ch-11` to `Ch-13`)](#-phase-3-pointer-structures-stacks--queues)

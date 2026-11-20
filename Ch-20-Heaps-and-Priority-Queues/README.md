@@ -35,11 +35,14 @@ For a $0$-indexed array:
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Pattern | Status |
 |---|---|---|:---:|
-| LeetCode 215: Kth Largest Element in an Array | Medium | Min-Heap of Size K / Quickselect | ⏳ To Do |
-| LeetCode 347: Top K Frequent Elements | Medium | Frequency Map + Min-Heap | ⏳ To Do |
-| LeetCode 295: Find Median from Data Stream | Hard | Two Heaps (Max-Heap + Min-Heap) | ⏳ To Do |
-| LeetCode 373: Find K Pairs with Smallest Sums | Medium | K-way Merge using Min-Heap | ⏳ To Do |
-| LeetCode 621: Task Scheduler | Medium | Max-Heap + Cooldown Queue | ⏳ To Do |
-| LeetCode 973: K Closest Points to Origin | Medium | Max-Heap of Size K | ⏳ To Do |
+| [LeetCode 215: Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)| Medium | Min-Heap of Size K / Quickselect | ⏳ To Do |
+| [LeetCode 347: Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)| Medium | Frequency Map + Min-Heap | ⏳ To Do |
+| [LeetCode 295: Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)| Hard | Two Heaps (Max-Heap + Min-Heap) | ⏳ To Do |
+| [LeetCode 373: Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)| Medium | K-way Merge using Min-Heap | ⏳ To Do |
+| [LeetCode 621: Task Scheduler](https://leetcode.com/problems/task-scheduler/)| Medium | Max-Heap + Cooldown Queue | ⏳ To Do |
+| [LeetCode 973: K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)| Medium | Max-Heap of Size K | ⏳ To Do |

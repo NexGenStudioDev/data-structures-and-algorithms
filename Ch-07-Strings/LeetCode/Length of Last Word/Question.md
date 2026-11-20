@@ -1,5 +1,7 @@
 # 58. Length of Last Word
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/length-of-last-word/)
+
 **Difficulty:** Easy  
 **Topics:** String  
 **Companies:** Google, Microsoft, Amazon, Adobe, and many more.

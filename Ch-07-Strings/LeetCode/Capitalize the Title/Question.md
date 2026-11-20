@@ -1,5 +1,7 @@
 # 2129. Capitalize the Title Question
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/capitalize-the-title/)
+
 **Difficulty:** Easy  
 **Topics:** String  
 **Companies:** Google, Microsoft, Amazon, Meta

@@ -60,12 +60,15 @@ Applications:
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Category | Status |
 |---|---|---|:---:|
-| LeetCode 204: Count Primes | Medium | Sieve of Eratosthenes | ⏳ To Do |
-| LeetCode 50: Pow(x, n) | Medium | Fast Binary Exponentiation | ⏳ To Do |
-| LeetCode 1071: Greatest Common Divisor of Strings | Easy | Euclidean GCD | ⏳ To Do |
-| LeetCode 96: Unique Binary Search Trees | Medium | Catalan Numbers / DP | ⏳ To Do |
-| LeetCode 292: Nim Game | Easy | Game Theory / Modulo 4 | ⏳ To Do |
-| LeetCode 877: Stone Game | Medium | Minimax / Game Theory DP | ✅ Complete |
-| LeetCode 372: Super Pow | Medium | Euler's Totient / Modular Exponentiation | ⏳ To Do |
+| [LeetCode 204: Count Primes](https://leetcode.com/problems/count-primes/)| Medium | Sieve of Eratosthenes | ⏳ To Do |
+| [LeetCode 50: Pow(x, n)](https://leetcode.com/problems/powx-n/)| Medium | Fast Exponentiation | ⏳ To Do |
+| [LeetCode 1071: Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)| Easy | Euclidean GCD | ⏳ To Do |
+| [LeetCode 96: Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| Medium | Catalan Numbers / DP | ⏳ To Do |
+| [LeetCode 292: Nim Game](https://leetcode.com/problems/nim-game/)| Easy | Game Theory / Modulo 4 | ⏳ To Do |
+| [LeetCode 877: Stone Game](https://leetcode.com/problems/stone-game/)| Medium | Minimax / Game Theory DP | ✅ Complete |
+| [LeetCode 372: Super Pow](https://leetcode.com/problems/super-pow/)| Medium | Euler's Totient / Modular Exponentiation | ⏳ To Do |

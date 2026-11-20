@@ -26,11 +26,14 @@ A greedy approach is correct if and only if:
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Category | Status |
 |---|---|---|:---:|
-| LeetCode 55: Jump Game | Medium | Reachability Frontier | ⏳ To Do |
-| LeetCode 45: Jump Game II | Medium | Range BFS / Greedy Leaps | ⏳ To Do |
-| LeetCode 134: Gas Station | Medium | Running Surplus Deficit Reset | ⏳ To Do |
-| LeetCode 435: Non-overlapping Intervals | Medium | Sort by End Time | ⏳ To Do |
-| LeetCode 452: Minimum Arrows to Burst Balloons | Medium | Interval Intersection | ⏳ To Do |
-| LeetCode 135: Candy | Hard | Two-Pass Greedy (Left & Right) | ⏳ To Do |
+| [LeetCode 55: Jump Game](https://leetcode.com/problems/jump-game/)| Medium | Reachability Frontier | ⏳ To Do |
+| [LeetCode 45: Jump Game II](https://leetcode.com/problems/jump-game-ii/)| Medium | Range BFS / Greedy Leaps | ⏳ To Do |
+| [LeetCode 134: Gas Station](https://leetcode.com/problems/gas-station/)| Medium | Running Surplus Deficit Reset | ⏳ To Do |
+| [LeetCode 435: Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)| Medium | Sort by End Time | ⏳ To Do |
+| [LeetCode 452: Minimum Arrows to Burst Balloons](https://leetcode.com/problems/minimum-arrows-to-burst-balloons/)| Medium | Interval Intersection | ⏳ To Do |
+| [LeetCode 135: Candy](https://leetcode.com/problems/candy/)| Hard | Two-Pass Greedy (Left & Right) | ⏳ To Do |

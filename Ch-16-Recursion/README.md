@@ -142,6 +142,11 @@ When given a problem, follow this structured mental process:
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
+For the linked Easy / Medium / Advanced question list and repository-based completion status, see the [Recursion Practice Tracker](./Practice-Tracker.md).
+
 Master recursion progressively from linear basics to advanced branching:
 
 | # | Problem | Difficulty | Platform | Core Concept | Status |
@@ -153,13 +158,9 @@ Master recursion progressively from linear basics to advanced branching:
 | 5 | [Power Using Recursion](./geeksforgeeks/Power%20Using%20Recursion/Question.md) | Easy | GeeksforGeeks | Linear Exponentiation Chain | ✅ Completed |
 | 6 | [First N Fibonacci Numbers](./geeksforgeeks/Fibonacci%20Series/Question.md) | Basic | GeeksforGeeks | Linear Recursion with an Accumulator | ✅ Completed |
 | 6 | Reverse an Array / String | Easy | LeetCode 344 | Two-Pointer Recursive Boundary | ⏳ Practice |
-| 7 | Check Palindrome Recursively | Easy | LeetCode 125 | Dual-End Boundary Check | ⏳ Practice |
-| 8 | LeetCode 509: Fibonacci Number | Easy | LeetCode | Binary / Tree Recursion | ⏳ Practice |
-| 9 | LeetCode 50: Pow(x, n) | Medium | LeetCode | Divide & Conquer Linear Recursion $O(\log N)$ | ⏳ Practice |
-| 10 | LeetCode 206: Reverse Linked List | Easy | LeetCode | Pointer Rewiring on Unwinding | ⏳ Practice |
-| 11 | LeetCode 779: K-th Symbol in Grammar | Medium | LeetCode | State Inversion via Parent Index | ⏳ Practice |
+| 8 | [LeetCode 509: Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)| Easy | LeetCode | Binary / Tree Recursion | ⏳ Practice |
+| 11 | [LeetCode 779: K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/)| Medium | LeetCode | State Inversion via Parent Index | ⏳ Practice |
 | 12 | Tower of Hanoi | Medium | Classical | 3-Peg Multi-Branch Transfer | ⏳ Practice |
-| 13 | LeetCode 78: Subsets | Medium | LeetCode | Pick / Don't Pick Choice Tree | ⏳ Practice |
 
 ---
 

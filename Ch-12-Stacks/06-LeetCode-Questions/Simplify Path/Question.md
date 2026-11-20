@@ -1,5 +1,7 @@
 # 71. Simplify Path
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/simplify-path/)
+
 You are given an **absolute path** representing a file or directory in a Unix-style file system.
 
 An absolute path always starts with a slash `/`.

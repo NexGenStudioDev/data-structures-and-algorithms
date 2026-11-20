@@ -34,10 +34,13 @@ These are common abstract implementation choices, not built-in names shared by e
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Key Pattern | Status |
 |---|---|---|:---:|
-| LeetCode 217: Contains Duplicate | Easy | Instant Set Insertion | ⏳ To Do |
-| LeetCode 349: Intersection of Two Arrays | Easy | Set Intersection | ⏳ To Do |
-| LeetCode 202: Happy Number | Easy | Cycle Detection via Visited Set | ⏳ To Do |
-| LeetCode 36: Valid Sudoku | Medium | 3 Sets per Row/Col/Box | ⏳ To Do |
-| LeetCode 128: Longest Consecutive Sequence | Medium | Intelligent Left-Boundary Check | ⏳ To Do |
+| [LeetCode 217: Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)| Easy | Instant Set Insertion | ⏳ To Do |
+| [LeetCode 349: Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)| Easy | Set Intersection | ⏳ To Do |
+| [LeetCode 202: Happy Number](https://leetcode.com/problems/happy-number/)| Easy | Cycle Detection via Visited Set | ⏳ To Do |
+| [LeetCode 36: Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| Medium | 3 Sets per Row/Col/Box | ⏳ To Do |
+| [LeetCode 128: Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | Set Lookup from Sequence Start | ⏳ To Do |

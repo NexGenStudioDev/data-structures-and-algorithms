@@ -25,6 +25,8 @@ Ch-18-Trees/
 
 ## 🎯 Master Traversals Summary
 
+Use the [Binary Tree Traversal Practice Tracker](./04-Traversals/Practice-Tracker.md) for traversal-only questions, difficulty groups, external question links, and local solution status.
+
 ```text
        1
       / \
@@ -42,13 +44,15 @@ Ch-18-Trees/
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Subtopic | Status |
 |---|---|---|:---:|
-| LeetCode 102: Binary Tree Level Order Traversal | Medium | BFS with Queue | ⏳ To Do |
-| LeetCode 104: Maximum Depth of Binary Tree | Easy | DFS / Height Calculation | ⏳ To Do |
-| LeetCode 543: Diameter of Binary Tree | Easy | Bottom-up Postorder | ⏳ To Do |
-| LeetCode 110: Balanced Binary Tree | Easy | Height Checking with Pruning | ⏳ To Do |
-| LeetCode 100: Same Tree | Easy | Simultaneous DFS | ⏳ To Do |
-| LeetCode 236: Lowest Common Ancestor | Medium | Postorder Discovery | ⏳ To Do |
-| LeetCode 199: Binary Tree Right Side View | Medium | BFS Level End / DFS Reverse Preorder | ⏳ To Do |
-| LeetCode 124: Binary Tree Maximum Path Sum | Hard | Subtree Contributions | ⏳ To Do |
+| [LeetCode 104: Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| Easy | DFS / Height Calculation | ⏳ To Do |
+| [LeetCode 543: Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)| Easy | Bottom-up Postorder | ⏳ To Do |
+| [LeetCode 110: Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)| Easy | Height Checking with Pruning | ⏳ To Do |
+| [LeetCode 100: Same Tree](./05-LeetCode-Questions/Same%20Tree/Question.md) | Easy | Simultaneous DFS | ✅ Completed · [Solution](./05-LeetCode-Questions/Same%20Tree/Solution.md) |
+| [LeetCode 236: Lowest Common Ancestor](https://leetcode.com/problems/lowest-common-ancestor/)| Medium | Postorder Discovery | ⏳ To Do |
+| [LeetCode 199: Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)| Medium | BFS Level End / DFS Reverse Preorder | ⏳ To Do |
+| [LeetCode 124: Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)| Hard | Subtree Contributions | ⏳ To Do |

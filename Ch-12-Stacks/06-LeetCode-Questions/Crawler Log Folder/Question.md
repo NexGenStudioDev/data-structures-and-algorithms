@@ -1,5 +1,7 @@
 # 1598. Crawler Log Folder
 
+**Question link:** [LeetCode problem](https://leetcode.com/problems/crawler-log-folder/)
+
 ## 📝 The Goal
 You are navigating through a file system, starting at the **main folder**. You are given a list of operations (`logs`) that tell you how to move around.
 

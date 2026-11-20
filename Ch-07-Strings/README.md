@@ -67,6 +67,9 @@ JavaScript strings use UTF-16 code units. ASCII letters and digits have the code
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Key Pattern | Status |
 |---|---|---|:---:|
 | [LeetCode 125: Valid Palindrome](./LeetCode/Valid%20Palindrome/) | Easy | Two Pointers | ✅ Complete |
@@ -76,5 +79,4 @@ JavaScript strings use UTF-16 code units. ASCII letters and digits have the code
 | [LeetCode 557: Reverse Words in String III](./LeetCode/Reverse%20Words%20in%20a%20String%20III/) | Easy | Reverse each word; output uses O(n) space in this implementation | ✅ Complete |
 | [LeetCode 2129: Capitalize the Title](./LeetCode/Capitalize%20the%20Title/) | Easy | String Tokenization | ✅ Complete |
 | [LeetCode 205: Isomorphic Strings](./LeetCode/Isomorphic%20Strings/) | Easy | Bi-directional Hash Map | ✅ Complete |
-| LeetCode 3: Longest Substring Without Repeating Characters | Medium | Sliding Window with Set | ⏳ To Do |
-| LeetCode 5: Longest Palindromic Substring | Medium | Expand Around Center / DP | ⏳ To Do |
+| [LeetCode 5: Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| Medium | Expand Around Center / DP | ⏳ To Do |

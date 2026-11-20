@@ -34,12 +34,14 @@ Ch-22-Graphs-Basics-and-Traversal/
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Category | Status |
 |---|---|---|:---:|
-| LeetCode 200: Number of Islands | Medium | Grid Connected Components (DFS/BFS) | ⏳ To Do |
-| LeetCode 133: Clone Graph | Medium | Graph Copy via BFS/DFS with Map | ⏳ To Do |
-| LeetCode 695: Max Area of Island | Medium | Grid Flood Fill | ⏳ To Do |
-| LeetCode 733: Flood Fill | Easy | DFS / BFS Color Spread | ⏳ To Do |
-| LeetCode 785: Is Graph Bipartite? | Medium | 2-Coloring via BFS/DFS | ⏳ To Do |
-| LeetCode 994: Rotting Oranges | Medium | Multi-source BFS | ⏳ To Do |
-| LeetCode 547: Number of Provinces | Medium | Connected Components | ⏳ To Do |
+| [LeetCode 200: Number of Islands](https://leetcode.com/problems/number-of-islands/)| Medium | Grid Connected Components (DFS/BFS) | ⏳ To Do |
+| [LeetCode 133: Clone Graph](https://leetcode.com/problems/clone-graph/)| Medium | Graph Copy via BFS/DFS with Map | ⏳ To Do |
+| [LeetCode 695: Max Area of Island](https://leetcode.com/problems/max-area-of-island/)| Medium | Grid Flood Fill | ⏳ To Do |
+| [LeetCode 733: Flood Fill](https://leetcode.com/problems/flood-fill/)| Easy | DFS / BFS Color Spread | ⏳ To Do |
+| [LeetCode 785: Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)| Medium | 2-Coloring via BFS/DFS | ⏳ To Do |
+| [LeetCode 994: Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)| Medium | Multi-source BFS | ⏳ To Do |

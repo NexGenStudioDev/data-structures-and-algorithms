@@ -32,11 +32,14 @@ Ch-23-Advanced-Graph-Algorithms/
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Technique | Status |
 |---|---|---|:---:|
-| LeetCode 207: Course Schedule | Medium | Kahn's Algorithm / Cycle in DAG | ⏳ To Do |
-| LeetCode 210: Course Schedule II | Medium | Topological Ordering | ⏳ To Do |
-| LeetCode 743: Network Delay Time | Medium | Dijkstra's Algorithm | ⏳ To Do |
-| LeetCode 787: Cheapest Flights Within K Stops | Medium | Bellman-Ford / Modified Dijkstra | ⏳ To Do |
-| LeetCode 1584: Min Cost to Connect All Points | Medium | Prim's / Kruskal's MST | ⏳ To Do |
-| LeetCode 1192: Critical Connections in a Network | Hard | Tarjan's Bridge Finding | ⏳ To Do |
+| [LeetCode 207: Course Schedule](https://leetcode.com/problems/course-schedule/)| Medium | Kahn's Algorithm / Cycle in DAG | ⏳ To Do |
+| [LeetCode 210: Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)| Medium | Topological Ordering | ⏳ To Do |
+| [LeetCode 743: Network Delay Time](https://leetcode.com/problems/network-delay-time/)| Medium | Dijkstra's Algorithm | ⏳ To Do |
+| [LeetCode 787: Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)| Medium | Bellman-Ford / Modified Dijkstra | ⏳ To Do |
+| [LeetCode 1584: Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)| Medium | Prim's / Kruskal's MST | ⏳ To Do |
+| [LeetCode 1192: Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)| Hard | Tarjan's Bridge Finding | ⏳ To Do |

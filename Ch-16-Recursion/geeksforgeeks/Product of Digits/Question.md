@@ -1,5 +1,7 @@
 #  Product of Digits Using Recursion
 
+**Question link:** [GeeksforGeeks reference](https://www.geeksforgeeks.org/dsa/program-to-calculate-product-of-digits-of-a-number/)
+
 
 ## **1. Problem Statement**
 

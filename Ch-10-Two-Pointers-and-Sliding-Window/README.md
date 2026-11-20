@@ -78,15 +78,17 @@ return false;
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Pattern | Status |
 |---|---|---|:---:|
-| LeetCode 167: Two Sum II (Sorted) | Medium | Opposite Direction | ⏳ To Do |
-| LeetCode 15: 3Sum | Medium | Sort + Two Pointers | ⏳ To Do |
-| LeetCode 11: Container With Most Water | Medium | Greedy Two Pointers | ⏳ To Do |
-| LeetCode 42: Trapping Rain Water | Hard | Two Pointers Left/Right Max | ⏳ To Do |
-| LeetCode 643: Maximum Average Subarray I | Easy | Fixed Sliding Window | ⏳ To Do |
-| LeetCode 3: Longest Substring Without Repeating | Medium | Variable Sliding Window | ⏳ To Do |
-| LeetCode 424: Longest Repeating Character Replacement | Medium | Variable Sliding Window | ⏳ To Do |
-| LeetCode 76: Minimum Window Substring | Hard | Variable Sliding Window + Map | ⏳ To Do |
-| LeetCode 141: Linked List Cycle | Easy | Fast & Slow Pointers | ⏳ To Do |
-| LeetCode 142: Linked List Cycle II | Medium | Fast & Slow Cycle Entry | ⏳ To Do |
+| [LeetCode 167: Two Sum II (Sorted)](https://leetcode.com/problems/two-sum-ii-sorted/)| Medium | Opposite Direction | ⏳ To Do |
+| [LeetCode 15: 3Sum](https://leetcode.com/problems/3sum/)| Medium | Sort + Two Pointers | ⏳ To Do |
+| [LeetCode 11: Container With Most Water](https://leetcode.com/problems/container-with-most-water/)| Medium | Greedy Two Pointers | ⏳ To Do |
+| [LeetCode 42: Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| Hard | Two Pointers Left/Right Max | ⏳ To Do |
+| [LeetCode 643: Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)| Easy | Fixed Sliding Window | ⏳ To Do |
+| [LeetCode 3: Longest Substring Without Repeating](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| Medium | Variable Sliding Window | ⏳ To Do |
+| [LeetCode 424: Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)| Medium | Variable Sliding Window | ⏳ To Do |
+| [LeetCode 76: Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| Hard | Variable Sliding Window + Map | ⏳ To Do |
+| [LeetCode 142: Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)| Medium | Fast & Slow Cycle Entry | ⏳ To Do |

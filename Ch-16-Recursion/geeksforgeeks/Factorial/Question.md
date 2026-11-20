@@ -1,5 +1,7 @@
 # Factorial of a Number (GeeksforGeeks)
 
+**Question link:** [GeeksforGeeks problem](https://www.geeksforgeeks.org/problems/factorial5739/1)
+
 ## Problem Statement
 
 Given a positive integer `n`, find the factorial of `n`.

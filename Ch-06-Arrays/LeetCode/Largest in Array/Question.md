@@ -1,5 +1,7 @@
 # Find the Largest Element in an Array
 
+**Question link:** [TakeUForward problem](https://takeuforward.org/practice/dsa/largest-element?category=fundamentals&source=strivers-a2z-dsa-sheet)
+
 **Level:** Beginner · **Topic:** Arrays · **Language focus:** JavaScript
 
 ## Problem

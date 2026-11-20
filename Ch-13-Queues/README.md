@@ -38,10 +38,13 @@ Ch-13-Queues/
 
 ## 📝 Practice Roadmap
 
+For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](../PRACTICE-TRACKER.md). LeetCode questions are linked below.
+
+
 | Problem | Difficulty | Subtopic | Status |
 |---|---|---|:---:|
 | [LeetCode 622: Design Circular Queue](./02-Circular-Queue/leetCode-question/Design%20Circular%20Queue/) | Medium | Ring Buffer Modulo Math | ✅ Complete |
-| LeetCode 232: Implement Queue using Stacks | Easy | Amortized $O(1)$ Dequeue | ⏳ To Do |
-| LeetCode 641: Design Circular Deque | Medium | Double-ended Ring Buffer | ⏳ To Do |
-| LeetCode 239: Sliding Window Maximum | Hard | Monotonic Deque | ⏳ To Do |
-| LeetCode 933: Number of Recent Calls | Easy | Sliding Window Queue | ⏳ To Do |
+| [LeetCode 232: Implement Queue using Stacks](../Ch-12-Stacks/06-LeetCode-Questions/Implement%20Queue%20using%20Stacks/Question.md) | Easy | Amortized $O(1)$ Dequeue | ✅ Complete · [Solution](../Ch-12-Stacks/06-LeetCode-Questions/Implement%20Queue%20using%20Stacks/docs/Approch1.Solution.md) |
+| [LeetCode 641: Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)| Medium | Double-ended Ring Buffer | ⏳ To Do |
+| [LeetCode 239: Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| Hard | Monotonic Deque | ⏳ To Do |
+| [LeetCode 933: Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)| Easy | Sliding Window Queue | ⏳ To Do |
