@@ -29,7 +29,7 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 | 13 | Queues | 7 |
 | 14 | Hash Maps & Hash Tables | 5 |
 | 15 | Sets | 6 |
-| 16 | Recursion — The Complete Master Guide | 13 |
+| 16 | Recursion — The Complete Master Guide | 21 |
 | 17 | Backtracking | 11 |
 | 18 | Binary Trees | 20 |
 | 19 | Binary Search Trees (BST) | 8 |
@@ -90,7 +90,7 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 | Difficulty | Platform | Question | Subtopic | Local question | Local answer / solution | Status |
 |---|---|---|---|---|---|---|
 | Easy | LeetCode | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Single-pass array scan | N/A | N/A | To Do |
-| Easy | LeetCode | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Array traversal / prefix sum | N/A | N/A | To Do |
+| Easy | LeetCode | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Array traversal / prefix sum | [Question](./Ch-06-Arrays/LeetCode/Find%20Pivot%20Index/Question.md) | [Solution](./Ch-06-Arrays/LeetCode/Find%20Pivot%20Index/doc/Approch1.md) | Completed |
 | Easy | TakeUForward | [Largest Element](https://takeuforward.org/practice/dsa/largest-element?category=fundamentals&source=strivers-a2z-dsa-sheet) | Arrays | [Question](./Ch-06-Arrays/LeetCode/Largest%20in%20Array/Question.md) | [Solution](./Ch-06-Arrays/LeetCode/Largest%20in%20Array/Answer.md) | Completed |
 | Easy | LeetCode | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | Single-pass array scan | N/A | N/A | To Do |
 | Easy | LeetCode | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Two-dimensional array construction | N/A | N/A | To Do |
@@ -381,14 +381,14 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 |---|---|---|---|---|---|---|
 | Easy | GeeksforGeeks | [Factorial](https://www.geeksforgeeks.org/problems/factorial5739/1) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Factorial/Question.md) | [Solution](./Ch-16-Recursion/geeksforgeeks/Factorial/Solution.md) | Completed |
 | Easy | LeetCode | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) | Binary / Tree Recursion | N/A | N/A | To Do |
+| Easy | LeetCode | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) | Enumerate digit combinations / frequency counting | [Question](./Ch-16-Recursion/leetcode/Finding%203-Digit%20Even%20Numbers/Question.md) | [Solution](./Ch-16-Recursion/leetcode/Finding%203-Digit%20Even%20Numbers/docs/Approch1.md) | Completed |
 | Easy | GeeksforGeeks | [First N Fibonacci Numbers](https://www.geeksforgeeks.org/dsa/program-to-print-first-n-fibonacci-numbers) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Fibonacci%20Series/Question.md) | [Solution](./Ch-16-Recursion/geeksforgeeks/Fibonacci%20Series/Solution.md) | Completed |
 | Easy | GeeksforGeeks | [Power Using Recursion](https://www.geeksforgeeks.org/problems/power-using-recursion/1) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Power%20Using%20Recursion/Question.md) | [Solution](./Ch-16-Recursion/geeksforgeeks/Power%20Using%20Recursion/Solution.md) | Completed |
 | Easy | GeeksforGeeks | [Print 1 to N Without Loops](https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/1%20to%20n%20Without%20Loop/Question.md) | [Solution](./Ch-16-Recursion/geeksforgeeks/1%20to%20n%20Without%20Loop/Solution.md) | Completed |
 | Easy | GeeksforGeeks | [Print N to 1 Without Loop](https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Question.md) | [Solution](./Ch-16-Recursion/geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Solution.md) | Completed |
 | Easy | GeeksforGeeks | [Product of Digits](https://www.geeksforgeeks.org/dsa/program-to-calculate-product-of-digits-of-a-number) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Product%20of%20Digits/Question.md) | [Solution](./Ch-16-Recursion/geeksforgeeks/Product%20of%20Digits/Solution.md) | Completed |
-| Easy | LeetCode | [Reverse String](https://leetcode.com/problems/reverse-string/) | Recursive two-pointer string reversal | N/A | N/A | To Do |
-| Easy | TakeUForward | [Sum of First N Numbers](https://takeuforward.org/practice/dsa/sum-of-first-n-numbers) | Recursion basics | N/A | N/A | To Do |
-
+| Easy | LeetCode | [Reverse String](https://leetcode.com/problems/reverse-string/) | Recursive two-pointer string reversal | [Question](./Ch-16-Recursion/leetcode/Reverse%20String/Question.md) | [Solution](./Ch-16-Recursion/leetcode/Reverse%20String/doc/Approch1.md) | Completed |
+| Easy | TakeUForward | [Sum of First N Numbers](https://takeuforward.org/practice/dsa/sum-of-first-n-numbers) | Recursion basics | [Question](./Ch-16-Recursion/leetcode/Sum%20of%20First%20N%20Numbers/Question.md) | [Solution](./Ch-16-Recursion/leetcode/Sum%20of%20First%20N%20Numbers/doc/Approch1.md) | Completed |
 | Easy | GeeksforGeeks | [Sum of Digits Using Recursion](https://www.geeksforgeeks.org/dsa/program-for-sum-of-the-digits-of-a-given-number/) | Reduce the number by one digit per call | N/A | N/A | To Do |
 | Easy | GeeksforGeeks | [Sum of Array Elements Using Recursion](https://www.geeksforgeeks.org/dsa/sum-array-elements-using-recursion/) | Linear recursion / smaller prefix | N/A | N/A | To Do |
 | Easy | GeeksforGeeks | [Minimum and Maximum Using Recursion](https://www.geeksforgeeks.org/dsa/recursive-programs-to-find-minimum-and-maximum-elements-of-array/) | Recurse over one smaller array prefix | N/A | N/A | To Do |
