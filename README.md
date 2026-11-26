@@ -273,15 +273,11 @@ Ch-XX-Topic-Name/
 
 ## 🛠️ How to Contribute & Add Future Code
 
-1. **Pick a Topic:** Choose a chapter from `Ch-01-` to `Ch-30-`.
-2. **Review the Roadmap:** Check the chapter `README.md` for suggested practice problems.
-3. **Add Your Solution:** Create a folder inside `LeetCode/<Problem-Name>/` or `geeksforgeeks/<Problem-Name>/` with `Question.md`, `Solution.md`, and code files.
-4. **Clean Commits:**
-   ```bash
-   git add -A
-   git commit -m "feat(Ch-16): add GeeksforGeeks Factorial recursive solution and dry-run"
-   git push origin master
-   ```
+Use the [contribution guide](./CONTRIBUTING.md) to report an issue or submit a pull request. See the [repository guidelines](./Agent.md) and [code of conduct](./CODE_OF_CONDUCT.md).
+
+## License
+
+The handbook is available under the [MIT License](./LICENSE). Third-party material remains subject to its original terms.
 
 ---
 
