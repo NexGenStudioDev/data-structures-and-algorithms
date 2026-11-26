@@ -168,7 +168,7 @@ Master recursion progressively from linear basics to advanced branching:
 | Easy | GeeksforGeeks | [Mean of Array Using Recursion](https://www.geeksforgeeks.org/dsa/mean-of-array-using-recursion/) | Build the mean from the previous prefix | N/A | N/A | To Do |
 | Medium | GeeksforGeeks | [Josephus Problem](https://www.geeksforgeeks.org/dsa/josephus-problem/) | Recursion / recurrence relation | N/A | N/A | To Do |
 | Medium | LeetCode | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) | State Inversion via Parent Index | N/A | N/A | To Do |
-| Medium | LeetCode | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Recursion / divide and conquer | N/A | N/A | To Do |
+| Medium | LeetCode | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Recursion / divide and conquer | [Question](./leetcode/Pow(x,%20n)/Question.md) | [Solution](./leetcode/Pow(x,%20n)/doc/Approch1.md) | Completed |
 | Medium | GeeksforGeeks | [Raise to Power of Its Own Reverse](https://www.geeksforgeeks.org/problems/power-of-numbers-1587115620/1) | Recursion / fast exponentiation | N/A | N/A | To Do |
 | Medium | LeetCode | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Divide at each operator / combine recursive results | N/A | N/A | To Do |
 | Medium | GeeksforGeeks | [Maximize the Number of Segments](https://www.geeksforgeeks.org/dsa/maximize-the-number-of-segments-of-length-p-q-and-r/) | Three-way recursion with base cases | N/A | N/A | To Do |
