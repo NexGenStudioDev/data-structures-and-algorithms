@@ -11,21 +11,36 @@
 
 ---
 
+## 🧭 Choose Your Starting Level
+
+For a complete study schedule, exam checklist, and interview answer framework, see the [Zero to Monster roadmap](./Learning-Paths/Zero-to-Monster.md).
+
+Follow the chapter numbers in order if you are new to DSA. If you already know the foundations, use these stages to find a suitable entry point. Each stage builds on earlier concepts; the labels describe the intended starting level, not a strict limit on who can study a chapter.
+
+| Stage | Chapters | Focus | You are ready to move on when you can… |
+|---|---|---|---|
+| **Beginner** | [Beginner guide](./Learning-Paths/Beginner.md) · Chapters 01–05 | DSA vocabulary, programming practice, algorithms, and complexity | Explain a simple algorithm and estimate how its work grows with input size. |
+| **Intermediate** | [Intermediate guide](./Learning-Paths/Intermediate.md) · Chapters 06–16, 18 | Arrays, strings, searching, sorting, pointers, linked lists, stacks, queues, hashing, sets, recursion, and binary trees | Choose a fitting structure or pattern and trace its state on a small example. |
+| **Advanced** | [Advanced guide](./Learning-Paths/Advanced.md) · Chapters 17, 19–28, 30 | Backtracking, BSTs, heaps, tries, graphs, DSU, greedy methods, dynamic programming, bit manipulation, advanced structures, and number theory | State the key invariant or correctness reason, analyze trade-offs, and handle constraints. |
+| **Interview practice** | [29](#-phase-8-interview-mastery--gameplan) | Patterns, problem tracking, revision, and study planning | Explain your approach, alternatives, correctness, and complexity clearly. |
+
+These stages are a navigation aid across the existing numbered chapters. Problem-solving practice can be used alongside any stage; chapter numbers and existing chapter folders remain the canonical structure.
+
 ## ⚡ Quick Jump Navigation
 
 - [🗺️ Master Curriculum Roadmap](#️-master-curriculum-roadmap)
 - [📚 Complete Table of Contents](#-complete-table-of-contents)
-- [🧾 Repository Practice Tracker](./Abhishek%20tracker.md)
-- [🧾 Akanksha Tracker](./Akanksha%20tracker.md)
-  - [Phase 1: Foundations & Complexity Analysis (`Ch-01` to `Ch-05`)](#-phase-1-foundations--complexity-analysis)
-  - [Phase 2: Core Linear Data Structures (`Ch-06` to `Ch-10`)](#-phase-2-core-linear-data-structures--techniques)
-  - [Phase 3: Pointer Structures, Stacks & Queues (`Ch-11` to `Ch-13`)](#-phase-3-pointer-structures-stacks--queues)
-  - [Phase 4: Hashing & Sets (`Ch-14` to `Ch-15`)](#-phase-4-hashing--sets)
-  - [Phase 5: Recursion, Backtracking & Search Trees (`Ch-16` to `Ch-19`)](#-phase-5-recursion-backtracking--search-trees)
-  - [Phase 6: Heaps, Tries & Graph Mastery (`Ch-20` to `Ch-24`)](#-phase-6-heaps-tries--graph-mastery)
-  - [Phase 7: Optimization Paradigms & Advanced Structures (`Ch-25` to `Ch-28`)](#-phase-7-optimization-paradigms--advanced-data-structures)
-  - [Phase 8: Interview Mastery & Gameplan (`Ch-29`)](#-phase-8-interview-mastery--gameplan)
-  - [Phase 9: Mathematical Foundations & Number Theory (`Ch-30`)](#-phase-9-mathematical-foundations--number-theory)
+- [🧾 Abhishek’s Practice Tracker](./Abhishek%20tracker.md)
+- [🧾 Akanksha’s Practice Tracker](./Akanksha%20tracker.md)
+- [Phase 1: Foundations & Complexity Analysis (`Ch-01` to `Ch-05`)](#-phase-1-foundations--complexity-analysis)
+- [Phase 2: Core Linear Data Structures (`Ch-06` to `Ch-10`)](#-phase-2-core-linear-data-structures--techniques)
+- [Phase 3: Pointer Structures, Stacks & Queues (`Ch-11` to `Ch-13`)](#-phase-3-pointer-structures-stacks--queues)
+- [Phase 4: Hashing & Sets (`Ch-14` to `Ch-15`)](#-phase-4-hashing--sets)
+- [Phase 5: Recursion, Backtracking & Search Trees (`Ch-16` to `Ch-19`)](#-phase-5-recursion-backtracking--search-trees)
+- [Phase 6: Heaps, Tries & Graph Mastery (`Ch-20` to `Ch-24`)](#-phase-6-heaps-tries--graph-mastery)
+- [Phase 7: Optimization Paradigms & Advanced Structures (`Ch-25` to `Ch-28`)](#-phase-7-optimization-paradigms--advanced-data-structures)
+- [Phase 8: Interview Mastery & Gameplan (`Ch-29`)](#-phase-8-interview-mastery--gameplan)
+- [Phase 9: Mathematical Foundations & Number Theory (`Ch-30`)](#-phase-9-mathematical-foundations--number-theory)
 - [⚡ Master Time & Space Complexity Cheatsheet](#-master-time--space-complexity-cheatsheet)
 - [🎯 The 14 Must-Know Algorithmic Patterns](#-the-14-must-know-algorithmic-patterns)
 - [⏱️ Input Constraints vs Target Complexity Target](#️-input-constraints-vs-target-complexity-target)
@@ -56,21 +71,6 @@ Phase 8: Interview Patterns & 90-Day Gameplan     (Ch-29)
   │
 Phase 9: Mathematical Foundations & Number Theory (Ch-30)
 ```
-
-## 🧭 Choose Your Starting Level
-
-For a complete study schedule, exam checklist, and interview answer framework, see the [Zero to Monster roadmap](./Learning-Paths/Zero-to-Monster.md).
-
-Follow the chapter numbers in order if you are new to DSA. If you already know the foundations, use these stages to find a suitable entry point. Each stage builds on earlier concepts; the labels describe the intended starting level, not a strict limit on who can study a chapter.
-
-| Stage | Chapters | Focus | You are ready to move on when you can… |
-|---|---|---|---|
-| **Beginner** | [Beginner guide](./Learning-Paths/Beginner.md) · Chapters 01–05 | DSA vocabulary, programming practice, algorithms, and complexity | Explain a simple algorithm and estimate how its work grows with input size. |
-| **Intermediate** | [Intermediate guide](./Learning-Paths/Intermediate.md) · Chapters 06–16, 18 | Arrays, strings, searching, sorting, pointers, linked lists, stacks, queues, hashing, sets, recursion, and binary trees | Choose a fitting structure or pattern and trace its state on a small example. |
-| **Advanced** | [Advanced guide](./Learning-Paths/Advanced.md) · Chapters 17, 19–28, 30 | Backtracking, BSTs, heaps, tries, graphs, DSU, greedy methods, dynamic programming, bit manipulation, advanced structures, and number theory | State the key invariant or correctness reason, analyze trade-offs, and handle constraints. |
-| **Interview practice** | [29](#-phase-8-interview-mastery--gameplan) | Patterns, problem tracking, revision, and study planning | Explain your approach, alternatives, correctness, and complexity clearly. |
-
-These stages are a navigation aid across the existing numbered chapters. Problem-solving practice can be used alongside any stage; chapter numbers and existing chapter folders remain the canonical structure.
 
 ---
 
