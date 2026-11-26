@@ -89,7 +89,7 @@ The Subtopic column keeps Singly, Doubly, and Circular Linked List practice sepa
 | Medium | LeetCode | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Singly Linked List / digit-wise addition and carry | N/A | N/A | To Do |
 | Medium | LeetCode | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Singly Linked List / deep copy with random links | N/A | N/A | To Do |
 | Medium | LeetCode | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | Doubly Linked List / splice child lists | N/A | N/A | To Do |
-| Medium | LeetCode | [Reorder List](https://leetcode.com/problems/reorder-list/) | Singly Linked List / split, reverse, and merge | N/A | N/A | To Do |
+| Medium | LeetCode | [Reorder List](https://leetcode.com/problems/reorder-list/) | Singly linked list / stack and recursion | [Question](../Ch-12-Stacks/06-LeetCode-Questions/Reorder%20List/Question.md) | [Stack solution](../Ch-12-Stacks/06-LeetCode-Questions/Reorder%20List/doc/Approc1.md) · [Recursive solution](../Ch-12-Stacks/06-LeetCode-Questions/Reorder%20List/doc/Approch2.md) | Completed |
 | Medium | LeetCode | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | Singly Linked List / delete with only a node reference | N/A | N/A | To Do |
 | Medium | GeeksforGeeks | [Reverse a Circular Linked List](https://www.geeksforgeeks.org/problems/reverse-the-circular-linked-list/1) | Circular Linked List / reverse next links | N/A | N/A | To Do |
 | Medium | TakeUForward | [Rotate a LL](https://takeuforward.org/practice/dsa/rotate-a-ll) | Singly Linked List / rotate by k positions | N/A | N/A | To Do |
