@@ -1,7 +1,5 @@
 # 932. Sum of First N Natural Numbers — Recursion
 
-The [runnable JavaScript solution](../code/index.js) recursively splits the range in half and adds the two partial sums. It takes O(N) time and O(log N) call-stack space, which supports the documented limit of 10,000. The walkthrough below illustrates linear recursion.
-
 **Difficulty:** Easy  
 **Topics:** Recursion, Mathematics, Basic Programming  
 **Approach Required:** Recursion Only
