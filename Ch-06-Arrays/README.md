@@ -62,7 +62,7 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 | Difficulty | Platform | Question | Subtopic | Local question | Local solution | Status |
 |---|---|---|---|---|---|---|
 | Easy | LeetCode | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Single-pass array scan | N/A | N/A | To Do |
-| Easy | LeetCode | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Array traversal / prefix sum | N/A | N/A | To Do |
+| Easy | LeetCode | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Array traversal / prefix sum | [Question](./LeetCode/Find%20Pivot%20Index/Question.md) | [Solution](./LeetCode/Find%20Pivot%20Index/doc/Approch1.md) | Completed |
 | Easy | TakeUForward | [Largest Element](https://takeuforward.org/practice/dsa/largest-element?category=fundamentals&source=strivers-a2z-dsa-sheet) | Arrays | [Question](./LeetCode/Largest%20in%20Array/Question.md) | [Solution](./LeetCode/Largest%20in%20Array/Answer.md) | Completed |
 | Easy | LeetCode | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | Single-pass array scan | N/A | N/A | To Do |
 | Easy | LeetCode | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Two-dimensional array construction | N/A | N/A | To Do |
@@ -83,6 +83,7 @@ For GFG and TakeUForward questions, see the [repository-wide Practice Tracker](.
 | Medium | LeetCode | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Kadane's Algorithm | N/A | N/A | To Do |
 | Medium | LeetCode | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | Array scan / circular Kadane pattern | N/A | N/A | To Do |
 | Medium | LeetCode | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Prefix & Suffix Products | N/A | N/A | To Do |
+| Medium | LeetCode | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Arrays / alternating indices | [Question](./LeetCode/Rearrange%20Array%20Elements%20by%20Sign/Question.md) | [Solution 1](./LeetCode/Rearrange%20Array%20Elements%20by%20Sign/docs/Approch1.md) · [Solution 2](./LeetCode/Rearrange%20Array%20Elements%20by%20Sign/docs/Approch2.md) | Completed |
 | Medium | LeetCode | [Rotate Array](https://leetcode.com/problems/rotate-array/) | In-place array rotation | N/A | N/A | To Do |
 | Medium | LeetCode | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Two-dimensional array transformation | N/A | N/A | To Do |
 | Medium | LeetCode | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Two-dimensional array traversal | N/A | N/A | To Do |

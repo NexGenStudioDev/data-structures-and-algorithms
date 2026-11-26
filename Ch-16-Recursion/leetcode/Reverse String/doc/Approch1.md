@@ -1,5 +1,7 @@
 # 🔄 344. Reverse String — Recursive Two-Pointer Approach
 
+The [runnable JavaScript solution](./code/index.js) uses iterative two-pointer swaps. It takes O(n) time and O(1) auxiliary space and supports the full input range. The recursive walkthrough below illustrates the same swaps and uses O(n) call-stack space.
+
 **Difficulty:** Easy\
 **Topics:** Array, String, Two Pointers, Recursion\
 **LeetCode:** [https://leetcode.com/problems/reverse-string/](https://leetcode.com/problems/reverse-string/)

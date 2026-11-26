@@ -1,10 +1,14 @@
 class Solution {
     NnumbersSum(N) {
-         if(N == 1) return 1;
+        function sumRange(first, last) {
+            if (first === last) {
+                return first;
+            }
 
-         return N + this.NnumbersSum(N - 1);
+            const middle = Math.floor((first + last) / 2);
+            return sumRange(first, middle) + sumRange(middle + 1, last);
+        }
 
+        return sumRange(1, N);
     }
 }
-
-

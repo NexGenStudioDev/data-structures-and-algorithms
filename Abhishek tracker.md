@@ -19,12 +19,12 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 | 03 | Basic Programming Questions | 2 |
 | 04 | Time Complexity Fast vs Slow | 1 |
 | 05 | Time and Space Complexity & Input Constraints | 1 |
-| 06 | Arrays | 20 |
+| 06 | Arrays | 29 |
 | 07 | Strings | 9 |
 | 08 | Searching Algorithms | 20 |
 | 09 | Sorting Algorithms | 20 |
 | 10 | Two Pointers & Sliding Window | 20 |
-| 11 | Linked Lists | 25 |
+| 11 | Linked Lists | 36 |
 | 12 | Stacks | 15 |
 | 13 | Queues | 7 |
 | 14 | Hash Maps & Hash Tables | 5 |
@@ -35,15 +35,15 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 | 19 | Binary Search Trees (BST) | 8 |
 | 20 | Heaps & Priority Queues | 7 |
 | 21 | Tries (Prefix Trees) | 5 |
-| 22 | Graphs (Basics & Traversal) | 8 |
+| 22 | Graphs (Basics & Traversal) | 7 |
 | 23 | Advanced Graph Algorithms | 7 |
 | 24 | Disjoint Set Union (DSU / Union-Find) | 5 |
 | 25 | Greedy Algorithms | 7 |
 | 26 | Dynamic Programming (DP) | 11 |
 | 27 | Bit Manipulation | 8 |
-| 28 | Advanced Data Structures | 3 |
+| 28 | Advanced Data Structures | 2 |
 | 29 | DSA Patterns & Interview Roadmap | 0 |
-| 30 | Math & Number Theory for DSA | 8 |
+| 30 | Math & Number Theory for DSA | 7 |
 
 ## Questions by chapter
 
@@ -115,6 +115,7 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 | Medium | LeetCode | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Kadane's Algorithm | N/A | N/A | To Do |
 | Medium | LeetCode | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | Array scan / circular Kadane pattern | N/A | N/A | To Do |
 | Medium | LeetCode | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Prefix & Suffix Products | N/A | N/A | To Do |
+| Medium | LeetCode | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Arrays / alternating indices | [Question](./Ch-06-Arrays/LeetCode/Rearrange%20Array%20Elements%20by%20Sign/Question.md) | [Solution 1](./Ch-06-Arrays/LeetCode/Rearrange%20Array%20Elements%20by%20Sign/docs/Approch1.md) · [Solution 2](./Ch-06-Arrays/LeetCode/Rearrange%20Array%20Elements%20by%20Sign/docs/Approch2.md) | Completed |
 | Medium | LeetCode | [Rotate Array](https://leetcode.com/problems/rotate-array/) | In-place array rotation | N/A | N/A | To Do |
 | Medium | LeetCode | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Two-dimensional array transformation | N/A | N/A | To Do |
 | Medium | LeetCode | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Two-dimensional array traversal | N/A | N/A | To Do |

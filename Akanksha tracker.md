@@ -19,31 +19,31 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 | 03 | Basic Programming Questions | 2 |
 | 04 | Time Complexity Fast vs Slow | 1 |
 | 05 | Time and Space Complexity & Input Constraints | 1 |
-| 06 | Arrays | 20 |
+| 06 | Arrays | 29 |
 | 07 | Strings | 9 |
 | 08 | Searching Algorithms | 20 |
 | 09 | Sorting Algorithms | 20 |
 | 10 | Two Pointers & Sliding Window | 20 |
-| 11 | Linked Lists | 25 |
+| 11 | Linked Lists | 36 |
 | 12 | Stacks | 15 |
 | 13 | Queues | 7 |
 | 14 | Hash Maps & Hash Tables | 5 |
 | 15 | Sets | 6 |
-| 16 | Recursion — The Complete Master Guide | 13 |
+| 16 | Recursion — The Complete Master Guide | 21 |
 | 17 | Backtracking | 11 |
 | 18 | Binary Trees | 20 |
 | 19 | Binary Search Trees (BST) | 8 |
 | 20 | Heaps & Priority Queues | 7 |
 | 21 | Tries (Prefix Trees) | 5 |
-| 22 | Graphs (Basics & Traversal) | 8 |
+| 22 | Graphs (Basics & Traversal) | 7 |
 | 23 | Advanced Graph Algorithms | 7 |
 | 24 | Disjoint Set Union (DSU / Union-Find) | 5 |
 | 25 | Greedy Algorithms | 7 |
 | 26 | Dynamic Programming (DP) | 11 |
 | 27 | Bit Manipulation | 8 |
-| 28 | Advanced Data Structures | 3 |
+| 28 | Advanced Data Structures | 2 |
 | 29 | DSA Patterns & Interview Roadmap | 0 |
-| 30 | Math & Number Theory for DSA | 8 |
+| 30 | Math & Number Theory for DSA | 7 |
 
 ## Questions by chapter
 
@@ -90,7 +90,7 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 | Difficulty | Platform | Question | Subtopic | Local question | Local answer / solution | Status |
 |---|---|---|---|---|---|---|
 | Easy | LeetCode | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Single-pass array scan | N/A | N/A | To Do |
-| Easy | LeetCode | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Array traversal / prefix sum | N/A | N/A | To Do |
+| Easy | LeetCode | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Array traversal / prefix sum | [Question](./Ch-06-Arrays/LeetCode/Find%20Pivot%20Index/Question.md) | N/A | To Do |
 | Easy | TakeUForward | [Largest Element](https://takeuforward.org/practice/dsa/largest-element?category=fundamentals&source=strivers-a2z-dsa-sheet) | Arrays | [Question](./Ch-06-Arrays/LeetCode/Largest%20in%20Array/Question.md) | N/A | To Do |
 | Easy | LeetCode | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | Single-pass array scan | N/A | N/A | To Do |
 | Easy | LeetCode | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Two-dimensional array construction | N/A | N/A | To Do |
@@ -115,6 +115,7 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 | Medium | LeetCode | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Kadane's Algorithm | N/A | N/A | To Do |
 | Medium | LeetCode | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | Array scan / circular Kadane pattern | N/A | N/A | To Do |
 | Medium | LeetCode | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Prefix & Suffix Products | N/A | N/A | To Do |
+| Medium | LeetCode | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Arrays / alternating indices | [Question](./Ch-06-Arrays/LeetCode/Rearrange%20Array%20Elements%20by%20Sign/Question.md) | N/A | To Do |
 | Medium | LeetCode | [Rotate Array](https://leetcode.com/problems/rotate-array/) | In-place array rotation | N/A | N/A | To Do |
 | Medium | LeetCode | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Two-dimensional array transformation | N/A | N/A | To Do |
 | Medium | LeetCode | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Two-dimensional array traversal | N/A | N/A | To Do |
@@ -381,14 +382,14 @@ A chapter-wise DSA path from beginner foundations to advanced interview practice
 |---|---|---|---|---|---|---|
 | Easy | GeeksforGeeks | [Factorial](https://www.geeksforgeeks.org/problems/factorial5739/1) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Factorial/Question.md) | N/A | To Do |
 | Easy | LeetCode | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) | Binary / Tree Recursion | N/A | N/A | To Do |
+| Easy | LeetCode | [Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) | Enumerate digit combinations / frequency counting | [Question](./Ch-16-Recursion/leetcode/Finding%203-Digit%20Even%20Numbers/Question.md) | N/A | To Do |
 | Easy | GeeksforGeeks | [First N Fibonacci Numbers](https://www.geeksforgeeks.org/dsa/program-to-print-first-n-fibonacci-numbers) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Fibonacci%20Series/Question.md) | N/A | To Do |
 | Easy | GeeksforGeeks | [Power Using Recursion](https://www.geeksforgeeks.org/problems/power-using-recursion/1) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Power%20Using%20Recursion/Question.md) | N/A | To Do |
 | Easy | GeeksforGeeks | [Print 1 to N Without Loops](https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/1%20to%20n%20Without%20Loop/Question.md) | N/A | To Do |
 | Easy | GeeksforGeeks | [Print N to 1 Without Loop](https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Print%20n%20to%201%20Without%20Loop/Question.md) | N/A | To Do |
 | Easy | GeeksforGeeks | [Product of Digits](https://www.geeksforgeeks.org/dsa/program-to-calculate-product-of-digits-of-a-number) | Recursion | [Question](./Ch-16-Recursion/geeksforgeeks/Product%20of%20Digits/Question.md) | N/A | To Do |
-| Easy | LeetCode | [Reverse String](https://leetcode.com/problems/reverse-string/) | Recursive two-pointer string reversal | N/A | N/A | To Do |
-| Easy | TakeUForward | [Sum of First N Numbers](https://takeuforward.org/practice/dsa/sum-of-first-n-numbers) | Recursion basics | N/A | N/A | To Do |
-
+| Easy | LeetCode | [Reverse String](https://leetcode.com/problems/reverse-string/) | Recursive two-pointer string reversal | [Question](./Ch-16-Recursion/leetcode/Reverse%20String/Question.md) | N/A | To Do |
+| Easy | TakeUForward | [Sum of First N Numbers](https://takeuforward.org/practice/dsa/sum-of-first-n-numbers) | Recursion basics | [Question](./Ch-16-Recursion/leetcode/Sum%20of%20First%20N%20Numbers/Question.md) | N/A | To Do |
 | Easy | GeeksforGeeks | [Sum of Digits Using Recursion](https://www.geeksforgeeks.org/dsa/program-for-sum-of-the-digits-of-a-given-number/) | Reduce the number by one digit per call | N/A | N/A | To Do |
 | Easy | GeeksforGeeks | [Sum of Array Elements Using Recursion](https://www.geeksforgeeks.org/dsa/sum-array-elements-using-recursion/) | Linear recursion / smaller prefix | N/A | N/A | To Do |
 | Easy | GeeksforGeeks | [Minimum and Maximum Using Recursion](https://www.geeksforgeeks.org/dsa/recursive-programs-to-find-minimum-and-maximum-elements-of-array/) | Recurse over one smaller array prefix | N/A | N/A | To Do |
