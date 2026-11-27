@@ -113,7 +113,7 @@ NewSum= PreviousSum - Outgoing + Incoming
 
 
 
-![Fixed Size Sliding Window](./Images/Sliding%20Window%20Approach.png)
+![Sliding Window Approach](./Images/sliding-window-approach.png)
 
 #### Dry Run
 
@@ -146,7 +146,7 @@ Maximum sum = `30`
 
 Where `n` is the array length and `k` is the fixed window size.
 
-![TC](./Images/TC.png)
+![Time Complexity Comparison](./Images/time-complexity-comparison.png)
 
 
 **Main objective:** Don't recalculate information that you have already calculated.
@@ -194,7 +194,7 @@ Valid: [1, 2, 5]
 ```
 
 
-![Sub-Sequence](./Images/Subsequence.png)
+![Subarray, Substring, and Subsequence](./Images/subarray-substring-subsequence.png)
 
 | Property        | Subarray         | Substring        | Subsequence              |
 | --------------- | ---------------- | ---------------- | ------------------------ |
@@ -212,7 +212,7 @@ let low = 0;
 let high = 0;
 ```
 
-![Two Pointers](./Images/Understanding%20Two%20Pointers.png)
+![Understanding Two Pointers](./Images/understanding-two-pointers.png)
 
 | Pointer  | Purpose                     |
 | -------- | --------------------------- |
@@ -249,7 +249,7 @@ Window state can be a sum, product, frequency map, set, count or another useful 
 
 Sliding Window is mainly divided into two types based on how the window size is maintained.
 
-![Two Pointers](./Images/Types%20of%20Sliding%20Window.png)
+![Types of Sliding Window](./Images/types-of-sliding-window.png)
 | Type                         | Description                                                               |
 | ---------------------------- | ------------------------------------------------------------------------- |
 | Fixed Size Sliding Window    | Window size remains constant throughout the traversal after initialization.|
@@ -267,7 +267,7 @@ Fixed Size Sliding Window is a technique where we maintain a window of exactly `
 
 After building the first complete window, we remove one outgoing element and add one incoming element whenever the window moves.
 
-![Fixed Size Sliding Window](./Images/Sliding%20Window.png)
+![Fixed Size Sliding Window](./Images/sliding-window.png)
 
 ### 5.2 How does it work?
 
@@ -294,7 +294,7 @@ Remove the first element and add the next element to maintain the same window si
 [2, 4, 6] → [4, 6, 8] → [6, 8, 10] → [8, 10, 12]
 ```
 
-![Fixed Size Sliding Window Approach](./Images/Sliding%20Window%20Approach.png)
+![Fixed Size Sliding Window Approach](./Images/sliding-window-approach.png)
 
 ### 5.3 Important Formulas
 
@@ -463,13 +463,13 @@ Unlike Fixed Size Sliding Window, we do not maintain a constant window length.
 
 We expand the window to explore more elements and shrink it whenever required by the problem's condition.
 
-![Variable Size Sliding Window](./Images/Variable%20Size%20Sliding%20Window.png)
+![Variable Size Sliding Window](./Images/variable-size-sliding-window.png)
 
 ### 6.2 Understanding the Concept
 
 Suppose we want to find the longest subarray whose sum is less than or equal to `6`.
 
-![Variable Size Sliding Window](./Images/Screenshot_20261127_125034.png)
+![Variable Size Sliding Window Concept](./Images/variable-size-sliding-window-concept.png)
 
 
 ```text
@@ -657,7 +657,7 @@ That is why repeated shrinking generally requires a `while` loop.
 | Applications          | Sum, average, anagrams      | Longest, shortest, counting |
 
 
-![Variable Size Sliding Window](./Images/Fixed%20Size%20vs%20Variable%20Size%20Sliding%20Window.png)
+![Fixed Size vs Variable Size Sliding Window](./Images/fixed-vs-variable-sliding-window.png)
 
 
 ---
@@ -816,7 +816,7 @@ Final answer: `2`
 
 ### 8.5 Longest vs Shortest Window
 
-![Variable Size Sliding Window](./Images/Longest%20vs%20Shortest%20Window.png)
+![Longest vs Shortest Window](./Images/longest-vs-shortest-window.png)
 
 | Longest Window         | Shortest Window            |
 | ---------------------- | -------------------------- |
@@ -841,7 +841,7 @@ For this purpose, we can use a Set, Hash Map or frequency array.
 ### 9.1 Understanding Frequency
 
 
-![Variable Size Sliding Window](./Images/Sliding%20Window%20with%20Frequency%20Tracking.png)
+![Sliding Window with Frequency Tracking](./Images/sliding-window-frequency-tracking.png)
 
 ```text
 Window = [a, b, a, c, b]
@@ -1860,10 +1860,18 @@ Sliding Window
 
 | Image Path                                | Diagram                      |
 | ----------------------------------------- | ---------------------------- |
-| `./Images/Fixed%20Size%20Sliding%20Window.png` | Fixed Size Sliding Window (Overview) |
-| `./Images/Sliding%20Window.png`           | Fixed Size Sliding Window    |
-| `./Images/Sliding%20Window%20Approach.png`| Sliding Window Approach      |
-| `./Images/Variable%20Size%20Sliding%20Window.png` | Variable Size Sliding Window |
+| `./Images/fixed-size-sliding-window-overview.png` | Fixed Size Sliding Window (Overview) |
+| `./Images/sliding-window.png` | Fixed Size Sliding Window |
+| `./Images/sliding-window-approach.png` | Sliding Window Approach |
+| `./Images/variable-size-sliding-window.png` | Variable Size Sliding Window |
+| `./Images/variable-size-sliding-window-concept.png` | Variable Size Sliding Window Concept |
+| `./Images/fixed-vs-variable-sliding-window.png` | Fixed Size vs Variable Size Sliding Window |
+| `./Images/longest-vs-shortest-window.png` | Longest vs Shortest Window |
+| `./Images/sliding-window-frequency-tracking.png` | Sliding Window with Frequency Tracking |
+| `./Images/subarray-substring-subsequence.png` | Subarray, Substring, and Subsequence |
+| `./Images/time-complexity-comparison.png` | Time Complexity Comparison |
+| `./Images/types-of-sliding-window.png` | Types of Sliding Window |
+| `./Images/understanding-two-pointers.png` | Understanding Two Pointers |
 
 *The external practice and resource links have been preserved from your original notes, but have not been live-verified.*
 
